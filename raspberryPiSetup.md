@@ -16,4 +16,7 @@ In theory, ComfySpace works with any and all Operating System with SSH connectio
 
 # Installing comfyScript
 
-ComfyScript is a list of pre-built Python scripts for you to start making your projects as quickly as possible. Although, you can totally use ComfySpace without ComfyScript
+ComfyScript is a list of pre-built Python scripts for you to start making your projects as quickly as possible. Although, you can totally use ComfySpace without ComfyScript.
+
+When opening a Space, the comfyScript folder will be automatically updated from the Github Repo.
+
