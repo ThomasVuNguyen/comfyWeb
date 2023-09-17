@@ -4,7 +4,7 @@ An application to create customizable interface for Raspberry Pi projects
 
 # The Mission
 
-Raspberry Pi and IoT devices are powerful, open, and well supported by a community of greatly enthusiatic makers & engineers. But I have always found it tedious and hard to create a control/input interface. 
+Raspberry Pi and IoT devices are powerful and well supported by a community of greatly enthusiatic makers & engineers. But I have always found it tedious and hard to create a control/input interface. 
 
 Of course there are buttons, but they are made mostly for demo, not a final product. There are a few apps available, but most of them are made for specific projects with buggy UI or have limitted built-in functionality. 
 
