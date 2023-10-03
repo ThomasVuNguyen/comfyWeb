@@ -1,16 +1,20 @@
-# What is a button?
-Inside each space, you can add buttons to control & monitor Raspberry Pi and its components. You can use a button to toggle LEDs or read data from a distance sensor
+# Enter a space
+By pressing on a space, you will enter (open) a space.<br>
+<img src = "assets/Button/button_step1_enterSpace.png" width="200" >
+<img src = "assets/Button/button_step2_spaceLayout.png" width="200" >
 
-# Create a button
-To create a button, you can choose the type and enter respective credentials
+On app bar, you can see the space name.
+Right below, you will see a 3-dot widget and a black screen. That is the [comfyScript]() widget and a terminal. 
+The comfyScript widget searches for and update the comfyScript folder in your Raspberry Pi. After the update is finished, the comfyScript widget will disappear and report completion to the terminal. <br>
+***This is not something to concern about, if curious: learn more about [comfyScript]()***<br>
+<img src = "assets/Button/button_step3_comfyScriptupdated.png" width="200" >
+<br>
+A terminal is a screen to tell you what's happening: a button is pressed, data is accessed, comfyScript is updated, etc. This is useful for bebugging.
 
-There are two types of buttons: pre-built and custom.
+Lastly, the floating + button allows you to add a new button to your space<br>
+<img src = "assets/Button/button_step4_addAButton.png" width="200" >
+<br>
 
-Pre-built buttons are already designed with certain functionalities in mind (LED on & off, motor to run clockwise-stop-counterclockwise, etc.). You just need to enter the corresponding pins connected and the system will refer to ComfyScript to control & read from such components. 
+# Button List
 
-Custom buttons are well... more customizable. There are certain actions built-in (toggle, slider, etc.) and you can assign commands of your choice to the buttons' functionalities. 
-
-# Functionality in progress
-- Draggability: The ability to drag and re-organize button positions
-- Color assignment: Each button will have its own color
-- 
+See available buttons in [button list]()

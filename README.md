@@ -1,20 +1,21 @@
-# comfySpace
-An application to create customizable interface for Raspberry Pi projects
+# ComfySpace
+Starting making more <ins>***comfortably***</ins> with Raspberry Pi
 
+# What is Comfy Space ?
 
+***ComfySpace*** is an application to build buttons that control and read data from Raspberry Pi and associated components like sensors, motors, HAT, etc.
+
+I hope to bring a more user **friendly** & **fast** way to get your project moving. Meanwhile, power users are provided with good documentation to get even **finer control** in their projects.
 # The Mission
 
-Raspberry Pi and IoT devices are powerful and well supported by a community of greatly enthusiatic makers & engineers. But I have always found it tedious and hard to create a control/input interface. 
+Raspberry Pi and IoT devices are powerful and well supported by a community of greatly enthusiatic makers & engineers. But I have always found it tedious and hard to create a control/input interface. Typically, you would need to create your own logic and UI, which takes lots of time to test and is not very reuable.
 
-Of course there are buttons, but they are made mostly for demo, not a final product. There are a few apps available, but most of them are made for specific projects with buggy UI or have limitted built-in functionality. 
+Just tell the app how the components are connected & what control you need, ComfySpace will take care of the rest.
 
-ComfySpace is made to change that - a more customizable solution.
+Are you a maker? <br> ComfySpace allows you to create an interface for your robots, home servers, LED matrix, etc. 
 
-You can make an interface the way you want with the device you already have: the phone in your pocket and laptop/PC you have at home.
+Are you a company making products out of the Raspberry Pi ecosystem? <br>
+ComfySpace lets you create widgets & applications to control your products. Think of how you can use Wix to create a website instead of hiring a web developer for your website - a lot less hassle.
 
-Are you a maker? ComfySpace allows you to create an interface of choice and share online.
-
-Are you the designer of a special sensor, component or HAT? You can create a sharable interface for your user to test and use such components?
-
-Are you a company making products out of the Raspberry Pi ecosystem? ComfySpace is what you need to easily make a demo project into an attractive engineering solution.
-
+Are you a software and/or Raspberry Pi enthusiast?<br>
+Consider helping out with the codebase! We can always use some help.

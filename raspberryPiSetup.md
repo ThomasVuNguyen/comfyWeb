@@ -4,19 +4,16 @@ Raspberry Pi is a single-board computer. Just like a computer, Raspberry Pi can 
 
 
 # Recommended Operating System
-In theory, ComfySpace works with any and all Operating System with SSH connection built-in on any computing devices. But we do recommend Raspberry Pi & Raspberry Pi OS
+Techinically, ComfySpace works with any and all Operating System with SSH connection built-in on any computing devices. But we do recommend [Raspberry Pi](https://www.raspberrypi.com/products/) & Raspberry Pi OS.
 
-# Setup Raspberry Pi
+# Setup Raspberry Pi (using Raspberry Pi Imager)
 
-1. Install Raspberry Pi Imager
-2. Flash Raspberry Pi OS and setup SSH credentials
+1. Install [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
+2. Flash Raspberry Pi OS onto a USB or Micro-SD card and setup SSH credentials
 3. Wait 
+4. Plug media in your Raspberry Pi and power up
 
-//add extendable area for more manual methods
+***Note: If you already have a running Raspberry Pi with known SSH credentials, skip this step.***
 
-# Installing comfyScript
 
-ComfyScript is a list of pre-built Python scripts for you to start making your projects as quickly as possible. Although, you can totally use ComfySpace without ComfyScript.
-
-When opening a Space, the comfyScript folder will be automatically updated from the Github Repo.
 
