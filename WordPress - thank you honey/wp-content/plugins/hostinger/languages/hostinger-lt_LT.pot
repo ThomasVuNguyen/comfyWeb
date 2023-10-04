@@ -1,0 +1,398 @@
+# Copyright (C) 2023 Hostinger
+# This file is distributed under the GPL v3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Hostinger 1.4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hostinger-wordpress-plugin\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-04-21T07:26:40+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: hostinger\n"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: includes/admin/class-hostinger-admin-menu.php:15
+#: includes/admin/class-hostinger-admin-menu.php:16
+msgid "Hostinger"
+msgstr ""
+
+#. Description of the plugin
+msgid "Hostinger WordPress plugin."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.hostinger.com"
+msgstr ""
+
+#: includes/admin/class-hostinger-admin-ajax.php:35
+#: includes/admin/onboarding/class-hostinger-onboarding.php:58
+msgid "Website is published"
+msgstr ""
+
+#: includes/admin/class-hostinger-admin-ajax.php:36
+msgid "Congratulations! Your website is online."
+msgstr ""
+
+#: includes/admin/class-hostinger-admin-ajax.php:60
+msgid "invalid data"
+msgstr ""
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:59
+msgid "You can access this guide material any time when updating your website"
+msgstr ""
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:61
+msgid "Preview website"
+msgstr ""
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+msgid "Set up your website"
+msgstr ""
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:70
+msgid "Follow our guided checklist to setup your website"
+msgstr ""
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:71
+#: includes/admin/onboarding/class-hostinger-onboarding.php:73
+msgid "Publish website"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:9
+msgid "Create a page describing your services"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:11
+msgid "Upload your portfolio projects"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:13
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:54
+msgid "Add a new page"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:24
+msgid "Give a page a short title such as “Our Services”"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:25
+msgid "Come up with a clear and concise name for the page that accurately reflects the services you provide."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:28
+msgid "Add the content and images that represent your services"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:29
+msgid "Write a brief introduction to your business, provide an overview of your services with descriptions and benefits, and use relevant images to support your content. Keep it simple and straightforward."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:32
+msgid "Finalize the page"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:33
+msgid "Make the page easy to read and navigate by using headings and bullet points. Include a clear call-to-action (CTA) to encourage visitors to take the next step for example, to contact you via email or contact form."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:39
+msgid "Create a new page called “My projects”"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:40
+msgid "Give your page a name (e.g. \"My Portfolio\"), then click the \"+\" button in the editor to add a new block."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:43
+msgid "Add a gallery block"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:44
+msgid "In the block menu, search for \"Gallery\" and select the Gallery block. Upload the images you want to showcase in your portfolio, then adjust the layout and add captions if needed."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:47
+msgid "Publish your page"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:48
+msgid "Once you're happy with your portfolio post, click the \"Publish\" button to make it live on your website. You can add a link to your main navigation menu or other relevant posts to make it easy for visitors to find."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:55
+msgid "In the left sidebar, find the Pages menu and click on Add New button. You will see the WordPress page editor. Each paragraph, image, or video in the WordPress editor is presented as a “block” of content."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:58
+msgid "Add a title"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:59
+msgid "Add the title of the page, for example, About. Click the Add Title text to open the text box where you will add your title. The title of your page should be descriptive of the information the page will have."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:62
+msgid "Add content"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:63
+msgid "Content can be anything you wish, for example, text, images, videos, tables, and lots more. Click on a plus sign and choose any block you want to add to the page."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:66
+msgid "Publish the page"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:67
+msgid "Before publishing, you can preview your created page by clicking on the Preview button. If you are happy with the result, click the Publish button."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:5
+msgid "Create your first blog post"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:11
+msgid "Create a catchy headline"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:12
+msgid "Create a headline that grabs your visitors attention and accurately represents the content of your post."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:15
+msgid "Draft your post"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:16
+msgid "Write your content, making sure to include relevant keywords and images. You can use different blocks to create headings, paragraphs, lists, and other types of content."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:19
+msgid "Proofread and publish"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:20
+msgid "Once you have finished drafting your post, read it over to check for errors, make any necessary revisions, and then publish it to your blog."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:5
+msgid "Add your first product"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:11
+msgid "Add your product"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:12
+msgid "Go to Products → Add New or Create Product and enter your product name and description."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:15
+msgid "Add products image and price"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
+msgid "To make the product stand out, upload a picture of it. During the setup of your wanted item, be sure to add its price and any other relevant information. Product categories and tags to help organize your products."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:19
+msgid "Publish the setup"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:20
+msgid "Once fields are filled, and your item has an image, description, and price, it’s time to publish it online. You will find the “publish” button at the top of the page, near the description field."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:11
+msgid "Edit post description"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:17
+msgid "Go to Posts"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:18
+msgid "In the left sidebar, find the Posts button. Click on the All Posts button and find the post for which you want to change the description."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:21
+msgid "Edit post"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:22
+msgid "Hover over the chosen post to see the options menu. Click on the Edit button to open the post editor."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:25
+msgid "Edit description"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:26
+msgid "You can see the whole post in the editor. Find the description part and change it to your preferences."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:5
+msgid "Edit site title"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:11
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:15
+msgid "Go to the Customize page"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:12
+msgid "In the left sidebar, click Appearance to expand the menu. In the Appearance section, click Customize. The Customize page will open."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:15
+msgid "Access the Site identity and edit title"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:16
+msgid "In the left sidebar, click Site Identity and edit your site title."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:5
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:15
+msgid "Upload an image"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:11
+msgid "Find the Media page"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:12
+msgid "In the left sidebar, find the Media button. The Media Library page allows you to edit, view, and delete media previously uploaded to your website."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:16
+msgid "To upload a new image, click on Add New button on the Media Library page and select files."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:19
+msgid "Edit an image"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:20
+msgid "If you wish to edit the image, click on the chosen image and click the Edit Image button. You can now crop, rotate, flip or scale the selected image."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:5
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:19
+msgid "Upload your logo"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:11
+msgid "Create a logo"
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:12
+msgid "Adding a logo is a great way to personalize a website or add branding information. You can use your existing logo or create a new one using the <a href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" target=\"_blank\">Ai Logo Maker</a>."
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:16
+msgid "In the left sidebar, click Appearance to expand the menu. In the Appearance section, click Customize. The Customize page will open. "
+msgstr ""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:20
+msgid "In the left sidebar, click Site Identity, then click on the Select Site Icon button. Here, you can upload your brand logo. "
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:17
+#: includes/admin/views/hostinger-onboarding-view.php:201
+msgid "How to Add Your WordPress Website to Google Search Console"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:22
+msgid "How to Create a WordPress Contact Us Page"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:27
+msgid "How to Clear Cache in WordPress Website"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:32
+msgid "How to Edit the Footer in WordPress"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:37
+msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:42
+msgid "How to Back Up a WordPress Site"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:47
+msgid "How to Import Images Into WordPress Website"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:52
+msgid "How to Set Up WordPress SMTP"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:60
+msgid "Home"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:61
+msgid "Learn"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:104
+msgid "Got it!"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:108
+msgid "Take me there"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:170
+msgid "Publishing website"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:171
+msgid "This can take some time"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:173
+msgid "Close"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:183
+msgid "WordPress tutorials"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:190
+msgid "Hostinger Academy"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:242
+msgid "Knowledge Base"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:243
+msgid "Find the answers you need in our Knowledge Base"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:253
+msgid "Help Center"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:254
+msgid "Get in touch with our live specialists"
+msgstr ""
+
+#: includes/views/hostinger-coming-soon.php:6
+#: includes/views/hostinger-coming-soon.php:14
+msgid "Coming Soon"
+msgstr ""
+
+#: includes/views/hostinger-coming-soon.php:15
+msgid "New WordPress website is being built and will be published soon"
+msgstr ""

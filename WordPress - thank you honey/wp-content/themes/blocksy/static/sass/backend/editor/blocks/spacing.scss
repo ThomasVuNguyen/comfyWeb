@@ -1,0 +1,32 @@
+:root {
+
+	.is-layout-flow,
+	.is-layout-constrained {
+
+		> * + * {
+			margin-block-start: 0;
+		}
+	}
+
+
+	.is-layout-flow,
+	.is-layout-constrained {
+
+		> * {
+			margin-bottom: var(--content-spacing);
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			margin-top: var(--content-spacing);
+			margin-bottom: calc(var(--has-content-spacing, 1) * (0.3em + 10px));
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+:root {
+	--tutor-body-color: var(--color);
+}
+
+.tutor-segment-title,
+.tutor-course-header-h1,
+.tutor-single-course-segment .tutor-segment-title {
+	color: var(--headings-color);
+}
+
+.tutor-table {
+	border: initial;
+}

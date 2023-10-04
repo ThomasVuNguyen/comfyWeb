@@ -1,0 +1,415 @@
+/*
+#
+# Theme Portfolio View
+# Default style for Portfolio View 
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Components
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+# Comments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Media
+--------------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+  display: inline-block;
+}
+
+/* Captions
+--------------------------------------------- */
+iframe {
+  border: 0;
+  max-width: 100%;
+}
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+/* Galleries
+--------------------------------------------- */
+.gallery {
+  margin-bottom: 1.5em;
+  display: grid;
+  grid-gap: 1.5em;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.gallery-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-columns-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-columns-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.gallery-columns-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.gallery-columns-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.gallery-caption {
+  display: block;
+}
+/* Table
+--------------------------------------------- */
+.entry-content table,
+.comment-content table {
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.entry-content table td,
+.entry-content table th,
+.comment-content table td,
+.comment-content table th {
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+.entry-content table th,
+.comment-content table th {
+  background: #ccc;
+}
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+
+/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  display: none;
+}
+
+/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#primary[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/* Alignments
+--------------------------------------------- */
+.alignleft {
+  /*rtl:ignore*/
+  float: left;
+
+  /*rtl:ignore*/
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.alignright {
+  /*rtl:ignore*/
+  float: right;
+
+  /*rtl:ignore*/
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+}
+
+/* Comments
+--------------------------------------------- */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+.comment-respond {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border: solid thin #eaeaea;
+  padding: 1.75rem;
+}
+
+.comment-notes {
+  font-size: medium;
+  margin: 0px 0;
+}
+
+.comment-list {
+  padding: 0;
+}
+
+.comments-title {
+  font-size: medium;
+}
+
+.comment-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.comment-author img {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.comment-metadata a {
+  color: #c1c1c1;
+}
+
+.says {
+  display: none;
+}
+
+.comment-reply-link {
+  border: solid thin #eaeaea;
+  padding: 0.2rem 0.5rem;
+}
+
+.comment-form-cookies-consent {
+  font-size: medium;
+  font-weight: normal;
+}
+
+.comments-area ol {
+  list-style: none;
+}
+
+.comment-body {
+  border: solid thin #e2e8f0;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: medium;
+  word-wrap: break-word;
+}
+
+ol.children {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+div.comments-area label {
+  display: inline-block;
+  margin-bottom: 0;
+  color: #757575;
+}
+
+div.comment-respond h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p.logged-in-as {
+  font-size: medium;
+  margin: 0px 0;
+}
+
+span.nav-subtitle {
+  color: #999;
+}
+form#commentform input:not([type="checkbox"]) {
+  display: block;
+  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .has-thumbnail .portfolio-view-text.text-center.p-3 {
+    margin-bottom: 2rem;
+  }
+}
+/*--------------------------------------------------------------
+
+## News ticker
+
+--------------------------------------------------------------*/
+
+.js-ticker {
+  overflow: hidden;
+}
+
+.js-ticker-track {
+  white-space: nowrap;
+}
+
+.js-ticker-item {
+  white-space: normal;
+  height: 100%;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+}
+.nbarmain {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+
+.nbarmain > div {
+  flex: none;
+}
+.nbarmain .news-latest,
+.nbarmain .news-update {
+  padding: 10px 10px 10px 0;
+  border-bottom: 1px solid #b50000;
+}
+.nbarmain .news-latest {
+  padding: 10px 15px;
+  background: #b50000;
+  color: #fff;
+}
+.news-update.ticker.news-noload {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+@supports ((display: -webkit-box) or (display: flex)) {
+  .js-ticker-track {
+    position: relative;
+    white-space: normal;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
+  .js-ticker-item {
+    height: auto;
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .js-ticker.active .js-ticker-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .js-ticker.active .js-ticker-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+}

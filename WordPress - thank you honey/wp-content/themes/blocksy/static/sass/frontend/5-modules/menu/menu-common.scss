@@ -1,0 +1,29 @@
+nav[class*="menu"] {
+
+	.ct-menu-link {
+		color: var(--linkInitialColor);
+		--icon-color: var(--linkInitialColor);
+	}
+
+	li:hover {
+		> .ct-menu-link,
+		> .ct-sub-menu-parent {
+			color: var(--linkHoverColor);
+
+			svg {
+				fill: var(--icon-hover-color, var(--linkHoverColor));
+			}
+		}
+	}
+
+	li[class*="current-menu-"] {
+		> .ct-menu-link,
+		> .ct-sub-menu-parent {
+			color: var(--linkActiveColor, var(--linkHoverColor));
+
+			svg {
+				fill: var(--icon-active-color, var(--icon-hover-color, var(--linkActiveColor, var(--linkHoverColor))));
+			}
+		}
+	}
+}

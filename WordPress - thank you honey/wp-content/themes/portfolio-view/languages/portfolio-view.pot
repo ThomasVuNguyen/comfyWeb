@@ -1,0 +1,410 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Portfolio View\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-22 09:34+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.1.1\n"
+"X-Domain: portfolio-view"
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:67
+msgid ", "
+msgstr ""
+
+#: actions/home-intro.php:16 inc/customizer.php:206
+msgid "A Web Designer"
+msgstr ""
+
+#: functions.php:144
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/customizer.php:161
+msgid "Agency Intro section settings"
+msgstr ""
+
+#: inc/customizer.php:159
+msgid "Agency Intro Settings"
+msgstr ""
+
+#: inc/customizer.php:86
+msgid "All Portfolio View theme settings"
+msgstr ""
+
+#: inc/customizer.php:392
+msgid "Classic Style"
+msgstr ""
+
+#: actions/header-actions.php:80
+msgid "Close"
+msgstr ""
+
+#: comments.php:69
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:42
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/customizer.php:347
+msgid "Container type"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:57
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#. Copyright date format, see https://www.php.net/date
+#: footer.php:22
+msgctxt "copyright date format"
+msgid "Y"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:104 template-parts/content-page.php:41
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/customizer.php:354 inc/customizer.php:418
+msgid "Full width Container"
+msgstr ""
+
+#: inc/customizer.php:390
+msgid "Grid Style"
+msgstr ""
+
+#: inc/customizer.php:254
+msgid "Header Facebook url"
+msgstr ""
+
+#: inc/customizer.php:324
+msgid "Header Instagram url"
+msgstr ""
+
+#: inc/customizer.php:282
+msgid "Header Linkedin url"
+msgstr ""
+
+#: inc/customizer.php:310
+msgid "Header Pinterest url"
+msgstr ""
+
+#: inc/customizer.php:268
+msgid "Header Twitter url"
+msgstr ""
+
+#: inc/customizer.php:296
+msgid "Header Youtube url"
+msgstr ""
+
+#: actions/home-intro.php:15 inc/customizer.php:193
+msgid "Hello, I'm James Smith"
+msgstr ""
+
+#: inc/customizer.php:436
+msgid "Hide All Pages"
+msgstr ""
+
+#: inc/customizer.php:435
+msgid "Hide Only Front Page"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Hide Site Tagline?"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://wpthemespace.com/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://wpthemespace.com/product/portfolio-view/"
+msgstr ""
+
+#: inc/customizer.php:187
+msgid "Image size should be 450px width & 460px height for better view."
+msgstr ""
+
+#: inc/customizer.php:226
+msgid "Intro Description"
+msgstr ""
+
+#: inc/customizer.php:200
+msgid "Intro Subtitle"
+msgstr ""
+
+#: inc/customizer.php:213
+msgid "Intro Title"
+msgstr ""
+
+#: 404.php:23
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: template-parts/content-none.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:87
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/customizer.php:373
+msgid "Left Sidebar"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:74
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/customizer.php:391
+msgid "List Style"
+msgstr ""
+
+#: functions.php:57
+msgid "Main Menu"
+msgstr ""
+
+#: actions/header-actions.php:79
+msgid "Menu"
+msgstr ""
+
+#: single.php:41
+msgid "Next:"
+msgstr ""
+
+#: inc/customizer.php:374
+msgid "No Sidebar"
+msgstr ""
+
+#. Author of the theme
+msgid "Noor Alam"
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#. 1: title.
+#: comments.php:36
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: inc/customizer.php:411
+msgid "Page Container type"
+msgstr ""
+
+#: template-parts/content-page.php:27 template-parts/content.php:70
+msgid "Pages:"
+msgstr ""
+
+#. Name of the theme
+msgid "Portfolio View"
+msgstr ""
+
+#: inc/customizer.php:333
+msgid "Portfolio View Blog Settings"
+msgstr ""
+
+#: inc/customizer.php:89
+msgid "Portfolio View Header Settings"
+msgstr ""
+
+#: inc/customizer.php:397
+msgid "Portfolio View Page Settings"
+msgstr ""
+
+#: actions/header-actions.php:53
+msgid "Portfolio View Theme"
+msgstr ""
+
+#: inc/customizer.php:335 inc/customizer.php:399
+msgid "Portfolio View theme blog settings"
+msgstr ""
+
+#: actions/header-actions.php:53
+msgid "Portfolio View Theme By"
+msgstr ""
+
+#: inc/customizer.php:91
+msgid "Portfolio View theme header settings"
+msgstr ""
+
+#: inc/customizer.php:85
+msgid "Portfolio View Theme settings"
+msgstr ""
+
+#. %s: post author.
+#: inc/template-tags.php:49
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:32
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. 1: list of categories.
+#: inc/template-tags.php:70
+#, php-format
+msgid "Posted in: %1$s"
+msgstr ""
+
+#: single.php:40
+msgid "Previous:"
+msgstr ""
+
+#: template-parts/content-list.php:38
+msgid "READ MORE"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/customizer.php:367
+msgid "Right and Left sidebar only show when sidebar widget is available. "
+msgstr ""
+
+#: inc/customizer.php:372
+msgid "Right Sidebar"
+msgstr ""
+
+#. %s: search query.
+#: search.php:40
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/customizer.php:366
+msgid "Select Blog Layout"
+msgstr ""
+
+#: inc/customizer.php:385
+msgid "Select Blog Style"
+msgstr ""
+
+#: inc/customizer.php:172
+msgid "Show Agency Intro? "
+msgstr ""
+
+#: inc/customizer.php:434
+msgid "Show all pages"
+msgstr ""
+
+#: inc/customizer.php:239
+msgid "Show Header Social?"
+msgstr ""
+
+#: inc/customizer.php:135
+msgid "Show Main Menu?"
+msgstr ""
+
+#: inc/customizer.php:120
+msgid "Show Menubar Logo?"
+msgstr ""
+
+#: inc/customizer.php:150
+msgid "Show Menubar Search Icon?"
+msgstr ""
+
+#: inc/customizer.php:106
+msgid "Show Menubar Section?"
+msgstr ""
+
+#: inc/customizer.php:429
+msgid "Show Page header"
+msgstr ""
+
+#: functions.php:142
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:29
+msgid "Skip to content"
+msgstr ""
+
+#: template-parts/content-none.php:38
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/customizer.php:353 inc/customizer.php:417
+msgid "Standard Container"
+msgstr ""
+
+#. 1: list of tags.
+#: inc/template-tags.php:77
+#, php-format
+msgid "Tagged: %1$s"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"The Portfolio View WordPress theme is an excellent choice for creatives, "
+"entrepreneurs, and small businesses. It provides an attractive, modern "
+"design with a wide range of features, including several page and post "
+"layouts, portfolio options, and multiple custom widgets. The theme is also "
+"highly customizable, offering a variety of color schemes and fonts to choose "
+"from. Additionally, the theme is SEO-friendly, ensuring your content is easy "
+"to find. It also includes eCommerce integration, allowing you to easily set "
+"up an online store. With its responsive design and customizable features, "
+"the Portfolio View WordPress theme offers a great way to create a beautiful "
+"website that’s sure to impress."
+msgstr ""
+
+#: inc/customizer.php:186
+msgid "Upload Profile Image"
+msgstr ""
+
+#: actions/header-actions.php:53
+msgid "Wp Theme Space"
+msgstr ""
+
+#: inc/customizer.php:412
+msgid "You can set standard container or full width container for page. "
+msgstr ""
+
+#: inc/customizer.php:348
+msgid "You can set standard container or full width container. "
+msgstr ""

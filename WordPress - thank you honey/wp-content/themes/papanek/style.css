@@ -1,0 +1,299 @@
+/*
+
+Theme Name: Papanek
+Theme URI: https://romanfink.com/papanek
+Author: Roman Fink
+Author URI: https://romanfink.com
+Description: Papanek is a minimalistic block theme with Full Site Editing feature, development for agencies and freelancer to get help quikly launch simple and clear website. Create simple and clear landing pages effortlessly with 54 ready-to-use patterns. Inspired by Victor Papanek.
+Requires at least: 6.2
+Tested up to: 6.2
+Requires PHP: 5.7
+Version: 1.0.3
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: papanek
+Tags: one-column, custom-colors, custom-menu, editor-style, full-site-editing, block-patterns, block-styles, blog, portfolio
+
+*/
+
+
+/* --- Stick footer to bottom --- */
+
+.wp-site-blocks {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wp-site-blocks > footer {
+    margin-block-start: 0px !important;
+}
+
+.wp-site-blocks > .wp-block-group {
+    margin-bottom: auto;
+}
+
+.wp-block-social-links .wp-social-link span:not(.screen-reader-text) {
+    font-size: var(--wp--preset--font-size--normal);
+}
+
+
+/* --- Helpers for block stylization --- */
+
+.border-radius-default {
+    border-radius: var(--wp--preset--spacing--10);
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.full-height {
+    height: 100%;
+}
+
+
+/* Block Style: Space Between */
+
+.is-style-papanek-rounded-borders {
+    border-radius: var(--wp--preset--spacing--10);
+    overflow: hidden;
+}
+
+
+/* --- Helper classes for mobile devices --- */
+
+@media (max-width: 767px) {
+
+    .mobile-hide {
+        display: none !important
+    }
+
+    .mobile-max-height-40 {
+        max-height: 40px;
+    }
+
+    .mobile-order-1 {
+        order: 1;
+    }
+
+    .mobile-order-2 {
+        order: 2;
+    }
+
+    .mobile-align-none {
+        float: none !important;
+        margin-inline-start: 0 !important;
+    }
+
+    .mobile-no-br br {
+        display: none;
+    }
+
+    .mobile--no-padding-top {
+        padding-top: 0 !important;
+    }
+
+    .mobile--no-padding-bottom {
+        padding-bottom: 0 !important;
+    }
+
+    .mobile-gallery-column > .wp-block-image {
+        width: 100% !important;
+    }
+
+}
+
+/* --- Material buttons --- */
+
+.wp-element-button, .wp-block-button a {
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    box-sizing: border-box;
+}
+
+.wp-element-button:hover, .wp-block-button:hover a {
+    transform: scale(1.02);
+}
+
+.wp-element-button:focus, .wp-block-button:focus a {
+    transform: scale(1);
+}
+
+.wp-element-button:active, .wp-block-button:active a {
+    transform: scale(1);
+}
+
+
+/* --- Inputs and ContactForm7 --- */
+
+form {
+    position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+select {
+    width: 100%;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: var(--wp--preset--font-size--normal);
+    border: 2px solid var(--wp--preset--color--primary-second);
+    outline: 0;
+    border-radius: var(--wp--preset--spacing--10);
+    background: var(--wp--preset--color--background);
+    color: var(--wp--preset--color--primary);
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none; /* hide the default arrow in ie10 and ie11 */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--wp--preset--color--primary-second);
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    cursor: pointer;
+    font-size: var(--wp--preset--font-size--small);
+    border: none;
+    border-radius: var(--wp--preset--spacing--10);
+    outline: none;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    background-color: var(--wp--preset--color--background);
+    color: var(--wp--preset--color--primary);
+    font-weight: 600;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    transform: scale(1.02);
+}
+
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+    transform: scale(1);
+}
+
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    transform: scale(1);
+}
+
+.wpcf7-form label {
+    display: block;
+    font-size: var(--wp--preset--font-size--small);
+    margin: 0 0 8px;
+    color: var(--wp--preset--color--background);
+    line-height: var(--wp--preset--font-size--medium);;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group p{
+    margin: 0;
+}
+
+.form-group.half {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+}
+
+.form-group.half.last {
+    margin-right: 0;
+}
+
+.form-group.third {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+}
+
+.form-group.third.last {
+    margin-right: 0;
+}
+
+.wpcf7-not-valid-tip {
+    font-size: 12px;
+}
+
+.wpcf7-form > p {
+    margin-bottom: 0;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+    padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+}
+
+ul.wp-block-categories-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--wp--preset--spacing--40);
+}
+
+.wp-block-query-pagination-numbers {
+    display: flex;
+    gap: var(--wp--preset--spacing--30);
+}

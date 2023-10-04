@@ -1,0 +1,129 @@
+.portfolio-view-about-wrap .portfolio-view-section .dashicons{margin-top:-4px;vertical-align:middle}.portfolio-view-about-wrap .nav-tab{font-size:16px}.portfolio-view-about-wrap h1{font-size:2em}.portfolio-view-about-wrap h3{font-size:1.2em}.portfolio-view-about-wrap .wp-badge{background-size:180px auto;background-position:center;height:160px;padding:0;width:190px;border-radius: 10%}.portfolio-view-about-wrap .quick-links a{margin-right:5px}.portfolio-view-about-notice .btn-dismiss{margin-left:20px}.portfolio-view-about-wrap .plugin-list{list-style-position:inside;list-style-type:disc}.about-wrap .feature-section{padding:40px 0 0;overflow:hidden}.about-page-action-required-box{background:#fff;border-left:4px solid #f8800c;display:block;margin-bottom:0;padding:10px 30px;position:relative;-webkit-box-shadow:0 1px 1px 0 rgba(0,0,0,.1);-moz-box-shadow:0 1px 1px 0 rgba(0,0,0,.1);box-shadow:0 1px 1px 0 rgba(0,0,0,.1)}.about-wrap .about-page-required-action-button{position:absolute;top:10px;right:10px;text-decoration:none;color:#b4b9be;border-radius:50%;cursor:pointer}.about-wrap .about-page-required-action-button:hover:before{color:#F44336}.about-wrap .about-page-action-required-box p{display:block;margin-top:0;width:100%;max-width:100%}.about-wrap .feature-section.recommended-plugins .col{background:#fff;padding:20px;margin-top:0}#free_pro .free-pro-table{border-spacing:0;width:100%}#free_pro .free-pro-table th{padding-bottom:20px}#free_pro .free-pro-table td{border-top:1px solid #ccc;padding:20px 0 25px}#free_pro .free-pro-table h3,#free_pro .free-pro-table td p{margin:0}#free_pro .free-pro-table .only-lite,#free_pro .free-pro-table .only-pro{text-align:center;width:15%}#free_pro .free-pro-table .only-lite .dashicons-before:before{color:#00A878}#free_pro .free-pro-table .only-pro .dashicons-before:before{color:#ff3439}#free_pro .free-pro-table .only-lite .dashicons-before:before,#free_pro .free-pro-table .only-pro .dashicons-before:before{font-size:35px;height:35px;width:35px}#free_pro .ti-about-page-text-center{text-align:center}.badge-action-count{padding:0 6px;display:inline-block;background-color:#d54e21;color:#fff;font-size:9px;line-height:17px;font-weight:600;margin:1px 0 0 5px;vertical-align:top;-webkit-border-radius:10px;border-radius:10px;z-index:26}.portfolio-view-about-wrap .badge-action-count{margin-top:5px}
+.about-wrap .three-col .col.plugin_box {
+    min-width: 150px;
+    max-width: 150px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
+.about-wrap .three-col .col.plugin_box img {
+    margin-bottom: 10px;
+}
+.col.plugin_box .action_bar {
+    margin: 10px 0;
+}
+a.button.button-danger {
+    background: #C82333;
+    border-color: #C82333;
+    color: #fff;
+}
+a.button.button-danger:hover {
+    background: green;
+    border-color: green;
+    color: #fff;
+}
+.about-wrap .feature-section {
+    padding: 40px 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+}
+.cupon-code{
+    text-transform: lowercase;
+}
+.col {
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 20px;
+    min-height: 230px;
+}
+@media only screen and (max-width: 780px) {
+    .col {
+        width: 100%;
+        float: left;
+        margin-right: 0;
+        margin-bottom: 20px;
+        min-height: 230px;
+    }
+}
+.mgadin-hero {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mge-info-hello {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.mge-info-title {
+    font-size: 22px;
+    display: block;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.mge-info-desc div {
+    margin-bottom: 10px;
+}
+
+.mge-info-desc {
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 10px 0 20px;
+}
+
+.mge-info-actions {
+    display: flex;
+    align-items: center;
+}
+
+.mge-info-actions a.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 20px;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.mge-info-actions .button i {
+    margin-left: 15px;
+}
+
+.mge-info-image {
+    flex: 0 0 400px;
+    overflow: hidden;
+}
+
+.mge-info-image img {
+    max-width: 100%;
+    min-width: 200px;
+}
+
+.mge-info-rev strong {
+    margin: 10px 0 1px;
+    display: block;
+    font-size: 15px;
+}
+
+.mge-info-actions.mgerev-action {
+    display: flex;
+    align-items: center;
+}
+
+.mge-info-desc div.mge-offer {
+    color: #a30000;
+    font-weight: 700;
+}
+
+.mge-info-rev .button {
+    padding: 5px 20px !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 10px;
+    font-size: 15px !important;
+}

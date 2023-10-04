@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "title": "Light in Darkness",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#ffffff",
+          "name": "Primary"
+        },
+        {
+          "slug": "primary-second",
+          "color": "#eee",
+          "name": "Primary Second"
+        },
+        {
+          "slug": "secondary",
+          "color": "#30BAFB",
+          "name": "Secondary"
+        },
+        {
+          "slug": "background",
+          "color": "#111",
+          "name": "Background"
+        },
+        {
+          "slug": "background-secondary",
+          "color": "#2f2f2f",
+          "name": "Background Gray"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--primary)"
+    }
+  }
+}

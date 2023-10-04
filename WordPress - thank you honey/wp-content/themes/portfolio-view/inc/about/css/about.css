@@ -1,0 +1,150 @@
+.portfolio-view-about-wrap .portfolio-view-section .dashicons {
+	margin-top: -4px;
+	vertical-align: middle;
+}
+
+.portfolio-view-about-wrap .nav-tab {
+	font-size: 16px;
+}
+
+.portfolio-view-about-wrap h1 {
+	font-size: 2em;
+}
+
+.portfolio-view-about-wrap h3 {
+	font-size: 1.2em;
+}
+
+.portfolio-view-about-wrap .wp-badge {
+	background-image: url('../images/logo.png');
+	background-color: #6540ff;
+	background-size: 180px auto;
+	background-position: center;
+	height: 100px;
+	padding: 0;
+	width: 200px;
+}
+
+.portfolio-view-about-wrap .quick-links a {
+	margin-right: 5px;
+}
+
+.portfolio-view-about-notice .btn-dismiss {
+	margin-left: 20px;
+}
+
+.portfolio-view-about-wrap .plugin-list {
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+.about-wrap .feature-section {
+	padding: 40px 0 0;
+	overflow: hidden;
+}
+
+.about-page-action-required-box {
+	background: #fff;
+	border-left: 4px solid #f8800c;
+	display: block;
+	margin-bottom: 0;
+	padding: 10px 30px;
+	position: relative;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+.about-wrap .about-page-required-action-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-decoration: none;
+	color: #b4b9be;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.about-wrap .about-page-required-action-button:hover:before {
+	color: #F44336;
+}
+
+.about-wrap .about-page-action-required-box p {
+	display: block;
+	margin-top: 0;
+	width: 100%;
+	max-width: 100%;
+}
+
+.about-wrap .feature-section.recommended-plugins .col {
+	background: #fff;
+	padding: 20px;
+	margin-top: 0;
+}
+
+#free_pro .free-pro-table {
+	border-spacing: 0;
+	width: 100%;
+}
+
+#free_pro .free-pro-table th {
+	padding-bottom: 20px;
+}
+
+#free_pro .free-pro-table td {
+	border-top: 1px solid #ccc;
+	padding: 20px 0 25px;
+}
+
+#free_pro .free-pro-table h3 {
+	margin: 0;
+}
+
+#free_pro .free-pro-table td p {
+	margin: 0;
+}
+
+#free_pro .free-pro-table .only-lite,
+#free_pro .free-pro-table .only-pro {
+	text-align: center;
+	width: 15%;
+}
+
+#free_pro .free-pro-table .only-lite .dashicons-before:before {
+	color: #00A878;
+}
+
+#free_pro .free-pro-table .only-pro .dashicons-before:before {
+	color: #ff3439;
+}
+
+#free_pro .free-pro-table .only-lite .dashicons-before:before,
+#free_pro .free-pro-table .only-pro .dashicons-before:before {
+	font-size: 35px;
+	height: 35px;
+	width: 35px;
+}
+
+#free_pro .ti-about-page-text-center {
+	text-align: center;
+}
+
+.badge-action-count {
+	padding: 0 6px;
+	display: inline-block;
+	background-color: #d54e21;
+	color: #fff;
+	font-size: 9px;
+	line-height: 17px;
+	font-weight: 600;
+	margin: 1px 0 0 2px;
+	vertical-align: top;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	z-index: 26;
+	margin-left: 5px;
+}
+
+.portfolio-view-about-wrap .badge-action-count{
+	margin-top: 5px;
+}

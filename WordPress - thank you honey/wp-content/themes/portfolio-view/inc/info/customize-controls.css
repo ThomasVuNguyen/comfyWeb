@@ -1,0 +1,30 @@
+#customize-controls
+  .control-section-portfolio-view-pro
+  .accordion-section-title:hover,
+#customize-controls
+  .control-section-portfolio-view-pro
+  .accordion-section-title:focus {
+  background-color: #fff;
+}
+li#accordion-section-portfolio_view_pro {
+  display: block !important;
+}
+li#accordion-section-portfolio_view_pro h3 {
+  background: #888 !important;
+  color: #fff !important;
+}
+.control-section-portfolio-view-pro .accordion-section-title .button {
+  margin-top: -4px;
+  font-weight: 400;
+  margin-left: 8px;
+  background: #007cba;
+  color: #fff;
+}
+input#_customize-input-footer_copy_text_control {
+  display: none;
+}
+
+.rtl .control-section-portfolio-view-pro .accordion-section-title .button {
+  margin-left: 0;
+  margin-right: 8px;
+}
