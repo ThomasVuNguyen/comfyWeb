@@ -1,1 +1,0 @@
-window.eb_frontend={};
