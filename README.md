@@ -1,4 +1,4 @@
-# ComfySpace
+# Comfy Space
 Starting making more <ins>***comfortably***</ins> with Raspberry Pi
 
 # What is Comfy Space ?

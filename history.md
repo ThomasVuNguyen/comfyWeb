@@ -12,3 +12,17 @@ It's scrappy, but it was my introduction to mobile development (and eventually c
 After publishing ComfySSH to the Play Store, I realized: This is not what I wanted. And so Comfy Space is born, from the rubble of ComfySSH.
 
 3 months and 200+ github commits later, Comfy Space is launching!
+
+# The Mission
+
+Raspberry Pi and IoT devices are powerful and well supported by a community of greatly enthusiatic makers & engineers. But I have always found it tedious and hard to create a control/input interface. Typically, you would need to create your own logic and UI, which takes lots of time to test and is not very reuable.
+
+Just tell the app how the components are connected & what control you need, ComfySpace will take care of the rest.
+
+Are you a maker? <br> ComfySpace allows you to create an interface for your robots, home servers, LED matrix, etc. 
+
+Are you a company making products out of the Raspberry Pi ecosystem? <br>
+ComfySpace lets you create widgets & applications to control your products. Think of how you can use Wix to create a website instead of hiring a web developer for your website - a lot less hassle.
+
+Are you a software and/or Raspberry Pi enthusiast?<br>
+Consider helping out with the codebase! We can always use some help.
