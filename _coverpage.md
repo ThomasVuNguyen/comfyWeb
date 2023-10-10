@@ -5,7 +5,7 @@
 > Control ***Raspberry Pi***  with ease 
 
 <a href="/build/comfySpace.zip" download><img src="assets/windows.png" alt="Comfy Space Logo" height = "20"/></a>
-<a href="/build/ComfySpace.apk" download><img src="assets/android.png" alt="Comfy Space Logo" height = "20"/></a>
+<a href="https://play.google.com/store/apps/details?id=tech.comfyStudio.comfySpace&hl=en_US&gl=US" download target="_blank"><img src="assets/android.png" alt="Comfy Space Logo" height = "20"/></a>
 [GitHub](https://github.com/ThomasVuNguyen/comfySpace)
 [Get Started](/intro)
 
