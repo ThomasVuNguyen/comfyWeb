@@ -9,3 +9,4 @@
 * [ComfyRobo](comfyRoboGuide.md "ComfyRobo Guide - ComfySpace")
 * [Developer Information](developerInformation.md "Developer Information")
 * [History & Mission](history.md "History of Comfy")
+* [TEST](test/comfytest2.html "test")

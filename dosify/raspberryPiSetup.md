@@ -16,3 +16,4 @@ Techinically, ComfySpace works with any and all Operating System with SSH connec
 4. Plug media in your Raspberry Pi and power up
 
 ***Note: If you already have a running Raspberry Pi with known SSH credentials, skip this step.***
+
