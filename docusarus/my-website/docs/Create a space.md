@@ -1,5 +1,9 @@
+import EmptyScreen from '../static/assets/Space/space_step1_empty.png';
+import AddSpace from '../static/assets/Space/space_step2_NewSpace.png';
+import SpaceInfo from '../static/assets/Space/space_step3_SpaceInfo.png';
+
+
 # What's a space?
-import ReactPlayer from 'react-player'
 
 A space is a card that opens a collection of buttons when clicked
 
@@ -11,14 +15,11 @@ Shout "Mom, I need some space!" and you'll get some. Just kidding!
 
 First, press the + button on your screen
 Next, enter your Raspberry Pi information and press "Done"
-<ReactPlayer playing controls url='/assets/Space/Space_step1_CreateSpace.mp4' />
+<img src={EmptyScreen} width="200"/>
+<img src={AddSpace} width="200"/>
+<img src={SpaceInfo} width="200"/>
 
-<video controls muted poster="<https://ruttl.com/assets/img/index-hero.jpg>">
-  <source
-    src="/assets/Space/Space_step1_CreateSpace.mp4"
-    type="video/mp4"
-  />
-</video>
+
 
 Congrats! You have created a Comfy Space.
 
