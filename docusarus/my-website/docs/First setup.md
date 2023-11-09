@@ -18,6 +18,8 @@ Save this information, you will need it later
 
 Congrats! Your Pi is Comfy-ready. 
 
+Plug in your Raspberry Pi and move onto the next step.
+
 ***Note: If you already have a Raspberry Pi with known SSH credentials, skip this step***
 
 # FAQ
