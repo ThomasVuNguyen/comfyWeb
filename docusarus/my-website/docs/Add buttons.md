@@ -2,18 +2,28 @@ import CreateButton from '../static/assets/Button/Button_CreateButton.gif';
 
 # Add some buttons
 Once you're inside a Space and the Space has fully loaded (Ducky has disappeared), let's add some buttons!
+<section style={{clear:'both'}}>
 <img src={CreateButton} width="180" style={{float : 'left', paddingRight : '20px'}}></img>
-Press the + button, and you will be presented with some options
+
+Press the + button, pick a button, enter button information.
+
+</section>
+
+<section style={{clear:'both'}}>
 
 There are two types of buttons:
-
-1. Component specific buttons
+- Component buttons:
 These are meant to control specific components with pre-determined gestures.
 
-***Put a list of cards with summary and clickable buttons for details here***
+***[Introduction to Component buttons](/docs/Component%20buttons/Introduction%20to%20component%20buttons)***
 
-2. Custom/Gesture buttons
+- Custom buttons
 You can assign specific commands for pre-programmed gestures. You can use your own Python or Bash commands. 
+
+***[Introduction to Component buttons](/docs/Custom%20buttons/Introduction%20to%20custom%20buttons)***
+
 We also have **ComfyScript** for faster iteration speed.
 
-***Put a list of cards with summary and clickable buttons for details here***
+
+
+</section>

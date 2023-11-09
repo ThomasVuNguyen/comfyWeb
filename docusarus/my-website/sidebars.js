@@ -26,6 +26,7 @@ const sidebars = {
       type: 'category',
       label: 'Component buttons',
       items: [
+        'Component buttons/Introduction to component buttons',
         'Component buttons/LED',
         'Component buttons/Stepper Motor',
         'Component buttons/Distance sensor',
@@ -37,6 +38,7 @@ const sidebars = {
       type: 'category',
       label: 'Custom buttons',
       items: [
+        'Custom buttons/Introduction to custom buttons',
         'Custom buttons/Press button',
         'Custom buttons/Toggle button',
         'Custom buttons/Gesture control buttons',
