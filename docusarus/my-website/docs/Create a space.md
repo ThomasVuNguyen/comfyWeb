@@ -1,4 +1,5 @@
 import EmptyScreen from '../static/assets/Space/space_step1_empty.png';
+import EmptyScreenWindows from '../static/assets/Space/space_step1_empty_windows.png';
 import AddSpace from '../static/assets/Space/space_step2_NewSpace.png';
 import SpaceInfo from '../static/assets/Space/space_step3_SpaceInfo.png';
 import FirstLoad from '../static/assets/Space/Space_FirstLoad.gif';
@@ -15,11 +16,18 @@ Shout "Mom, I need some space!" and you'll get some. Just kidding!
 
 First, press the + button on your screen
 Next, enter your Raspberry Pi information and press "Done"
-<img src={EmptyScreen} width="180"/>
-<img src={AddSpace} width="180"/>
-<img src={SpaceInfo} width="180"/>
+<section style={{clear:'both'}}>
+<img src={EmptyScreen} height="400" style={{float : 'left', paddingRight : '20px'}}></img>
+
+<img src={AddSpace} height="400" style={{float : 'left', paddingRight : '20px'}}></img>
+<img src={SpaceInfo} height="400" style={{float : 'left', paddingRight : '20px'}}></img>
+</section>
+
+<section style={{clear:'both'}}>
 
 ***Congrats! You have created a Comfy Space.***
+
+</section>
 
 # Use a Space
 
