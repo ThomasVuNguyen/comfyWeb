@@ -18,7 +18,7 @@ const sidebars = {
 
   
   tutorialSidebar: [
-    'Quick start',
+    //'Quick start',
     'First setup',
     'Create a space',
     'Add buttons',

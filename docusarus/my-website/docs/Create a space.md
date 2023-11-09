@@ -1,19 +1,24 @@
 # What's a space?
+import ReactPlayer from 'react-player'
 
-A space is a clickable card on your screen. It stores SSH and login credential information about your Raspberry Pi.
-
-**Put in picture with all information with arrows**
+A space is a card that opens a collection of buttons when clicked
 
 Simply put, you can click on it to start controlling your Raspberry Pi remotely.
 
 # Create a space
 
-Shout "Mom, I need some space!" and you'll get some
-
-Just kidding.
+Shout "Mom, I need some space!" and you'll get some. Just kidding!
 
 First, press the + button on your screen
 Next, enter your Raspberry Pi information and press "Done"
+<ReactPlayer playing controls url='/assets/Space/Space_step1_CreateSpace.mp4' />
+
+<video controls muted poster="<https://ruttl.com/assets/img/index-hero.jpg>">
+  <source
+    src="/assets/Space/Space_step1_CreateSpace.mp4"
+    type="video/mp4"
+  />
+</video>
 
 Congrats! You have created a Comfy Space.
 
