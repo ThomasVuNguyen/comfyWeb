@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Comfy Space',
-  tagline: 'Raspberry Pi simplified',
+  tagline: 'Raspberry Pi development simplified',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -43,15 +43,11 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -64,7 +60,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/rpi-social-card.jpg',
       navbar: {
         title: 'Comfy Doc',
         logo: {
@@ -80,8 +76,13 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://play.google.com/store/apps/details?id=tech.comfyStudio.comfySpace&hl=en_US&gl=US',
+            label: 'Android download',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/ThomasVuNguyen/comfySpace/releases',
+            label: 'Windows download',
             position: 'right',
           },
         ],
@@ -102,17 +103,31 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Reddit',
+                href: 'https://www.reddit.com/r/ComfySpace/',
+              },
+            ],
+          },
+          {
+            title: 'Comfy Github repositories',
+            items: [
+              {
+                label: 'ComfySpace',
+                href: 'https://github.com/ThomasVuNguyen/comfySpace',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'ComfyScript',
+                href: 'https://github.com/ThomasVuNguyen/comfyScript',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'ComfyShare',
+                href: 'https://github.com/ThomasVuNguyen/comfyShare',
               },
+              {
+                label: 'ComfyRobo',
+                href: 'https://github.com/ThomasVuNguyen/comfyRobo',
+              },
+              
             ],
           },
           {
@@ -123,13 +138,13 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Thomas Nguyen',
+                to: 'https://tungnguyen.me/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ComfyStudio & built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

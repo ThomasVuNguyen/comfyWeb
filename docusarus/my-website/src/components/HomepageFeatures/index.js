@@ -4,32 +4,39 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Zero setup',
+    Svg: require('@site/static/img/zero-setup.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        ComfySpace (the application) and ComfyScript (API & library) have been designed so that there is that no setup on your end.
+        It's all automatic!
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Simple and stable',
+    Svg: require('@site/static/img/simple-stable.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Create a button, bind it to a component or command. Done!
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Time saving for makers',
+    Svg: require('@site/static/img/time-savin.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Instead of writing your own 100-line long python scripts. Write <code>python3 comfyScript/component pin state</code> to control any components
+      </>
+    ),
+  },
+  {
+    title: 'Cross-platform',
+    Svg: require('@site/static/img/cross-platform.svg').default,
+    description: (
+      <>
+        ComfySpace is now available on Windows & Android! Coming soon to iOS, MacOS, and Linux. Potentially web also!
       </>
     ),
   },

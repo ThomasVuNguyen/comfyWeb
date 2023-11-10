@@ -6,5 +6,5 @@ sidebar_position: 1
 
 Raspberry Pi development **simplified**.
 
-## Getting Started
 
+## Getting Started
