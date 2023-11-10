@@ -1,4 +1,10 @@
-# Introduction to Component-specific buttons
+import DistanceSensor from '../../static/assets/Button/Distance_Sensor.gif';
+
+import StepperMotor from '../../static/assets/Button/Stepper_Motor.gif';
+
+import LED from '../../static/assets/Button/LED.gif';
+
+# Component-specific buttons
 
 As the name implies, these are buttons specific to a certain component (LED, motor, sensor)
 
@@ -10,6 +16,8 @@ This is great for simple projects!
 <p>
 A toggle button to turn an LED on/off
 Press +, enter the GPIO pin used to power the LED, press done.
+
+<img src={LED} width="360"></img>
 </p>
 </details>
 
@@ -23,6 +31,7 @@ Press +, enter the GPIO pin used to power the Stepper Motor, press done.
 Put pic here
 
 Swipe left to rotate counterclockwise, swipe right to rotate clockwise, and tap to stop any rotation.
+<img src={StepperMotor} width="360"></img>
 </p>
 </details>
 
@@ -50,4 +59,5 @@ Put pic here
 
 You can now see the sensor reading in real time.
 </p>
+<img src={DistanceSensor} width="360"></img>
 </details>

@@ -22,6 +22,9 @@ const sidebars = {
     'First setup',
     'Create a space',
     'Add buttons',
+    'Component specific buttons',
+    'Custom buttons',
+    /*
     {
       type: 'category',
       label: 'Component buttons',
@@ -45,7 +48,7 @@ const sidebars = {
         'Custom buttons/Data read button',
       
       ],
-    },
+    },*/
   ],
    
 };

@@ -15,12 +15,12 @@ There are two types of buttons:
 - Component buttons:
 These are meant to control specific components with pre-determined gestures.
 
-***[Introduction to Component buttons](/docs/Component%20buttons/Introduction%20to%20component%20buttons)***
+***[Introduction to Component buttons](/docs/Component%20specific%20buttons)***
 
 - Custom buttons
 You can assign specific commands for pre-programmed gestures. You can use your own Python or Bash commands. 
 
-***[Introduction to Component buttons](/docs/Custom%20buttons/Introduction%20to%20custom%20buttons)***
+***[Introduction to Component buttons](/docs/Custom%20buttons)***
 
 We also have **ComfyScript** for faster iteration speed.
 
