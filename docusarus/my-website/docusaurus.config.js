@@ -72,19 +72,15 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://play.google.com/store/apps/details?id=tech.comfyStudio.comfySpace&hl=en_US&gl=US',
-            label: 'Android download',
+            href: '/docs/Download',
+            label: 'Download',
             position: 'right',
           },
-          {
-            href: 'https://github.com/ThomasVuNguyen/comfySpace/releases',
-            label: 'Windows download',
-            position: 'right',
-          },
+
         ],
       },
       footer: {
@@ -94,8 +90,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Documentation',
+                to: '/docs/First%20setup',
               },
             ],
           },

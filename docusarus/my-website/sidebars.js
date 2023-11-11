@@ -25,6 +25,7 @@ const sidebars = {
     'Component specific buttons',
     'Custom buttons',
     'Download',
+    'FAQ',
     /*
     {
       type: 'category',

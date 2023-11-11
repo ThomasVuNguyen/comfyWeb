@@ -18,13 +18,9 @@ Save this information, you will need it later
 
 Congrats! Your Pi is Comfy-ready. 
 
+Lastly, <a href='/docs/Download'>***install***</a> Comfy Space.
+
 Plug in your Raspberry Pi and move onto the next step.
 
 ***Note: If you already have a Raspberry Pi with known SSH credentials, skip this step***
 
-# FAQ
-
-How do I make sure my Raspberry Pi is setup correctly?
-Try scanning all wifi-connected devices in your network with an application like [Fing](https://www.fing.com/). If your Raspberry Pi doesn't show up, try waiting for 2-3 minutes and setup the Raspberry Pi again.
-
-If you run into an issue, try to find it or post it in our Issues page. This will help us create a better experience for everyone and let us all share our knowledge!
