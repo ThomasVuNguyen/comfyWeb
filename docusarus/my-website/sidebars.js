@@ -35,7 +35,6 @@ const sidebars = {
         'Component buttons/Stepper Motor',
         'Component buttons/Distance sensor',
         'Component buttons/DC Motor',
-      
       ],
     },
     {
