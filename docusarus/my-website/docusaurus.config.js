@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Comfy Space',
+  title: 'comfySpace',
   tagline: 'Raspberry Pi development simplified',
   favicon: 'img/favicon.ico',
 

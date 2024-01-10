@@ -4,6 +4,15 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
+    title: 'Gesture-based control',
+    Svg: require('@site/static/img/zero-setup.svg').default,
+    description: (
+      <>
+        Controlling your Raspberry Pi with swipe, tap, and toggle
+      </>
+    ),
+  },
+  {
     title: 'Zero setup',
     Svg: require('@site/static/img/zero-setup.svg').default,
     description: (
