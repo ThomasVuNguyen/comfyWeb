@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'comfySpace',
-  tagline: 'Intuitive Raspberry Pi interface',
+  tagline: 'Build Raspberry Pi interface with ease',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk');
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -14,7 +16,9 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'ABeeZee';
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -26,5 +30,41 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+  --ifm-font-family-base: 'ABeeZee';
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.call_to_action .button{
+  display: inline-block;
+}
+
+.download{
+  display: inline-block;
+}
+.get_started{
+
+  display: inline-block;
+}
+
+.inline_block{
+  display: inline-block;
+}
+
+.hero__title{
+  font-size: 70px;
+  font-family: 'AbeeZee';
+  font-style: italic;
+  font-weight: 400;
+}
+
+.underlined{
+  text-decoration: underline;
+}
+
+.hero__subtitle{
+  font-family: 'Space Grotesk';
+}
+
+.RPIlogo{
+  vertical-align: middle;
 }
