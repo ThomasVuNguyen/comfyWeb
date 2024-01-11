@@ -12,17 +12,26 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+        Intuitive Raspberry Pi interface
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons} style={{paddingBottom:'20px'}}>
+        
+        <div className='get_started'style={{paddingBottom:'20px'}}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/First%20setup">
             Get started!
           </Link>
         </div>
+        <div className = 'download'style={{paddingBottom:'20px'}}>
+          <Link
+            className="button button--secondary button--lg "
+            to="/docs/First%20setup">
+            Download
+          </Link>
+        </div>
+  
       </div>
     </header>
   );

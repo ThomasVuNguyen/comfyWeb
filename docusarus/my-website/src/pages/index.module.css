@@ -4,6 +4,7 @@
  */
 
 .heroBanner {
+  display: inline-block;
   padding: 4rem 0;
   text-align: left;
   position: relative;
@@ -16,8 +17,16 @@
   }
 }
 
-.buttons {
-  float: left;
-  justify-content:left;
+
+.call_to_action .button{
+  display: inline-block;
 }
 
+.download{
+  float: right;
+  display: inline-block;
+}
+.get_started{
+  float: right;
+  display: inline-block;
+}
