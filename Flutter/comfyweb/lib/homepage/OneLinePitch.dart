@@ -21,43 +21,33 @@ class _OneLinePitchState extends State<OneLinePitch> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextRenderer(
-                  style: TextRendererStyle.header1,
-                  child: Text(
-                      'Your ',
-                    style: h1Style,
-                  )),
-              TextRenderer(
-                  style: TextRendererStyle.header1,
-                  child: Text(
-                      'better',
-                    style: h1StyleUnderlined,
-                  )),
-              TextRenderer(
-                  style: TextRendererStyle.header1,
-                  child: Text(
-                    ' ',
-                    style: h1Style,
-                  )),
+              Text(
+                  'Your ',
+                style: h1Style,
+              ),
+              Text(
+                  'better',
+                style: h1StyleUnderlined,
+              ),
+              Text(
+                ' ',
+                style: h1Style,
+              ),
               GestureDetector(
                 onTap: () async{
                   await LaunchUrl('https://www.raspberrypi.com');
                 },
                   child: Image.network('assets/rpilogo.png', width: 80,)),
-              TextRenderer(
-                  style: TextRendererStyle.header1,
-                  child: Text(
-                      ' interface',
-                    style: h1Style,
-                  )),
+              Text(
+                  ' interface',
+                style: h1Style,
+              ),
             ],
           ),
-          TextRenderer(
-            style: TextRendererStyle.header2,
-              child: Text(
-                  'made with ease',
-                style: h1SupportText,
-              )),
+          Text(
+              'made with ease',
+            style: h1SupportText,
+          ),
           DownLoadBtn()
         ],
       ),
