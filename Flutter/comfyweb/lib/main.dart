@@ -15,10 +15,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return RobotDetector(
       child: MaterialApp(
-        initialRoute: '/',
-        routes: {
-          //'/': (context) => MyHomePage()
-        },
         title: 'Comfy Space',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
