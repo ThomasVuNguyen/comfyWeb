@@ -1,6 +1,49 @@
-#title{
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk');
+.button{
     justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: row;
+}
+
+#rpi_logo{
+    display: inline-block;
+    overflow: hidden; 
+    vertical-align: middle;
+    height: 45px;
+}
+
+.h1_title{
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 58px;
+}
+
+.h2_title{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 26px;
+    font-style: normal;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+#title{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#comfy_logo{
+    display: inline-block;
+    overflow: hidden; 
+    vertical-align: middle;
+    height: 40px;
+    padding: 2px;
 }

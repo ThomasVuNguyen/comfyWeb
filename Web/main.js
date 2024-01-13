@@ -1,0 +1,15 @@
+/*
+$(document).ready(
+    (function(){
+    $('#title').load("./homepage/title.html");}
+    ));
+*/
+$(document).ready(function(){
+    $("#rpi_logo").hover(function(){
+        $(this).animate({height:'50px'})
+    },
+    function(){
+        $(this).animate({height:'45px'})
+    }
+    )
+});

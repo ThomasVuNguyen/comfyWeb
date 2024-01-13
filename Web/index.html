@@ -2,22 +2,76 @@
 <html lang="en">
   <head>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script>
-        $(function(){
-            $('#title').load("/homepage/title.html");
-        });
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>A modern RPi control interface</title>
+    <script src="./main.js"></script>
+    <script src="./feature_card.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./feature_card.css">
+    <link rel="stylesheet" href="./topnav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href=
+    "/homepage/assets/comfylogo.png"
+              type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
-        <h1>Welcome to My Website</h1>  
-        <div id="title"></div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="./homepage/assets/comfylogo.png" id="comfy_logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+        <div id="title">
+          <h1 class="h1_title">
+            Your
+            <span class="underlined">better</span> 
+            <span id=>
+              <a href="https://www.raspberrypi.com/"><img src="/homepage/assets/RPiLogo.png" id="rpi_logo"></a>
+            </span>
+            interface
+          </h1>  
+          <div class="h2_title">
+            <span>made with </span>
+            <span class="underlined">ease</span>
+          </div>
+        </div>
+        <div id="#featuredisplay"></div>
+        <feature-card 
+        img='./homepage/assets/RPiLogo.png'
+        title="whats up"
+        description="heuyy"
+        link="/"
+        ></feature-card>
     </main>
 	<script src="index.js"></script>
   </body>
