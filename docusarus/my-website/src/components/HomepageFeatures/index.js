@@ -1,33 +1,38 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-
+import GestureButton from '/static/img/gesture-button.gif';
+import LED from '/static/assets/Button/LED.gif';
 const FeatureList = [
   {
+    img: GestureButton,
+    
     title: 'Gesture-based control',
     Svg: require('@site/static/img/zero-setup.svg').default,
+    
     description: (
       <>
-        Controlling your Raspberry Pi with swipe, tap, and toggle
+        Modern gestures can be used to execute any commands: swipe, tap, toggle, ... or even voice!
       </>
     ),
   },
+
   {
-    title: 'Zero setup',
+    title: 'Component-specific control',
+    img: LED,
     Svg: require('@site/static/img/zero-setup.svg').default,
     description: (
       <>
-        ComfySpace (the application) and ComfyScript (API & library) have been designed so that there is that no setup on your end.
-        It's all automatic!
+      Great for time saving & testing
       </>
     ),
   },
   {
-    title: 'Simple and stable',
+    title: 'Ease of development',
     Svg: require('@site/static/img/simple-stable.svg').default,
     description: (
       <>
-        Create a button, bind it to a component or command. Done!
+        ComfySpace is designed from ground up to provide a minimal setup & development experience
       </>
     ),
   },
@@ -36,7 +41,7 @@ const FeatureList = [
     Svg: require('@site/static/img/time-savin.svg').default,
     description: (
       <>
-        Instead of writing your own 100-line long python scripts. Write <code>python3 comfyScript/component pin state</code> to control any components
+      ComfyScript can be used to control any Raspberry Pi component in 1 line of code. You can still use your programming language of choice, of course
       </>
     ),
   },
@@ -45,17 +50,20 @@ const FeatureList = [
     Svg: require('@site/static/img/cross-platform.svg').default,
     description: (
       <>
-        ComfySpace is now available on Windows & Android! Coming soon to iOS, MacOS, and Linux. Potentially web also!
+        ComfySpace is now available on Windows, MacOS & Android! Coming soon to iOS & Linux.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, img}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
+        <img src={img} className={styles.featureImg}></img>
+        {/*
         <Svg className={styles.featureSvg} role="img" />
+        */}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
