@@ -15,4 +15,14 @@
 
 .BrandName{
     margin-left: calc(var(1 rem) * 1.5);
+    margin-top: calc(var(1 rem) * 1.5);
+}
+
+.MarkdownPage {
+    width: 80%;
+    margin: auto;
+}
+
+.BtnGroup{
+    margin: auto;
 }

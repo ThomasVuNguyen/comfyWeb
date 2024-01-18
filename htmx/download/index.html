@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <title>Modern Raspberry Pi development</title>
+    <link rel="icon" href="./assets/comfy_logo.png" type="image/icon type">
+</head>
+<body>
+    
+        <dialog id="waitlist-ios">
+            <dialog open>
+                <article>
+                  <h2>Join the iOS waitlist</h2>
+                  <p>
+                    Currently, iOS is still in active development, if you're interested, give me a thumbs up below to show interest.
+                    This way, iOS will be prioritized over other OS.
+                  </p>
+
+                  <p>
+                    Optionally, provide your email to hear about iOS releases.
+                  </p>
+                  <form>
+                    <fieldset role="group">
+                      <input type="email" placeholder="Enter your email" />
+                    </fieldset>
+                  </form>
+                  <footer>
+                    <button className="secondary">
+                      Cancel
+                    </button>
+                    <button>Confirm</button>
+                  </footer>
+                </article>
+              </dialog>
+          </dialog>
+    
+          <dialog id="waitlist-linux">
+            <dialog open>
+                <article>
+                  <h2>Join the Linux waitlist</h2>
+                  <p>
+                    Currently, ComfySpace on Linux is still in active development, if you're interested, give me a thumbs up below to show interest.
+                    This way, Linux will be prioritized over other OS.
+                  </p>
+
+                  <p>
+                    Optionally, provide your email to hear about Linux releases.
+                  </p>
+                  <form>
+                    <fieldset role="group">
+                      <input type="email" placeholder="Enter your email" />
+                    </fieldset>
+                  </form>
+                  <footer>
+                    <button className="secondary">
+                      Cancel
+                    </button>
+                    <button>Confirm</button>
+                  </footer>
+                </article>
+              </dialog>
+          </dialog>
+
+    <div class="navbar"></div>
+    <h1 style="text-align: center;" >A comfortable interface experience</h1>
+    <h5 style="text-align: center;">available on most plattform</em></h3>
+      <div class="container" style="margin: auto; width:fit-content;">
+        <a href="/doc" role="button" class="contrast" style="margin-right: 5px; margin-bottom: 40px;" ><img src="../assets/google-play.958x1024.png" width="20"> Android</a>
+        <a role="button" class="contrast DownloadNotAvailable-ios" style="margin-left:5 px;"><img src="../assets/apple.851x1024.png" width="20"> iOS</a>
+        
+    </div>
+
+    <div class="container" style="margin: auto; width:fit-content;">
+        <a href="/doc" role="button" class="contrast" style="margin-right: 5px; margin-bottom: 40px;" ><img src="../assets/folder-type-macos.1024x982.png" width="20"> MacOS</a>
+        <a role="button" class="contrast DownloadNotAvailable-linux" style="margin-right: 5px; margin-bottom: 40px;" ><img src="../assets/linux_logo.png" width="20"> Linux</a>
+        <a href="/download" role="button" class="contrast" style="margin-left:5 px;"><img src="../assets/windows.1021x1024.png" width="20"> Windows</a>
+    </div>
+    
+
+</body>
+</html>

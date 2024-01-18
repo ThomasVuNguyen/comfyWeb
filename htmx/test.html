@@ -1,32 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dropdown Value Alert</title>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-</head>
-<body>
-
-<select id="myDropdown">
-  <option value="option1">Option 1</option>
-  <option value="option2">Option 2</option>
-  <option value="option3">Option 3</option>
-</select>
-
+<meta charset="utf-8">
+<title>jQuery UI Dialog - Default functionality</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
 <script>
-  // jQuery code
-  $(document).ready(function(){
-    // Event listener for change in dropdown value
-    $('#myDropdown').change(function(){
-      // Get the selected option's value
-      var selectedValue = $(this).val();
-      
-      // Alert the value
-      alert("Selected Option Value: " + selectedValue);
+$(document).ready(function() {
+  $(function() {
+    console.log('false');
+    $( "#dialog" ).dialog({
+        autoOpen: false,
+        title: 'Test'
     });
   });
-</script>
 
+  $("button").click(function(){
+    console.log("click");
+        $(this).hide();
+        $( "#dialog" ).attr(
+          "open", true
+        )
+    });
+}); 
+</script>
+</head>
+<body>
+<button id="open">Open Dialog box</button> 
+<div id="dialog" title="Basic dialog">
+<p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
 </body>
 </html>
