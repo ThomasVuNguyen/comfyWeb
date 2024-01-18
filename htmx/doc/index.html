@@ -8,12 +8,40 @@
     <link rel="stylesheet" href="../style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./main.js"></script>
-
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
     <title>Modern Raspberry Pi development</title>
     <link rel="icon" href="./assets/comfy_logo.png" type="image/icon type">
 </head>
 <body>
-    <div class="navbar"></div>
     
+    <div class="navbar"></div>
+    <select id="PageSelect" aria-label="Select" required>
+        <option selected disabled value="">Select</option>
+        <option value="GetStarted">Get started</option>
+        <option value="WhatsASpace">What's a space?</option>
+        <option value="AddAButton">Add a button</option>
+        <option value="Componentbuttons">Component-specific buttons</option>
+        <option value="ComfyScript">ComfyScript</option>
+        <option value="Download">Download</option>
+        <option value="FAQ">FAQ</option>
+      </select>
+    
+      <details open>
+        <summary role="button" id="GetStarted" >Get Started</summary>
+        <md-block class="MarkdownPage" src="../pages/First setup.md">
+        
+        </md-block>
+      </details>
+      <details>
+        <summary role="button" id="Space" >What's a Space?</summary>
+        <md-block class="MarkdownPage" src="../pages/Create a space.md">
+        
+        </md-block>
+      </details>
+      <details>
+        <summary role="button" id="Button" >Add some buttons?</summary>
+        <md-block class="MarkdownPage" src="../pages/Add buttons.md">
+        </md-block>
+      </details>
 </body>
 </html>
