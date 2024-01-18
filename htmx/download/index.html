@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css" />
     <link rel="stylesheet" href="../style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
-    <title>Modern Raspberry Pi development</title>
+    
+    
+    <title>Modern Raspberry Pi deupavelopment</title>
     <link rel="icon" href="./assets/comfy_logo.png" type="image/icon type">
 </head>
 <body>
     
         <dialog id="waitlist-ios">
-            <dialog open>
+        
                 <article>
                   <h2>Join the iOS waitlist</h2>
                   <p>
@@ -28,17 +30,19 @@
                   </p>
                   <form>
                     <fieldset role="group">
-                      <input type="email" placeholder="Enter your email" />
+                      <input type="email" placeholder="Enter your email" id="ios-waitlist-email"/>
                     </fieldset>
                   </form>
                   <footer>
-                    <button className="secondary">
-                      Cancel
-                    </button>
-                    <button>Confirm</button>
+                    <a href="/download/">
+                        <button className="secondary" id="ios-waitlist-close">
+                            Cancel
+                          </button>
+                    </a>
+                    <button id="ios-waitlist-submit">Confirm</button>
                   </footer>
                 </article>
-              </dialog>
+
           </dialog>
     
           <dialog id="waitlist-linux">
@@ -55,14 +59,16 @@
                   </p>
                   <form>
                     <fieldset role="group">
-                      <input type="email" placeholder="Enter your email" />
+                      <input type="email" placeholder="Enter your email" id="linux-waitlist-email"/>
                     </fieldset>
                   </form>
                   <footer>
-                    <button className="secondary">
-                      Cancel
-                    </button>
-                    <button>Confirm</button>
+                    <a href="/download/">
+                        <button className="secondary" id="ios-waitlist-close">
+                            Cancel
+                          </button>
+                    </a>
+                    <button id="linux-waitlist-submit">Confirm</button>
                   </footer>
                 </article>
               </dialog>
