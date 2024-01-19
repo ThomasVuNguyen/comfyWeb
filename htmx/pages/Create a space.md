@@ -6,9 +6,7 @@ import FirstLoad from '../static/assets/Space/Space_FirstLoad.gif';
 
 # What's a space?
 
-A space is a card that opens a collection of buttons when clicked
-
-Simply put, you can click on it to start controlling your Raspberry Pi remotely.
+A Space is a customizable interface. You can add buttons & features to control your Raspberry Pi. 
 
 # Create a space
 

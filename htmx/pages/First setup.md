@@ -2,25 +2,28 @@
 
 ***Requirements: A Windows, Mac, or Linux computer***
 
-First, download [Raspberry Pi Imager](https://www.raspberrypi.com/software/) to your computer, install, and run it.
+1. Download [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 
-![Download Raspberry Pi Imager](../static/assets/Imager/imager_step1_download.png)
+<img src="../pages/Imager/imager_step1_download.png" width="70%">
 
-Next, plug in your SD Card / USB drive and pick any Raspberry Pi OS and of your choice in the app.
+2. Insert an SD card or USB into your computer
 
-![Pick Raspberry Pi OS](../static/assets/Imager/imager_step2_os.png)
+3. Open Raspberry Pi Imager & select Raspberry Pi OS
 
-Lastly, add Raspberry Pi SSH and wifi information. 
+<img src="../pages/Imager/imager_step2_os.png" width="70%">
 
-![Pick Raspberry Pi SSH and Wifi](../static/assets/Imager/imager_step4_ssh_and_wifi.png)
+4. Choose the SD card/USB
 
-Save this information, you will need it later
+
+5. Set up SSH & Wifi credentials
+
+<img src="../pages/Imager/imager_step4_ssh_and_wifi.png" width="70%">
+
+***Save this information, you will need it later***
 
 Congrats! Your Pi is Comfy-ready. 
 
-Lastly, <a href='/docs/Download'>***install***</a> Comfy Space.
+Lastly, <a href='/download'>***install***</a> Comfy Space.
 
 Plug in your Raspberry Pi and move onto the next step.
-
-***Note: If you already have a Raspberry Pi with known SSH credentials, skip this step***
 
