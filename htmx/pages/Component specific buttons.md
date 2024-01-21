@@ -1,9 +1,7 @@
 # Component-specific buttons
 
-As the name implies, these are buttons specific to a certain component (LED, motor, sensor)
+A component-specific button is a button designed to control a specific component connected to your Raspberry Pi, such as an LED, motor, or sensor.
 
-This is great for simple projects!
-***And saves you so much time when prototyping and testing***
 
 <details open>
     <summary>LED button</summary>
@@ -57,3 +55,5 @@ Displaying information from distance sensor (HC-SR04) in real time.
 </p>
 <img src="../pages/Button/Distance_Sensor.gif" width="360"></img>
 </details>
+
+***This is great for simple & proof of concept projects. Or just test to see if that component is functioning***

@@ -21,7 +21,7 @@ Shout "Mom, I need some space!" and you'll get some. Just kidding!
 # Inside a Space
 ***Once inside a Space, there's a few components available to you***
 1. The app bar
-This contains a "+" button, allowing you to create <a href="/doc/#Button"> buttons </a>
+This contains a "+" button, allowing you to create buttons
 
 2. The terminal - displaying real time status.
 
