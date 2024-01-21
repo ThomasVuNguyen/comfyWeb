@@ -1,10 +1,3 @@
-import Tap from '../static/assets/Button/Tap_Button.gif';
-import Toggle from '../static/assets/Button/Toggle_Button.gif';
-import VerticalSwipe from '../static/assets/Button/Vertical_Swipe.gif';
-import HorizontalSwipe from '../static/assets/Button/Horizontal_Swipe.gif';
-import DataRead from '../static/assets/Button/Data_Read.gif';
-
-
 # Custom buttons
 
 Gesture buttons allow users to control various functions or execute commands using different gestures such as swiping, tapping, or toggling. 
