@@ -1,28 +1,17 @@
 
 # Add some buttons
-Once you're inside a Space and the Space has fully loaded (Ducky has disappeared), let's add some buttons!
-<section style={{clear:'both'}}>
-<img src={CreateButton} width="180" style={{float : 'left', paddingRight : '20px'}}></img>
+Once you're inside a Space, let's add some buttons!
 
-Press the + button, pick a button, enter button information.
+1. Locate and press the "+" button.
 
-</section>
+2. Choose the type of button you want to add: component-based or gesture-based.
 
-<section style={{clear:'both'}}>
+3. If you select a component-based button, follow the prompts to enter the pin numbers associated with the components you want to control.
 
-There are two types of buttons:
-- Component buttons:
-These are meant to control specific components with pre-determined gestures.
+***Learn more about <a href="/doc/#ComponentButton">Component buttons</a>***
 
-***[Introduction to Component buttons](/docs/Component%20specific%20buttons)***
+4. If you select a gesture-based button, customize the gestures and associate them with specific commands or actions.
 
-- Custom buttons
-You can assign specific commands for pre-programmed gestures. You can use your own Python or Bash commands. 
+***Learn more about <a href="/doc/#GestureButton">Gesture buttons</a>***
 
-***[Introduction to Component buttons](/docs/Custom%20buttons)***
-
-We also have **ComfyScript** for faster iteration speed.
-
-
-
-</section>
+5. Once you have configured the button, it will appear in the space, ready for you to interact with!

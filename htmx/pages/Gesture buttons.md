@@ -7,76 +7,67 @@ import DataRead from '../static/assets/Button/Data_Read.gif';
 
 # Custom buttons
 
-These are buttons with built-in gestures (tap, swipe, etc.) and you can bind that with a command (Python, bash or [comfyScript](https://github.com/ThomasVunguyen/comfyScript)).
+Gesture buttons allow users to control various functions or execute commands using different gestures such as swiping, tapping, or toggling. 
+You can use any programming language (Python, bash or [comfyScript](https://github.com/ThomasVunguyen/comfyScript), etc.) along with it.
 
-You're not bound to the specific components and can execute multiple commands at once.
+***This is great for more custom/complex projects!***
 
-This is great for more custom/complex projects!
-***Think of all the cool things you could make with this***
-
-Imagine a swipe controlling multiple motors and executing other commands!
-
-
-<details>
+<details open>
     <summary>Tap button</summary>
 
-<p>
-Press it and a command will be executed.
 
-Press +, enter a command, press done.
+***To create: Press +, enter a command, press done.***
 
-Now tap it and see some magic!
+***To use: Press it and a command will be executed.***
 
-</p>
-<img src={Tap} width="180"></img>
+<img src="../pages/Button/Tap_Button.gif" width="180"></img>
 </details>
 
-<details>
+<details open>
     <summary>Toggle button</summary>
 <p>
 A toggle buttons with 2 commands for 2 toggle states.
 
-Press +, enter 2 commands, press done.
+***To create: Press +, enter 2 commands (for on & off), press done.***
 
-Now toggle it on/off and see what happens!
+***To use: Tap to toggle on/off, executing respective commands.***
 </p>
-<img src={Toggle} width="180"></img>
+<img src="../pages/Button/Toggle_Button.gif" width="180"></img>
 </details>
 
-<details>
+<details open>
     <summary>Horizontal Gesture button</summary>
 <p>
 Swipe left, right, and tap to execute a command. You can bind one command to each gesture.
 
-Press +, enter 3 commands for the gestures, press done.
+***To create: Press +, enter 3 commands for the 3 gestures, press done.***
 
-Now swipe left, right, and tap to see something happen!
+***To use:Now swipe left, right, and tap to make cool things happen!***
 </p>
-<img src={HorizontalSwipe} width="180"></img>
+<img src="../pages/Button/Horizontal_Swipe.gif" width="180"></img>
 </details>
 
 
-<details>
+<details open>
     <summary>Vertical Gesture button</summary>
 <p>
 Swipe up, down, and tap to execute a command. You can bind one command to each gesture.
 
-Press +, enter 3 commands for the gestures, press done.
+***To create: Press +, enter 3 commands for the gestures, press done.***
 
-Now swipe top, down, and tap to see something happen!
+***To use: Now swipe top, down, and tap to see something happen!***
 </p>
-<img src={VerticalSwipe} width="180"></img>
+<img src="../pages/Button/Vertical_Swipe.gif" width="180"></img>
 </details>
 
-<details>
+<details open>
     <summary>Data button</summary>
 <p>
+
 See and track any data in real time.
-***Similar to "watch" in bash ***
 
-Press +, enter the command, press done.
+***To create: Press +, enter the command, press done.***
 
-Now watch the data in real time!
 </p>
-<img src={DataRead} width="180"></img>
+<img src="../pages/Button/Data_Read.gif" width="180"></img>
 </details>

@@ -6,6 +6,7 @@
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css" />
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./slideshot.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./main.js"></script>
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
@@ -47,7 +48,7 @@
 
       <div class="MarkdownPage">
         <details  >
-            <summary role="button" class="outline contrast"id="Button" >Add some buttons?</summary>
+            <summary role="button" class="outline contrast" id="Button" >Add some buttons?</summary>
             <md-block class="MarkdownPage" src="../pages/Add buttons.md">
             </md-block>
           </details>
@@ -55,21 +56,28 @@
 
       <div class="MarkdownPage">
         <details>
-            <summary role="button" class="outline contrast"id="Button" >Component-specific buttons</summary>
+            <summary role="button" class="outline contrast" id="ComponentButton" >Component-specific buttons</summary>
             <md-block class="MarkdownPage" src="../pages/Component specific buttons.md">
             </md-block>
           </details>
       </div>
-
       <div class="MarkdownPage">
         <details>
-            <summary role="button" class="outline contrast"id="Button" >Gesture buttons</summary>
+            <summary role="button" class="outline contrast"id="GestureButton" >Gesture buttons</summary>
             <md-block class="MarkdownPage" src="../pages/Gesture buttons.md">
             </md-block>
           </details>
       </div>
+      <div class="MarkdownPage">
+        <details>
+            <summary role="button" class="outline contrast"id="OtherButtons" >Other buttons</summary>
+            <md-block class="MarkdownPage" src="../pages/Other buttons.md">
+              Documentation in progress
+            </md-block>
+          </details>
+      </div>
       <div class="container" style="margin: auto; width:fit-content;">
-        <a href="/doc" role="button" class="outline" style="margin-right: 5px; margin-bottom: 40px;" >Get started</a>
+        <a href="/" role="button" class="outline" style="margin-right: 5px; margin-bottom: 40px;" >Home</a>
         <a href="/download" role="button" class="contrast outline" style="margin-left:5 px;">Download</a>
     </div>
 
