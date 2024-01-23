@@ -1,9 +1,3 @@
-import EmptyScreen from '../static/assets/Space/space_step1_empty.png';
-import EmptyScreenWindows from '../static/assets/Space/space_step1_empty_windows.png';
-import AddSpace from '../static/assets/Space/space_step2_NewSpace.png';
-import SpaceInfo from '../static/assets/Space/space_step3_SpaceInfo.png';
-import FirstLoad from '../static/assets/Space/Space_FirstLoad.gif';
-
 # What's a space?
 
 A Space is a customizable interface where you can add buttons & features to control your Raspberry Pi. 
@@ -12,14 +6,44 @@ A Space is a customizable interface where you can add buttons & features to cont
 
 Shout "Mom, I need some space!" and you'll get some. Just kidding!
 
-1. Launch the Comfy Space application
-2. On the main screen, press the "+" button.
-3. Add a Space Name (Mars Rover, Remote Homelab, etc.), enter your Raspberry Pi information & press "Done"
-4. A new Space is created, click on it to open your Space!
-5. To edit a space information (name, credentials, etc.), simply click on the "Edit" button.
+<div role="group">
+<p style="word-wrap: break-word; width: 50%; margin-top: auto; margin-bottom: auto;">
+1. On the main screen, press the "+" button.
+</p>
+<img src="../pages/Spaces/Add Button.png" width="30%" style="min-width: 100px !important; margin: 10px!important; ">
+</div>
+
+<div role="group">
+<p style="word-wrap: break-word; width: 50%; margin-top: auto; margin-bottom: auto;">
+2. Enter a Space Name (ex. Mars Rover), enter your Raspberry Pi information & press "Done"
+</p>
+<img src="../pages/Spaces/Space Information.png" width="30%" style="min-width: 100px !important; margin: 10px !important;">
+</div>
+
+<div role="group">
+
+<img src="../pages/Spaces/Open Space.png" width="60%" style="min-width: 100px !important; margin: 10px !important;">
+<p style="word-wrap: break-word; width: 30%; margin-top: auto; margin-bottom: auto;">
+3. A new Space is created, click on it to open your Space!
+</p>
+</div>
+
+<div role="group">
+<p style="word-wrap: break-word; width: 50%; margin-top: auto; margin-bottom: auto;">
+4. To edit a space information (name, credentials, etc.), simply click on the "Edit" button.
+</p>
+<img src="../pages/Spaces/Edit Space.png" width="30%" style="min-width: 100px !important; margin: 10px !important;">
+</div>
+
+
+
 
 # Inside a Space
 ***Once inside a Space, there's a few components available to you***
+
+<div role="group">
+<div style="word-wrap: break-word; width: 50%; margin-top: auto; margin-bottom: auto;">
+
 1. The app bar
 This contains a "+" button, allowing you to create buttons
 
@@ -32,6 +56,11 @@ This contains a "+" button, allowing you to create buttons
 4. Voice command button.
 
 ***Learn more about <a href="/doc/#OtherButtons"> Voice commands </a>***
+</div>
+<img src="../pages/Spaces/Space Layout.png" width="30%" style="min-width: 100px !important; margin: 10px !important;">
+</div>
+
+
 
 
 
