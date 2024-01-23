@@ -13,7 +13,7 @@ You can use any programming language (Python, bash or [comfyScript](https://gith
 
 ***To use: Press it and a command will be executed.***
 
-<img src="../pages/Button/Tap_Button.gif" width="180"></img>
+<img src="../pages/Button//Gesture/Tap.gif" width="50%" style="min-width: 180px"></img>
 </details>
 
 <details open>
@@ -25,7 +25,7 @@ A toggle buttons with 2 commands for 2 toggle states.
 
 ***To use: Tap to toggle on/off, executing respective commands.***
 </p>
-<img src="../pages/Button/Toggle_Button.gif" width="180"></img>
+<img src="../pages/Button/Gesture/Toggle.gif" width="50%" style="min-width: 180px"></img>
 </details>
 
 <details open>
@@ -37,7 +37,7 @@ Swipe left, right, and tap to execute a command. You can bind one command to eac
 
 ***To use:Now swipe left, right, and tap to make cool things happen!***
 </p>
-<img src="../pages/Button/Horizontal_Swipe.gif" width="180"></img>
+<img src="../pages/Button/Gesture/Horizontal.gif" width="50%" style="min-width: 180px"></img>
 </details>
 
 
@@ -50,7 +50,7 @@ Swipe up, down, and tap to execute a command. You can bind one command to each g
 
 ***To use: Now swipe top, down, and tap to see something happen!***
 </p>
-<img src="../pages/Button/Vertical_Swipe.gif" width="180"></img>
+<img src="../pages/Button/Gesture/Vertical.gif" width="50%" style="min-width: 180px"></img>
 </details>
 
 <details open>
@@ -62,5 +62,5 @@ See and track any data in real time.
 ***To create: Press +, enter the command, press done.***
 
 </p>
-<img src="../pages/Button/Data_Read.gif" width="180"></img>
+<img src="../pages/Button/Gesture/Data.gif" width="50%" style="min-width: 180px"></img>
 </details>

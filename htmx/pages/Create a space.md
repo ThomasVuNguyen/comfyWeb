@@ -44,23 +44,14 @@ Shout "Mom, I need some space!" and you'll get some. Just kidding!
 <div role="group">
 <div style="word-wrap: break-word; width: 50%; margin-top: auto; margin-bottom: auto;">
 
-1. The app bar
-This contains a "+" button, allowing you to create buttons
+1."+" button to create buttons
 
 2. The terminal - displaying real time status.
 
-3. The button area - where all your buttons will reside.
+3. The button area - where all your <a href="/doc/#Button"> buttons </a> will reside.
 
-***Learn more about <a href="/doc/#Button"> buttons </a>***
+4. <a href="/doc/#OtherButtons"> Voice commands </a> button.
 
-4. Voice command button.
-
-***Learn more about <a href="/doc/#OtherButtons"> Voice commands </a>***
 </div>
 <img src="../pages/Spaces/Space Layout.png" width="30%" style="min-width: 100px !important; margin: 10px !important;">
 </div>
-
-
-
-
-
