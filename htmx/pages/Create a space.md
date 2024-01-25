@@ -7,16 +7,13 @@ A Space is a customizable interface where you can add buttons & features to cont
 Shout "Mom, I need some space!" and you'll get some. Just kidding!
 
 <div role="group">
-<p style="word-wrap: break-word; width: 50%; margin-top: auto; margin-bottom: auto;">
-1. On the main screen, press the "+" button.
-</p>
-<img src="../pages/Spaces/Add Button.png" width="30%" style="min-width: 100px !important; margin: 10px!important; ">
-</div>
+<div style="word-wrap: break-word; width: 50%; margin-top: auto; margin-bottom: auto;">
 
-<div role="group">
-<p style="word-wrap: break-word; width: 50%; margin-top: auto; margin-bottom: auto;">
+1. On the main screen, press the "+" button.
+
 2. Enter a Space Name (ex. Mars Rover), enter your Raspberry Pi information & press "Done"
-</p>
+</div>
+<img src="../pages/Spaces/Add Button.png" width="30%" style="min-width: 100px !important; margin: 10px!important; ">
 <img src="../pages/Spaces/Space Information.png" width="30%" style="min-width: 100px !important; margin: 10px !important;">
 </div>
 
@@ -33,6 +30,7 @@ Shout "Mom, I need some space!" and you'll get some. Just kidding!
 4. To edit a space information (name, credentials, etc.), simply click on the "Edit" button.
 </p>
 <img src="../pages/Spaces/Edit Space.png" width="30%" style="min-width: 100px !important; margin: 10px !important;">
+<img src="../pages/Spaces/Edit space prompt.png" width="30%" style="min-width: 100px !important; margin: 10px !important;">
 </div>
 
 

@@ -6,7 +6,7 @@ Once you're inside a Space, let's add some buttons!
 <p style="word-wrap: break-word; width: 50%; margin-top: auto; margin-bottom: auto;">
 1. Locate and press the "+" button.
 </p>
-<img src="../pages/Button/Add button.png" width="30%" style="min-width: 100px !important; margin: 10px!important; ">
+<img src="../pages/Button/Add button.png" width="30%" style=" float: left; min-width: 100px !important; margin: 10px!important; ">
 </div>
 
 <div role="group">
