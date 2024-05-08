@@ -4,3 +4,39 @@ title: My New Hugo Site
 module:
   imports:
     - path: github.com/imfing/hextra
+
+menu:
+  main:
+    - name: Documentation
+      pageRef: /docs
+      weight: 1
+    - name: Download
+      pageRef: /download
+      weight: 2
+    - name: Support
+      pageRef: /support
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/imfing/hextra"
+      params:
+        icon: github
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+      link: /
+      width: 40
+      height: 20
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: fa
