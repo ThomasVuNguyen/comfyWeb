@@ -1,0 +1,3 @@
+[submodule "hugo/comfyspace/themes/hextra"]
+	path = hugo/comfyspace/themes/hextra
+	url = https://github.com/imfing/hextra

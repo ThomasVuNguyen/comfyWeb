@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "comfyspace",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
