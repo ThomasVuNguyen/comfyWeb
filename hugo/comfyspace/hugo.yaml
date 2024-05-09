@@ -1,7 +1,7 @@
-baseURL: https://example.org/
+baseURL: https://comfyspace.tech/
 languageCode: en-us
-title: My New Hugo Site
-
+title: Comfy Space
+theme: hextra
 
 menu:
   main:
@@ -20,7 +20,7 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/imfing/hextra"
+      url: "https://github.com"
       params:
         icon: github
 

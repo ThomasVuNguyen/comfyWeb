@@ -1,3 +1,12 @@
 [submodule "hugo/comfyspace/themes/hextra"]
 	path = hugo/comfyspace/themes/hextra
 	url = https://github.com/imfing/hextra
+[submodule "hugo/comfyspace/themes/hextraz"]
+	path = hugo/comfyspace/themes/hextraz
+	url = https://github.com/imfing/hextra.git
+[submodule "hugo/comfyspace/themes/ananke"]
+	path = hugo/comfyspace/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "hugo/v3/themes/ananke"]
+	path = hugo/v3/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
