@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections ) 6 }}
+  <div class="archive-body">
+    {{ range $pag.Pages }}
+      {{ .Render "li" }}
+    {{ end }}
+  </div>
+
+  {{ partial "pagination" . }}
+{{ end }}

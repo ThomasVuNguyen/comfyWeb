@@ -10,3 +10,6 @@
 [submodule "hugo/v3/themes/ananke"]
 	path = hugo/v3/themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "hugo/v4/themes/ananke"]
+	path = hugo/v4/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
