@@ -1,0 +1,3 @@
+privacy
+{{<form-contact>}}
+{{<test>}}
