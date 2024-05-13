@@ -6,6 +6,8 @@
   </url><url>
     <loc>http://localhost:1313/docs/</loc>
   </url><url>
+    <loc>http://localhost:1313/privacy/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
