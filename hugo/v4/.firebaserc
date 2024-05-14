@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "comfyspace-73966"
+  },
+  "targets": {
+    "comfyspace-73966": {
+      "hosting": {
+        "comfyweb": [
+          "comfyspace-73966"
+        ],
+        "comfyspace": [
+          "comfyspace"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

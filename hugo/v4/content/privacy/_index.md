@@ -1,3 +1,3 @@
-privacy
-{{<form-contact>}}
-{{<test>}}
+---
+---
+{{<privacy_note>}}
