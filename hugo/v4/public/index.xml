@@ -2,23 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
+    <link>https://example.org/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/release/1.0.0/</link>
+      <link>https://example.org/docs/a-friendly-guide-to-robotics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/release/1.0.0/</guid>
+      <guid>https://example.org/docs/a-friendly-guide-to-robotics/</guid>
+      <description>&lt;!DOCTYPE html&gt; A guide to robotics 5 minutes read&#xA;A friendly guide to robotics Robots are created in our own image, so they are simple to understand by nature.&#xA;A robot could be anything from a remote-controlled car, a voice-activated AI chatbot, to a portable camera. If it possesses hardware components and performs a useful function, it qualifies as a robot!&#xA;Despite the diversity in robotics, all robots share some fundamental attributes.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/robots-new-man-best-friend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/robots-new-man-best-friend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/welcome-to-comfy-space/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/welcome-to-comfy-space/</guid>
+      <description>adas</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/release/1.0.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/release/1.0.0/</guid>
       <description></description>
     </item>
     <item>
       <title>A friendly guide to robotics</title>
-      <link>http://localhost:1313/privacy/lesson1/</link>
+      <link>https://example.org/privacy/lesson1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/privacy/lesson1/</guid>
+      <guid>https://example.org/privacy/lesson1/</guid>
       <description></description>
     </item>
   </channel>
