@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy Space</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</head>
+<body>
+     <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="bg-white py-24 sm:py-32">
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                  <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                    <div class="lg:pr-4">
+                      <div class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                        <img class="absolute inset-0 h-full w-full object-cover brightness-125" src="https://firebasestorage.googleapis.com/v0/b/comfyspace-73966.appspot.com/o/lessons%2F0%2Fassets%2Frobot-intro.jpg?alt=media&token=3d8a9c09-b38f-4d2b-aa6d-fb3a63e70361" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="text-base leading-7 text-gray-700 lg:max-w-lg">
+                        <p class="text-base font-semibold leading-7 text-indigo-600">Comfy Academy</p>
+                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{.Get "title"}}</h1>
+                        <div class="max-w-xl">
+                          <p class="mt-6">{{.Get "description"}}</p>
+                        </div>
+                      </div>
+                      <dl class="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
+                        <div>
+                          <dt class="text-sm font-semibold leading-6 text-gray-600">Reading time</dt>
+                          <dd class="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">5 minute</dd>
+                        </div>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://plus.unsplash.com/premium_photo-1715588659685-fac565ef60bb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1715583198007-1ec0de4292bb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="section">
+        <div class="container is-clipped">
+          <div id="slider">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img
+                    src="https://images.unsplash.com/photo-1550921082-c282cdc432d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 1
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img
+                    src="https://images.unsplash.com/photo-1550945771-515f118cef86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 2
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img
+                    src="https://images.unsplash.com/photo-1550971264-3f7e4a7bb349?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 3
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img
+                    src="https://images.unsplash.com/photo-1550931937-2dfd45a40da0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 4
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img
+                    src="https://images.unsplash.com/photo-1550930516-af8b8cc4f871?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 5
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card-image">
+                <figure class="image video-container is-16by9">
+                  <iframe type="text/html" src="https://www.youtube.com/embed/H0v773vKS_U" frameborder="0"></iframe>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 6
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>
