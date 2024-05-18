@@ -5,26 +5,6 @@ title="A friendly guide to robotics"
 description="Robots are created in our own image, so they are simple to understand by nature."
 >}}
 
-
-## The Senses - Sensing Surroundings
-
-Some robots also possess the capability to sense their surroundings: they can hear sounds, see objects, measure distances, and even recognize objects with simple AI functionalities.
-
-<img src="https://firebasestorage.googleapis.com/v0/b/comfyspace-73966.appspot.com/o/lessons%2F0%2Fassets%2Fsensor-demo.gif?alt=media&token=05c1b8f2-5f90-4a3c-b73f-b340fa19dc34" style="max-width: 500px">
-
-These features can be used to gather information for security cameras, object detection, object monitoring, etc., or to drive autonomous actions like sounding an alarm if an intruder is detected, or making the robot move when it sees you.
-
-To achieve these sensory functions, your robot might require one or more (or none at all) of these components, again depending on your desired application:
-
-- Light sensor
-- Camera
-- Microphone
-- Distance sensor
-- Human presence sensor (yes, it's a thing and it's cool)
-- and much more: if you think of a sensor, it probably exists
-
-The world of sensors is truly fascinating. As science evolves, it offers creatives a plethora of options to experiment with.
-
 ## The Veins - Creating Connections
 
 To connect all the above components, you'll need wires.
