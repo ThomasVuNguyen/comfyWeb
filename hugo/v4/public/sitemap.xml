@@ -2,34 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://example.org/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://example.org/docs/</loc>
+    <loc>http://localhost:1313/docs/</loc>
   </url><url>
-    <loc>https://example.org/docs/a-friendly-guide-to-robotics/</loc>
+    <loc>http://localhost:1313/docs/a-friendly-guide-to-robotics/</loc>
   </url><url>
-    <loc>https://example.org/docs/robots-new-man-best-friend/</loc>
+    <loc>http://localhost:1313/docs/robots-new-man-best-friend/</loc>
   </url><url>
-    <loc>https://example.org/docs/welcome-to-comfy-space/</loc>
+    <loc>http://localhost:1313/docs/welcome-to-comfy-space/</loc>
   </url><url>
-    <loc>https://example.org/download/</loc>
+    <loc>http://localhost:1313/download/</loc>
   </url><url>
-    <loc>https://example.org/privacy/</loc>
+    <loc>http://localhost:1313/privacy/</loc>
   </url><url>
-    <loc>https://example.org/release/1.0.0/</loc>
+    <loc>http://localhost:1313/release/1.0.0/</loc>
   </url><url>
-    <loc>https://example.org/release/</loc>
+    <loc>http://localhost:1313/release/</loc>
   </url><url>
-    <loc>https://example.org/support/</loc>
+    <loc>http://localhost:1313/support/</loc>
   </url><url>
-    <loc>https://example.org/terms-and-conditions/</loc>
+    <loc>http://localhost:1313/terms-and-conditions/</loc>
   </url><url>
-    <loc>https://example.org/privacy/lesson1/</loc>
+    <loc>http://localhost:1313/privacy/lesson1/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
