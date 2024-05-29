@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Slideshow</title>
+  <!-- Link Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Optional: Custom styles for the slideshow */
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide content vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+        <!--Blog -->
+      
+        <div class="bg-white px-6 py-32 lg:px-8">
+          <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+            <p class="text-base font-semibold leading-7 text-indigo-600">Comfy Academy</p>
+            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{.Get "title"}}</h1>
+            <p class="mt-6 text-xl leading-8">{{.Get "description"}}</p><br>
+            <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../placeholder/image_fx_a_person_building_a_robot_on_their_desk_the.jpg" alt="">
+            
+            
+            <div class="mt-10 max-w-2xl">
+              <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Meet Jax!</h2>
+              <p class="mt-6">To best understand the process, let me introduce Jax - an aspiring robotic maker! We will follow his process of turning an idea into a tangible robot.</p>
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../placeholder/image_fx_a_lego_character_toy_on_a_desk.jpg" alt="">
+                        </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../blog/Raspberry-pi-image.png" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                </svg>
+                Original image by <a style="text-decoration: none;" class=" text-sm leading-6 text-gray-500" href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/" target="_blank">Raspberry Pi Foundation</a>
+              </figcaption>
+            </figure>
+            
+
+  
+            <!--Parting words-->
+            <div class="mt-10 max-w-2xl">
+              <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Final words</h2>          </div>
+            <figure class="mt-10 border-l border-indigo-600 pl-9">
+              <blockquote class="font-semibold text-gray-900">
+                <p>Hello, folks! This is Thomas the Maker, your friendly assistant. I hope this guide has been helpful to you. Robotics can seem like a complex field, but I aim to simplify that. I believe this beginner-friendly guide has given you a clearer understanding of the basic anatomy of a robot, helping you visualize your ideas better.</p>
+              </blockquote>
+              <figcaption class="mt-6 flex gap-x-4">
+                <img class="h-6 w-6 flex-none rounded-full bg-gray-50 object-cover" src="../../chilling-in-the-park.jpg" alt="">
+                <div class="text-sm leading-6"><strong class="font-semibold text-gray-900">Thomas Nguyen</strong> – Author</div>
+              </figcaption>
+            </figure>
+            <div class="mt-10 max-w-2xl">           
+              <p class="mt-6">If you have any questions or ideas to share, don’t hesitate to let me know! Thank you for reading, and remember to keep your creative juices flowing!</p>
+              <!--<figure class="mt-16">
+                <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                  <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                  </svg>
+                  <a href="https://www.adafruit.com/product/4298?gad_source=1&gclid=CjwKCAjw9cCyBhBzEiwAJTUWNekv7BQY5SACQ6QfacoIpa2b3yhnFyIwfR63vJz66B9bP3Zz1OL1GBoCye8QAvD_BwE" target="_blank" style="text-decoration: none;" class=" text-sm leading-6 text-gray-500">Raspberry Pi power supply</a>
+                </figcaption>
+              </figure>-->
+            </div>
+  
+  
+          </div>
+        </div>
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://via.placeholder.com/600x400?text=Slide%201" alt="Slide 1"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/600x400?text=Slide%202" alt="Slide 2"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/600x400?text=Slide%203" alt="Slide 3"></div>
+      <!-- Add more slides as needed -->
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    // Initialize Swiper
+   var swiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>

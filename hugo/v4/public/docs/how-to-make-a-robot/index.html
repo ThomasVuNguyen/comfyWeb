@@ -89,6 +89,7 @@
   <title>Swiper Slideshow</title>
   
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
      
     .swiper-container {
@@ -108,6 +109,165 @@
 </head>
 <body>
 
+        
+      
+        <div class="bg-white px-6 py-32 lg:px-8">
+          <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+            <p class="text-base font-semibold leading-7 text-indigo-600">Comfy Academy</p>
+            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">How to build a robot?</h1>
+            <p class="mt-6 text-xl leading-8">In this article, you will learn how to turn your idea into a robot, remotely controlled with the Comfy Space application.</p>
+            <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../placeholder/image_fx_a_person_building_a_robot_on_their_desk_the.jpg" alt="">
+            <div class="mt-10 max-w-2xl">
+              <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">The brain</h2>
+              <p class="mt-6">Every robot, just like human, has a brain to control all operations. This is often a Raspberry Pi computer.</p>
+              <p class="mt-6">The Raspberry Pi is a credit-card-sized, affordable, and highly versatile computer. It's the perfect choice for various robotic projects. The Raspberry Pi comes with Wi-Fi functionality, enabling you to remotely control your robot using the ComfySpace app. It also features I/O pins (input/output) to control sensors, motors and more.</p>
+            </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../blog/Raspberry-pi-image.png" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                </svg>
+                Original image by <a style="text-decoration: none;" class=" text-sm leading-6 text-gray-500" href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/" target="_blank">Raspberry Pi Foundation</a>
+              </figcaption>
+            </figure>
+  
+            
+            <div class="mt-10 max-w-2xl">
+              <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">The limbs</h2>
+              <p class="mt-6">Robots can sometimes perform an action: a car moving, a light turns on, or a speaker producing sounds.</p>
+            </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../blog/Demo1.gif" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                </svg>
+                Comfy Space demo projects
+              </figcaption>
+            </figure>
+            <div class="mt-10 max-w-2xl">          
+              <p class="mt-6">To drive these actions, your robot might require one or more (or none at all) of these components, depending on the desired function.</p>
+            </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../blog/motor-example.png" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                </svg>
+                Original image by <a style="text-decoration: none;" class=" text-sm leading-6 text-gray-500" href="https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/overview" target="_blank">Adafruit</a>
+              </figcaption>
+            </figure>
+            <div class="mt-10 max-w-2xl">          
+              <p class="mt-6">When used (single or multiple), these "limbs" can create amazing results.</p>
+            </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../blog/jax-demo.gif" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                </svg>
+                <a style="text-decoration: none;" class=" text-sm leading-6 text-gray-500" href="https://www.youtube.com/watch?v=jPaVmc4hQWY" target="_blank">Jax - camera on wheels (robot)</a>
+              </figcaption>
+            </figure>
+  
+            
+            <div class="mt-10 max-w-2xl">
+              <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">The senses</h2>
+              <p class="mt-6">Some robots can also "sense" their surroundings, taking information from the surroundings (temperature, humidity, air quality, video, etc.)</p>
+            </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../blog/fire-sensor.gif" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                </svg>
+                <a href="https://www.youtube.com/watch?v=y1_scz9I0go" target="_blank" style="text-decoration: none;" class=" text-sm leading-6 text-gray-500">Flame sensor tutorial by NerdCave</a>
+              </figcaption>
+            </figure>
+            <div class="mt-10 max-w-2xl">           
+              <p class="mt-6">There are many sensors available, measuring anything you can think of.</p>
+            </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../blog/sensor-example.png" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                </svg>
+              Four out of many useful sensors available            
+            </figcaption>
+            </figure>
+  
+            
+            <div class="mt-10 max-w-2xl">
+              <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">The veins</h2>
+              <p class="mt-6">To connect all of the useful components above together, jumper cables are required.</p>
+            </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://robu.in/wp-content/uploads/2019/03/jumper.jpg" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                </svg>
+                Jumper cable in a pack
+              </figcaption>
+            </figure>
+            <div class="mt-10 max-w-2xl">           
+              <p class="mt-6">These cables are used to physically connect components together.</p>
+            </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://elmwoodelectronics.ca/cdn/shop/products/3813-02_2048x.jpg?v=1525794118" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+            </figcaption>
+            </figure>
+  
+            
+            <div class="mt-10 max-w-2xl">
+              <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">The power source</h2>
+              <p class="mt-6">To power all of the components above, a power source is required.</p>
+            </div>
+            <div class="mt-10 max-w-2xl">           
+              <p class="mt-6">The simplest power source is a power supply. If you have a stationary robotic project, this is a perfect option.</p>
+            </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../blog/raspi-power-supply.png" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                </svg>
+                <a href="https://www.adafruit.com/product/4298?gad_source=1&gclid=CjwKCAjw9cCyBhBzEiwAJTUWNekv7BQY5SACQ6QfacoIpa2b3yhnFyIwfR63vJz66B9bP3Zz1OL1GBoCye8QAvD_BwE" target="_blank" style="text-decoration: none;" class=" text-sm leading-6 text-gray-500">Raspberry Pi power supply</a>
+              </figcaption>
+            </figure>
+            <div class="mt-10 max-w-2xl">           
+              <p class="mt-6">If your robots require portability, perhaps consider a portable battery!.</p>
+            </div>
+            <figure class="mt-16">
+              <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="../../blog/rpi-battery.png" alt="">
+              <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+            </figcaption>
+            </figure>
+  
+            
+            <div class="mt-10 max-w-2xl">
+              <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Final words</h2>          </div>
+            <figure class="mt-10 border-l border-indigo-600 pl-9">
+              <blockquote class="font-semibold text-gray-900">
+                <p>Hello, folks! This is Thomas the Maker, your friendly assistant. I hope this guide has been helpful to you. Robotics can seem like a complex field, but I aim to simplify that. I believe this beginner-friendly guide has given you a clearer understanding of the basic anatomy of a robot, helping you visualize your ideas better.</p>
+              </blockquote>
+              <figcaption class="mt-6 flex gap-x-4">
+                <img class="h-6 w-6 flex-none rounded-full bg-gray-50 object-cover" src="../../chilling-in-the-park.jpg" alt="">
+                <div class="text-sm leading-6"><strong class="font-semibold text-gray-900">Thomas Nguyen</strong> – Author</div>
+              </figcaption>
+            </figure>
+            <div class="mt-10 max-w-2xl">           
+              <p class="mt-6">If you have any questions or ideas to share, don’t hesitate to let me know! Thank you for reading, and remember to keep your creative juices flowing!</p>
+              
+            </div>
+  
+  
+          </div>
+        </div>
+
   
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -125,7 +285,7 @@
 
   <script>
     
-    var swiper = new Swiper('.swiper-container', {
+   var swiper = new Swiper('.swiper-container', {
       
       direction: 'horizontal',
       loop: true,

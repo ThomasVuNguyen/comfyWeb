@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:1313/docs/</link>
+    <link>https://example.org/docs/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/docs/a-friendly-guide-to-robotics/</link>
+      <link>https://example.org/docs/a-friendly-guide-to-robotics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/a-friendly-guide-to-robotics/</guid>
+      <guid>https://example.org/docs/a-friendly-guide-to-robotics/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xD;A guide to robotics&#xD;Comfy Academy&#xA;A friendly guide to robotics&#xD;Robots are created in our own image, so they are simple to understand by nature.&#xA;The brain&#xD;Every robot, just like human, has a brain to control all operations. This is often a Raspberry Pi computer.&#xA;The Raspberry Pi is a credit-card-sized, affordable, and highly versatile computer. It&#39;s the perfect choice for various robotic projects. The Raspberry Pi comes with Wi-Fi functionality, enabling you to remotely control your robot using the ComfySpace app.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/docs/how-to-make-a-robot/</link>
+      <link>https://example.org/docs/how-to-build-a-robot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/how-to-make-a-robot/</guid>
-      <description>&lt;!DOCTYPE html&gt;&#xD;Swiper Slideshow&#xD;</description>
+      <guid>https://example.org/docs/how-to-build-a-robot/</guid>
+      <description>&lt;!DOCTYPE html&gt;&#xD;Swiper Slideshow&#xD;Comfy Academy&#xA;How to build a robot?&#xD;In this article, you will learn how to turn your idea into a robot, remotely controlled with the Comfy Space application.&#xA;Meet Jax!&#xD;To best understand the process, let me introduce Jax - an aspiring robotic maker! We will follow his process of turning an idea into a tangible robot.&#xA;Original image by Raspberry Pi Foundation&#xD;Final words Hello, folks!</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/docs/robots-new-man-best-friend/</link>
+      <link>https://example.org/docs/robots-new-man-best-friend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/robots-new-man-best-friend/</guid>
+      <guid>https://example.org/docs/robots-new-man-best-friend/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/docs/welcome-to-comfy-space/</link>
+      <link>https://example.org/docs/welcome-to-comfy-space/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/welcome-to-comfy-space/</guid>
+      <guid>https://example.org/docs/welcome-to-comfy-space/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xD;Welcome to Comfy Space!&#xD;Comfy Academy&#xA;Welcome to Comfy Space&#xD;The amazing world of robotics should be approachable and enjoyable for everyone, not just the tech-savvy&#xA;The foreword&#xD;The field of robotics is a fascinating blend of complexity and diversity, giving birth to everything from remote-control cars to Boston Dynamic&#39;s awe-inspiring robot dogs.&#xA;A few examples of robots in real life&#xD;The limbs&#xD;Robots can sometimes perform an action: a car moving, a light turns on, or a speaker producing sounds.</description>
     </item>
   </channel>
