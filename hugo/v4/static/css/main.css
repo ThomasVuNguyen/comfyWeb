@@ -1,0 +1,51 @@
+/* Brand design guideline */
+:root {
+    --primary-container-color: #B0F1C2;
+    --on-primary-container-color: #00210F;
+
+    --surface-color: #F6FBF3;
+    --on-surface-color: #181D19;
+    --on-surface-outline: #717971;
+
+    --primary-color: #2D6A45;
+    --on-primary-color: white;
+
+    --font-display: 'Montserrat', sans-serif;
+    --font-display-weight: 57;
+  }
+
+  
+.nav-button{
+    color:  var(--primary-color);
+}
+
+
+.background{
+    background-color: var(--surface-color);
+    color: var(--on-surface-color);
+}
+
+.background-color{
+    color: var(--surface-color);
+}
+.accent-color{
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+}
+
+.primary-color-block{
+    background-color: var(--primary-container-color);
+    color: var(--on-primary-container-color)
+}
+
+.primary-color-text{
+    color: var(--primary-color)
+}
+
+.surface-color-text{
+    color: var(--on-surface-color)
+}
+
+.surface-outline-color{
+    color: var(--on-surface-outline);
+}
