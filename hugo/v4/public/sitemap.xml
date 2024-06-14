@@ -2,36 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://comfyspace.tech/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://comfyspace.tech/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/</loc>
+    <loc>https://comfyspace.tech/docs/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/a-friendly-guide-to-robotics/</loc>
+    <loc>https://comfyspace.tech/docs/a-friendly-guide-to-robotics/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/how-to-build-a-robot/</loc>
+    <loc>https://comfyspace.tech/docs/how-to-build-a-robot/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/robots-new-man-best-friend/</loc>
+    <loc>https://comfyspace.tech/docs/robots-new-man-best-friend/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/welcome-to-comfy-space/</loc>
+    <loc>https://comfyspace.tech/docs/welcome-to-comfy-space/</loc>
   </url><url>
-    <loc>http://localhost:1313/download/</loc>
+    <loc>https://comfyspace.tech/download/</loc>
   </url><url>
-    <loc>http://localhost:1313/privacy/</loc>
+    <loc>https://comfyspace.tech/privacy/</loc>
   </url><url>
-    <loc>http://localhost:1313/release/1.0.0/</loc>
+    <loc>https://comfyspace.tech/release/1.0.0/</loc>
   </url><url>
-    <loc>http://localhost:1313/release/</loc>
+    <loc>https://comfyspace.tech/release/</loc>
   </url><url>
-    <loc>http://localhost:1313/support/</loc>
+    <loc>https://comfyspace.tech/support/</loc>
   </url><url>
-    <loc>http://localhost:1313/terms-and-conditions/</loc>
+    <loc>https://comfyspace.tech/terms-and-conditions/</loc>
   </url><url>
-    <loc>http://localhost:1313/privacy/lesson1/</loc>
+    <loc>https://comfyspace.tech/privacy/lesson1/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://comfyspace.tech/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://comfyspace.tech/tags/</loc>
   </url>
 </urlset>
