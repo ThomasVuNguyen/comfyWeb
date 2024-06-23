@@ -10,6 +10,9 @@
     --primary-color: #2D6A45;
     --on-primary-color: white;
 
+    --tetriary-surface-color: #BEEAF7;
+    --on-tetriary-surface-color: #001F26;
+
     --font-display: 'Montserrat', sans-serif;
     --font-display-weight: 57;
   }
@@ -48,4 +51,10 @@
 
 .surface-outline-color{
     color: var(--on-surface-outline);
+}
+
+
+.surface-tetriary-color{
+    background-color: var(--tetriary-surface-color);
+    color: var(--on-tetriary-surface-color);
 }
