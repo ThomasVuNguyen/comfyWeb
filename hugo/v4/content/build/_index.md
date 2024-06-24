@@ -5,8 +5,8 @@ description: "Get inspired for your next creation!"
 projects:
     - title: PlayCar
       description: A remote controlled car fun to play with & easy to make
-      img: /projects/playcar/title.jpg
-      url: 
+      img: /build/playcar/title.jpg
+      url: playcar
       author:
         name: Thomas Nguyen
         role: CEO & Creator
