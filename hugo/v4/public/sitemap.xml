@@ -6,11 +6,7 @@
   </url><url>
     <loc>https://comfyspace.tech/about/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/build/</loc>
-  </url><url>
     <loc>https://comfyspace.tech/download/</loc>
-  </url><url>
-    <loc>https://comfyspace.tech/learn/</loc>
   </url><url>
     <loc>https://comfyspace.tech/learn/a-friendly-guide-to-robotics/</loc>
   </url><url>
@@ -35,6 +31,10 @@
     <loc>https://comfyspace.tech/privacy/lesson1/</loc>
   </url><url>
     <loc>https://comfyspace.tech/categories/</loc>
+  </url><url>
+    <loc>https://comfyspace.tech/learn/</loc>
+  </url><url>
+    <loc>https://comfyspace.tech/build/</loc>
   </url><url>
     <loc>https://comfyspace.tech/tags/</loc>
   </url>
