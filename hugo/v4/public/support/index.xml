@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ComfySpace</title>
-    <link>http://localhost:1313/support/</link>
+    <link>https://comfyspace.tech/support/</link>
     <description>Recent content on ComfySpace</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/support/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://comfyspace.tech/support/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/support/account_deletion/</link>
+      <link>https://comfyspace.tech/support/account_deletion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/support/account_deletion/</guid>
+      <guid>https://comfyspace.tech/support/account_deletion/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xD;Comfy FAQ&#xD;ComfySpace&#xD;By Thomas Nguyen.&#xA;How can I request an account deletion?&#xD;Submit your email or username here &amp; we will take care of the rest.&#xA;Your account will be deleted within 24 hours.&#xD;</description>
     </item>
   </channel>
