@@ -2,44 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://comfyspace.tech/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/build/playcar/</loc>
+    <loc>http://localhost:1313/build/playcar/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/download/</loc>
+    <loc>http://localhost:1313/download/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/learn/a-friendly-guide-to-robotics/</loc>
+    <loc>http://localhost:1313/learn/a-friendly-guide-to-robotics/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/learn/how-to-build-a-robot/</loc>
+    <loc>http://localhost:1313/learn/how-to-build-a-robot/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/learn/robots-new-man-best-friend/</loc>
+    <loc>http://localhost:1313/learn/robots-new-man-best-friend/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/learn/welcome-to-comfy-space/</loc>
+    <loc>http://localhost:1313/learn/welcome-to-comfy-space/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/privacy/</loc>
+    <loc>http://localhost:1313/privacy/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/release/1.0.0/</loc>
+    <loc>http://localhost:1313/release/1.0.0/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/release/</loc>
+    <loc>http://localhost:1313/release/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/share/</loc>
+    <loc>http://localhost:1313/share/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/support/</loc>
+    <loc>http://localhost:1313/support/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/support/account_deletion/</loc>
+    <loc>http://localhost:1313/support/account_deletion/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/terms-and-conditions/</loc>
+    <loc>http://localhost:1313/terms-and-conditions/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/privacy/lesson1/</loc>
+    <loc>http://localhost:1313/privacy/lesson1/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/learn/</loc>
+    <loc>http://localhost:1313/learn/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/build/</loc>
+    <loc>http://localhost:1313/build/</loc>
   </url><url>
-    <loc>https://comfyspace.tech/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

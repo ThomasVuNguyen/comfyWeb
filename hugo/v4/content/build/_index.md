@@ -11,7 +11,6 @@ projects:
         name: Thomas Nguyen
         role: CEO & Creator
 
-
 ---
 
 
