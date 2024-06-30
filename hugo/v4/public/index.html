@@ -24,6 +24,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="/css/main.css">
+    
 
 
 </head>
@@ -279,6 +280,28 @@
         </div>
       </footer>
 
+      <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        
+        
       
+        
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyC2U2LL4kdSYd1clW4iQSXr4PFKuK_1uaA",
+          authDomain: "comfyspace-73966.firebaseapp.com",
+          projectId: "comfyspace-73966",
+          storageBucket: "comfyspace-73966.appspot.com",
+          messagingSenderId: "290068007404",
+          appId: "1:290068007404:web:2d3de02cb87000043cd8c9",
+          measurementId: "G-E3YKVED4S4"
+        };
+      
+        
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>

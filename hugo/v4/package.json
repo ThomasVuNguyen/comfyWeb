@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "postcss assets/main.css -o static/css/main.css"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +14,7 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4"
   },
-  "scripts": {
-  "build:css": "postcss assets/main.css -o static/css/main.css"
+  "dependencies": {
+    "firebase": "^10.12.2"
+  }
 }
-
-}
-
