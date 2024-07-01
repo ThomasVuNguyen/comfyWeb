@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A guide to robotics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+<body>    
+      
+      <div class="px-6 py-32 lg:px-8">
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+          <p class="text-base font-semibold leading-7 primary-color-text">Comfy Projects</p>
+          <h1 class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">{{.Page.Params.title}}</h1>
+          <p class="mt-6 text-xl leading-8">{{ .Page.Params.description}}</p>
+          {{ with .Page.Params.img}}
+          <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="{{ . }}" alt="">
+          {{end}}
+          {{ with .Page.Params.video}}
+          <video class="h-full w-full rounded-lg" controls>
+            <source
+              src="{{.}}"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          {{end}}
+          <br><br><br>
+          <!-- Component list -->
+          <div class="component-list">
+            <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+              <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Components</p>
+              <p class="mt-2 text-base text-gray-500">Here are some components you need for this project. Most of these can be used for multiple projects!</p>
+                {{ range .Page.Params.components }}
+                
+                <div class="flex space-x-6 border-b border-greeb-100 py-10">
+                  <img src="{{.img}}" alt="Glass bottle with black plastic pour top and mesh insert." class="h-20 w-20 flex-none rounded-lg bg-gray-100 object-cover object-center sm:h-40 sm:w-40">
+                  <div class="flex flex-auto flex-col">
+                    <div>
+                      <h4 class="font-medium primary-color-text">
+                        {{.name}}
+                      </h4>
+                      <p class="mt-2 text-sm">
+                        {{.description}}
+                      </p>
+                    </div>
+                    <div class="mt-6 flex flex-1 items-end">
+                      <dl class="flex space-x-4 divide-x divide-gray-200 text-sm sm:space-x-6">
+                        <div class="flex">
+                          <dt class="font-medium primary-color-text">Quantity</dt>
+                          <dd class="ml-2 primary-color-text">{{.quantity}}</dd>
+                        </div>
+                        <div class="flex pl-4 sm:pl-6">
+                          <dt class="font-medium primary-color-text">Price</dt>
+                          <dd class="ml-2 primary-color-text">{{.price}}</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    
+                  </div>
+
+                </div>
+                {{ end }}
+              
+            </div>
+          </div>
+          <br><br>
+
+          <!-- Tool list -->
+          <div class="tool-list">
+            <div class="mx-auto max-w-3xl px-4sm:px-6 lg:px-8">
+              <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Tools</p>
+              <p class="mt-2 text-base text-gray-500">You might already have these tools. If not, ask around!</p>
+                {{ range .Page.Params.tools }}
+                <div class="flex space-x-6 border-b border-greeb-100 py-5">
+                  <img src="{{.img}}" alt="Glass bottle with black plastic pour top and mesh insert." class="h-20 w-20 flex-none rounded-lg bg-gray-100 object-cover object-center sm:h-40 sm:w-40">
+                  <div class="flex flex-auto flex-col">
+                    <div>
+                      <h4 class="font-medium primary-color-text text-2xl">
+                        {{.name}}
+                      </h4>
+                      <p class="mt-10 max-w-2xl">
+                        {{.description}}
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
+                </div>
+            </div>
+            <br><br>
+
+
+                <!-- Assembly -->
+
+                {{ range .Page.Params.assembly}}
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">{{ .name }}</h1><br>
+                    <p >{{.description}}</p>
+                    {{ range .steps}}
+                    <div class="max-w-2xl">
+                      <p>{{.description}}</p>
+                    </div>
+                    
+                    <figure>
+                      {{ with .img}}
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="{{.}}" alt="">
+                      <br>
+                      {{end}}
+                      {{ with .video}}
+                      <video class="h-full w-full rounded-lg" controls>
+                        <source
+                          src="{{.}}"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                      <br>
+                      {{end}}
+                      {{ with .img_note}}
+                      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                        <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                        </svg>
+                          {{.}}
+                      </figcaption>
+                      {{ end }}
+                    </figure>
+                    {{ with .link}}
+                    <a href ="{{.url}}" style="text-decoration: none;">
+                    <div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+                      <img src="{{.img}}" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+                      <div class="w-2/3 p-4 flex flex-col justify-between">
+                        <p class="text-gray-600 text-sm">
+                          {{.description}}
+                        </p>
+                        <div class="flex items-center text-gray-500 text-xs">
+                          <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                          </svg>
+                          <span>{{.url}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                    {{ end }}
+                    {{with .note}}
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{{.}}</p>
+                      </blockquote>
+                    </figure>
+                    <br>
+                    {{end}}
+                    {{ end }}
+
+                  </div>
+                {{ end }}
+                <br><br>
+          <!-- Final words -->
+          {{ with .Page.Params.final_words}}
+          <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Final words</h1>
+         <figure class="mt-10 border-l border-green-500 pl-9">
+            <blockquote class="font-semibold primary-text-color">
+              <p class="primary-color-text">{{.note}}</p>
+            </blockquote>
+          </figure>
+        
+          {{ end }}
+          <br>
+
+<!-- Extra -->
+{{ with .Page.Params.extra}}
+<h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Extra</h1>
+<br>
+{{end}}
+{{ range .Page.Params.extra}}
+<a href ="{{.url}}" style="text-decoration: none;">
+<div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+  <img src="{{.img}}" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+  <div class="w-2/3 p-4 flex flex-col justify-between">
+    <h2 class="text-xl font-semibold primary-color-text mb-2">{{.name}}</h2>
+    <p class="text-gray-600 text-sm">
+      {{.description}}
+    </p>
+    <div class="flex items-center text-gray-500 text-xs">
+      <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+      </svg>
+      <span>{{.url}}</span>
+    </div>
+  </div>
+</div>
+</a>
+{{ end }}         
+
+
+<!-- Credits -->
+{{ with .Page.Params.credit}}
+<h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Credits</h1>
+<br>
+
+{{end}}
+{{ range .Page.Params.credit}}
+<a href ="{{.url}}" style="text-decoration: none;">
+<div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+  <img src="{{.img}}" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+  <div class="w-2/3 p-4 flex flex-col justify-between">
+    <h2 class="text-xl font-semibold primary-color-text mb-2">{{.type}}</h2>
+    <p class="text-gray-600 text-sm">
+      {{.part}} by {{.creator}}
+    </p>
+    <div class="flex items-center text-gray-500 text-xs">
+      <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+      </svg>
+      <span>{{.url}}</span>
+    </div>
+  </div>
+</div>
+</a>
+{{ end }}
+        </div>
+      </div>
+      
+    <!--TESTING-->
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

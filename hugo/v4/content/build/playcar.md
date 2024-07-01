@@ -2,7 +2,7 @@
 title: "Playcar"
 description: "RC cars are fun but hard to build. Not this one!"
 altImg: "image of playcar causing havoc"
-img: ""
+video: /build/playcar/video_title.mov
 components:
     - name: Raspberry Pi Zero 2W
       img: https://www.cnx-software.com/wp-content/uploads/2021/10/Raspberry-Pi-Zero-2-W-board.jpg
@@ -72,79 +72,71 @@ tools:
       description: Nothing fancy, a cheap set from your local grocer should work. Just make sure you have both hex & flat-head bits.
 
 assembly:
-    - name: Get 3D Printing!
-      description: Let's get to 3d print some stuff on your dear 3D Printer (if you, your friend or local library might have one!). If you can't find one, email me at thomas@comfyspace.tech and I will print for you for free!
+    - name: Fire up your 3D Printer!
+      description:
+      steps:  
+        - img: 
+          description: Follow link below to print 3D parts.
+          link: 
+            url: https://www.printables.com/model/929071-playcar-a-comfy-rc-car
+            img: https://media.printables.com/media/prints/929071/images/7083808_0de82f27-33a1-46df-a15f-1c67a5d1877b_2fe5a47f-dc32-49c2-8af4-427d683d0b98/thumbs/inside/1600x1200/jpg/timeline-1_01_00_01_21.webp
+            description: Download the STL files below & 3D print them.
+          note: If you don't have access to a 3D printer, email me at thomas@comfyspace.tech and I will print for you for free!
+
+
+    - name: Assembling the wheels
+      description: 3D printed parts + motors = awesome terrain wheels.
       steps:
-        - name: Download the STL files
-          img: 
-          description: 
-          note: You can <a href="/customize">customize</a> the parts if you want!
-        
-        - name: Fire up the 3D printer!
-          img:
-          description: Follow the instructions in the Printable link to print the right quantity of parts
-          note: 
-      credits:
-        - creator: 
-          part:
-          url:
-    - name: Assembly the wheels
-      descriptions: 3D printed parts + motors = awesome traversal wheels.
-      steps:
-        - name: 
-          img:
-          description: Follow the instruction below to put together wheel assemblies. Note that the left & right wheels are slightly different.
+        - img: https://images.unsplash.com/photo-1719438646966-efb152b1b732?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D
+          description: Put together wheel assemblies. Note that the left & right wheels are slightly different.
 
         - name: It's alive!
           img:
-          description: Admire what you just built, such a marvelous piece! Whoever designed this must be a genius. 
-        
-      credits:
-        - creator: nahueltaibo
-          part: Rover Tracks v2
-          url: https://www.thingiverse.com/thing:3112734
+          description: Take a moment to admire what you just built! Whoever designed this must be a genius. 
+
 
     - name: Assemble the brain
       description: To power the whole robot, you need a brain (Raspberry Pi), power source (AA batteries), and other nicknacks.
       steps:
         - name: Make electrical connections
           description: A fancy way of saying plugging wires together & to the right places. Just follow the schematic below and you'll be fine!
-          img:
+          img: https://images.unsplash.com/photo-1719530908903-caf3926dd2e8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw2Mnx8fGVufDB8fHx8fA%3D%3D
 
         - description: If you do not like soldering, you can use the butt connectors to connect wires instead!
-          img:
+          img: https://images.unsplash.com/photo-1719584417586-1386172bba3f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D
         
         - name: Assemble mechanical parts
           description: Now that all electrical connections are made, let's screw all of this nicknacks together. Just make sure the right parts are put in the right spots, using the right screw sizes. No pressure!
-          img: 
+          img: https://images.unsplash.com/photo-1719216325263-9070d79336c3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw4MHx8fGVufDB8fHx8fA%3D%3D
         
     - name: Put some software in your robots!
       description: Now, your robot is just a slew of plastics & metal binded together as a stylish paperweight. Let's put some software to make it sentient.
-
       steps:
-        - name: Download the Comfy app
+        - name: Download the Comfy app - 
           description: The Comfy application allows you to control Playcar without buying expensive controller & coding for hours. <a href="https://comfyspace.tech/download">Download</a> & create an account if you have not done so!
-          steps:
-            - name: Create a project
-              description: Just do what the video says. It's going to be alright.
-              video: 
+      steps:
+        - name: Create a project
+          description: Just do what the video says. It's going to be alright.
+          video: https://docs.material-tailwind.com/demo.mp4
 
-            - name: Add some buttons!
-              description: We will create some buttons to control Playcar & have some fun!
-              video:
-
+        - name: Add some buttons!
+          description: We will create some buttons to control Playcar & have some fun!
+          video: https://docs.material-tailwind.com/demo.mp4
+extra:
+  - name: Customization
+    description: You can customize the 3D design here!
+    img: https://images.unsplash.com/photo-1718887240077-2a189281ba27?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHwxMjd8fHxlbnwwfHx8fHw%3D
+    url: https://cad.onshape.com/documents/ce454679e894303a0ee32b59/w/9d54d89ffd016244679e1564/e/e174f969d6d1654d10106797?renderMode=0&uiState=6682317baef2f63452943a4b
+credit:
+  - type: Inspiration
+    img: https://plus.unsplash.com/premium_photo-1674007584834-271ef37d2387?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw5M3x8fGVufDB8fHx8fA%3D%3D
+    creator: nahueltaibo
+    part: Rover Tracks v2
+    url: https://www.thingiverse.com/thing:3112734
 final_words:
-    - name: Have some fun with your new creations!
-      description: Hopefully everything went well until now. If so, congrats on making your own Playcar! Have some fun, show it to your neighbors, and share it online!
-      note: If you would like to, email me a picture or video at thomas@comfyspace.tech, it would lighten up my heart in a rainy day! 
-      end_word: I have worked hard to make sure Playcar is as fun to play with and minimal to build as possible. If you're reading this, from the bottom of my heart, I am proud of you! And thank you!
-
-    
-
-
-
+    note: Congrats on your Playcar! Enjoy it, show it to neighbors, and share online. Email me a picture or video at thomas@comfyspace.tech to brighten my day!
 
 
 ---
-{{<playcar
+{{<build
 >}}
