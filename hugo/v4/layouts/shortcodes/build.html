@@ -11,6 +11,7 @@
 <body>    
       
       <div class="px-6 py-32 lg:px-8">
+        
         <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
           <p class="text-base font-semibold leading-7 primary-color-text">Comfy Projects</p>
           <h1 class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">{{.Page.Params.title}}</h1>
@@ -32,7 +33,7 @@
           <div class="component-list">
             <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
               <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Components</p>
-              <p class="mt-2 text-base text-gray-500">Here are some components you need for this project. Most of these can be used for multiple projects!</p>
+              <p class="mt-2 text-base ">Here are some components you need for this project. Most of these can be used for multiple projects!</p>
                 {{ range .Page.Params.components }}
                 
                 <div class="flex space-x-6 border-b border-greeb-100 py-10">
@@ -97,6 +98,7 @@
                 <!-- Assembly -->
 
                 {{ range .Page.Params.assembly}}
+          
                   <div class="mx-auto max-w-3xl text-base leading-7">
 
                     <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">{{ .name }}</h1><br>
@@ -110,6 +112,15 @@
                       {{ with .img}}
                       <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="{{.}}" alt="">
                       <br>
+                      {{end}}
+                      {{ with .pdf}}
+                      <div class="max-w-3xl w-full mx-auto my-8 px-4">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="relative pb-[56.25%] h-0">
+                                <iframe class="absolute top-0 left-0 w-full h-full" src="{{.}}" scrolling="no"></iframe>
+                            </div>
+                        </div>
+                    </div>
                       {{end}}
                       {{ with .video}}
                       <video class="h-full w-full rounded-lg" controls>
@@ -257,15 +268,6 @@
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
           <a href="#slide2" class="btn btn-circle">❮</a>
           <a href="#slide4" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div id="slide4" class="carousel-item relative w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-          class="w-full" />
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide3" class="btn btn-circle">❮</a>
-          <a href="#slide1" class="btn btn-circle">❯</a>
         </div>
       </div>
     </div>

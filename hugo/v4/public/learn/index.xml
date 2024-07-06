@@ -35,5 +35,12 @@
       <guid>https://comfyspace.tech/learn/welcome-to-comfy-space/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xD;Welcome to Comfy Space!&#xD;Comfy Academy&#xA;Welcome to Comfy Space&#xD;The amazing world of robotics should be approachable and enjoyable for everyone, not just the tech-savvy&#xA;The foreword&#xD;The field of robotics is a fascinating blend of complexity and diversity, giving birth to everything from remote-control cars to Boston Dynamic&#39;s awe-inspiring robot dogs.&#xA;A few examples of robots in real life&#xD;The limbs&#xD;Robots can sometimes perform an action: a car moving, a light turns on, or a speaker producing sounds.</description>
     </item>
+    <item>
+      <title>Application overview</title>
+      <link>https://comfyspace.tech/learn/app-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://comfyspace.tech/learn/app-overview/</guid>
+      <description>&lt;!DOCTYPE html&gt;&#xD;A guide to robotics&#xD;Comfy Projects&#xA;Application overview&#xD;How to create an account &amp;amp; an application overview</description>
+    </item>
   </channel>
 </rss>

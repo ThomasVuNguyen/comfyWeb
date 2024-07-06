@@ -1,6 +1,6 @@
 ---
 title: "Playcar"
-description: "RC cars are fun but hard to build. Not this one!"
+description: "An RC Car that's easy to build & fun to play with."
 altImg: "image of playcar causing havoc"
 video: /build/playcar/video_title.mov
 components:
@@ -52,7 +52,7 @@ components:
       quantity: 1
       price: 5$ 
     
-    - name: Butt Connectors
+    - name: Butt Connectors (optional)
       img: https://www.harborfreight.com/media/catalog/product/cache/9fc4a8332f9638515cd199dd0f9238da/i/m/image_20121.jpg
       description: Used to connect wires together. Great & cheap alternatives to soldering. If you already have a soldering iron & solder, you can skip this.
       quantity: 1
@@ -76,7 +76,7 @@ assembly:
       description:
       steps:  
         - img: 
-          description: Follow link below to print 3D parts.
+          description: First let's print the 3D parts. You can find the 3d files & instruction in the link below.
           link: 
             url: https://www.printables.com/model/929071-playcar-a-comfy-rc-car
             img: https://media.printables.com/media/prints/929071/images/7083808_0de82f27-33a1-46df-a15f-1c67a5d1877b_2fe5a47f-dc32-49c2-8af4-427d683d0b98/thumbs/inside/1600x1200/jpg/timeline-1_01_00_01_21.webp
@@ -85,10 +85,9 @@ assembly:
 
 
     - name: Assembling the wheels
-      description: 3D printed parts + motors = awesome terrain wheels.
+      description: Put together the motors & 3D printed parts to create some awesomely traversal wheels.
       steps:
-        - img: https://images.unsplash.com/photo-1719438646966-efb152b1b732?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D
-          description: Put together wheel assemblies. Note that the left & right wheels are slightly different.
+        - pdf: https://www.slideshare.net/slideshow/embed_code/key/zBi8Rs3KyF3EkQ?hostedIn=slideshare&page=upload
 
         - name: It's alive!
           img:

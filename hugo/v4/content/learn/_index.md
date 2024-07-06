@@ -9,10 +9,14 @@ lessons:
       url: a-friendly-guide-to-robotics/
       author:
         name: Thomas Nguyen
-        role: CEO & Creator
-
-
-
+        role: Creator
+    - title: Application overview
+      description: How to create an account & application overview
+      img: /blog/get-started.png
+      url: app-overview/
+      author:
+        name: Thomas Nguyen
+        role: Creator
 ---
 
 {{<blog>}}
