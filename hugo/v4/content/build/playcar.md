@@ -84,58 +84,61 @@ assembly:
           note: If you don't have access to a 3D printer, email me at thomas@comfyspace.tech and I will print for you for free!
 
 
-    - name: Assembling the wheels
-      description: Put together the motors & 3D printed parts to create some awesomely traversal wheels.
+    - name: Mechanical assembly
+      description: Let's put together the electronics & 3d-printed parts.
       steps:
-        - pdf: https://www.slideshare.net/slideshow/embed_code/key/zBi8Rs3KyF3EkQ?hostedIn=slideshare&page=upload
-
+        - pdf: https://www.slideshare.net/slideshow/embed_code/key/32Zr9IlsBWJlXT?hostedIn=slideshare&page=upload
         - name: It's alive!
           img:
-          description: Take a moment to admire what you just built! Whoever designed this must be a genius. 
-
-
-    - name: Assemble the brain
-      description: To power the whole robot, you need a brain (Raspberry Pi), power source (AA batteries), and other nicknacks.
+          description: Take a moment to admire what you just built! Whoever designed this must be a genius.
+        - description: Did you know that the wheels are very traversal?. Well, now you do!
+          
+    - name: Create electrical connections
+      description: To provide power & data/control for the whole system, we will connect parts together using jumper wires.
       steps:
+        - description: Just follow the schematic below and you'll be fine! 
         - name: Make electrical connections
-          description: A fancy way of saying plugging wires together & to the right places. Just follow the schematic below and you'll be fine!
-          img: https://images.unsplash.com/photo-1719530908903-caf3926dd2e8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw2Mnx8fGVufDB8fHx8fA%3D%3D
-
-        - description: If you do not like soldering, you can use the butt connectors to connect wires instead!
-          img: https://images.unsplash.com/photo-1719584417586-1386172bba3f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D
-        
-        - name: Assemble mechanical parts
-          description: Now that all electrical connections are made, let's screw all of this nicknacks together. Just make sure the right parts are put in the right spots, using the right screw sizes. No pressure!
-          img: https://images.unsplash.com/photo-1719216325263-9070d79336c3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw4MHx8fGVufDB8fHx8fA%3D%3D
-        
+          description: 
+          pdf: https://www.slideshare.net/slideshow/embed_code/key/9G7b8gZ3Oh4UbM?hostedIn=slideshare&page=upload
+          note: You can use butt connectors if soldering is not your jam!
+        - description: Finally, put on the lid!
+          img: /build/playcar/final-assembly.png
     - name: Put some software in your robots!
       description: Now, your robot is just a slew of plastics & metal binded together as a stylish paperweight. Let's put some software to make it sentient.
+      steps:
+
       steps:
         - name: Download the Comfy app - 
           description: The Comfy application allows you to control Playcar without buying expensive controller & coding for hours. <a href="https://comfyspace.tech/download">Download</a> & create an account if you have not done so!
       steps:
-        - name: Create a project
-          description: Just do what the video says. It's going to be alright.
-          video: https://docs.material-tailwind.com/demo.mp4
+        - name: Flash an OS
+          description: Follow the video instruction to prepare the Operating System (OS).
+          video: /build/playcar/flash-os.mov
 
+        - name: Turn on the beast (and scan for IP address)
+          description: Next, follow the video to turn on the robot (for the first time), yay!
+          video: /build/playcar/ip-check.mov
+          note: If you have a Linux/Mac computer, open "Terminal" and run "dig +short comfy.local" instead
+
+    - name: Remotely control Playcar (using ComfySpace application)
+      description: To provide power & data/control for the whole system, we will connect parts together using jumper wires.
+      steps:
         - name: Add some buttons!
           description: We will create some buttons to control Playcar & have some fun!
           video: https://docs.material-tailwind.com/demo.mp4
 extra:
   - name: Customization
     description: You can customize the 3D design here!
-    img: https://images.unsplash.com/photo-1718887240077-2a189281ba27?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHwxMjd8fHxlbnwwfHx8fHw%3D
+    img: /build/playcar/cad-work.png
     url: https://cad.onshape.com/documents/ce454679e894303a0ee32b59/w/9d54d89ffd016244679e1564/e/e174f969d6d1654d10106797?renderMode=0&uiState=6682317baef2f63452943a4b
 credit:
   - type: Inspiration
-    img: https://plus.unsplash.com/premium_photo-1674007584834-271ef37d2387?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw5M3x8fGVufDB8fHx8fA%3D%3D
+    img: /build/playcar/original-rover.png
     creator: nahueltaibo
     part: Rover Tracks v2
     url: https://www.thingiverse.com/thing:3112734
 final_words:
     note: Congrats on your Playcar! Enjoy it, show it to neighbors, and share online. Email me a picture or video at thomas@comfyspace.tech to brighten my day!
-
-
 ---
 {{<build
 >}}
