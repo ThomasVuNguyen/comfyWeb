@@ -42,5 +42,12 @@
       <guid>https://comfyspace.tech/learn/app-overview/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xD;A guide to robotics&#xD;Comfy Projects&#xA;Application overview&#xD;How to create an account &amp;amp; an application overview</description>
     </item>
+    <item>
+      <title>The traditional robot building process</title>
+      <link>https://comfyspace.tech/learn/traditional-robot-building/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://comfyspace.tech/learn/traditional-robot-building/</guid>
+      <description>&lt;!DOCTYPE html&gt;&#xD;A guide to robotics&#xD;Comfy Academy&#xA;The traditional robot building process&#xD;How are robots made?&#xA;Adam Savage building a robot on his show - Tested&#xD;This article will pertain mostly to personal &amp;amp; done-in-garages types of projects.&#xA;A remote-controlled car I recently built&#xD;Although many lessons can be applied to large scale corporate-level robots.&#xA;Just a picture of Thomas during his internship at Tesla, no biggie&#xD;Robot building is a diverse art</description>
+    </item>
   </channel>
 </rss>

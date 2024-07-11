@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComfySpace</title>
+    <meta content="Build robots comfortably with ComfySpace" property="og:title" />
+    <meta property="og:description" content="Learn, build, and share creative robotics while having fun!" />
+    <meta property="og:image" content="https://comfyspace.tech/brand-assets/social-image.gif" />
+    <meta content="Build robots comfortably with ComfySpace" property="twitter:title" />
+    <meta property="twitter:description" content="Learn, build, and share creative robotics while having fun!" />
+    <meta property="twitter:image" content="https://comfyspace.tech/brand-assets/social-image.gif" />
+    <meta property="twitter:site" content="comfyspace.tech" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://comfyspace.tech/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://comfyspace.tech/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://comfyspace.tech/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://comfyspace.tech/favicon/site.webmanifest">
+  <link rel="mask-icon" href="https://comfyspace.tech/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="/css/main.css">
+    
+
+
+</head>
+<body>
+      <div x-data="{ isOpen: false }">
+        <header class="background">
+          <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+              <a href="/" class="-m-1.5 p-1.5">
+                <span class="sr-only">ComfySpace</span>
+                <img class="h-12 w-auto" src="/brand-assets/light-logo.png" alt="">
+              </a>
+            </div>
+            <div class="flex lg:hidden">
+              <button @click="isOpen = !isOpen" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class=" hidden lg:flex lg:gap-x-12">
+              <a href="/learn" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Learn</a>
+              <a href="/build" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Build</a>
+              <a href="/share" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Share</a>
+              <a href="/support" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Support</a>
+              <a href="/about" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">About us</a>
+
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+              <a href="/download">
+              <button type="button" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                
+                Download
+              </button></a>
+            </div>
+          </nav>
+          
+          <div x-show="isOpen" class="lg:hidden background" role="dialog" aria-modal="true">
+            
+            <div class="fixed inset-0 z-10"></div>
+            <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">ComfySpace</span>
+                  <img class="h-8 w-auto" src="/brand-assets/logo.png" alt="">
+                </a>
+                <button @click="isOpen = !isOpen" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Close menu</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                  <div class="space-y-2 py-6">
+                    <a href="/learn" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 " style="text-decoration: none;">Learn</a>
+                    <a href="/build" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 " style="text-decoration: none;">Build</a>
+                    <a href="/share" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 " style="text-decoration: none;">Share</a>
+                    <a href="/support" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50" style="text-decoration: none;">Support</a>
+                    <a href="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 style=" style="text-decoration: none;">About Us</a>
+                  </div>
+                  
+                  <div class="py-6">
+                    <a href="/download" class="accent-color -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                      <button type="button" class="relative inline-flex items-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                        Download
+                      </button>
+                    </a>
+                  </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="background">
+        
+      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A guide to robotics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+<body>    
+      
+      <div class="px-6 py-32 lg:px-8">
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+          <p class="text-base font-semibold leading-7 primary-color-text">Comfy Academy</p>
+          <h1 class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">The traditional robot building process</h1>
+          <p class="mt-6 text-xl leading-8">How are robots made?</p>
+          
+          <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://images.squarespace-cdn.com/content/v1/6349bb42c6a46e6c92799f1a/663a4c8c-43c3-4b96-ac83-0f926d411478/adam-savage-working-on.jpg" alt="">
+          
+          
+          <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+            <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+            </svg>
+            Adam Savage building a robot on his show - Tested
+          </figcaption>
+          
+          
+
+                
+
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>This article will pertain mostly to personal &amp; done-in-garages types of projects.</p>
+                    </div>
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/learn/traditional-robot/remote-control-car.webp" alt="">
+                    
+                      
+                      
+                      
+                      
+                      
+                      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                        <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                        </svg>
+                          A remote-controlled car I recently built
+                      </figcaption>
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>Although many lessons can be applied to large scale corporate-level robots.</p>
+                    </div>
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/learn/traditional-robot/thomas-at-tesla.webp" alt="">
+                    
+                      
+                      
+                      
+                      
+                      
+                      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                        <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                        </svg>
+                          Just a picture of Thomas during his internship at Tesla, no biggie
+                      </figcaption>
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <br>
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Robot building is a diverse art</h1><br>
+                    
+                    <div class="max-w-2xl">
+                      <p>One could argue building a robot is an artistic practice.</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>Like art, robotics is diverse. The art of robot building reflects the builders&#39; personality &amp; style. Everything from location, materials, methodlogies to scale can vary largely.</p>
+                    </div>
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/learn/traditional-robot/builders.webp" alt="">
+                    
+                      
+                      
+                      
+                      
+                      
+                      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                        <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                        </svg>
+                          Youtubers building robots in different environments
+                      </figcaption>
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>Nevertheless, it&#39;s a great learning experience that leads to a potentially useful object!</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/lHxFFn04L10?v=lHxFFn04L10&amp;t=336s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div></div>
+                      
+                      
+                      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                        <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                        </svg>
+                          Skip to 5:36s to see an AI chat(ro)bot
+                      </figcaption>
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <br>
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Ideation</h1><br>
+                    
+                    <div class="max-w-2xl">
+                      <p>Despite all the differences in how (and where) people build robots, they all share many similarities in the development process. This includes ideation.</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>People find inspirations from everyday objects, problems to solve, or just a vibe. This leads to amazing robot ideas.</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      <video class="h-full w-full rounded-lg" controls>
+                        <source
+                          src="/build/playcar/play-with-playcar.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">You can try out Comfy Projects to spark something in your mind!</p>
+                      </blockquote>
+                    </figure>
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <br>
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Mechanical Design</h1><br>
+                    
+                    <div class="max-w-2xl">
+                      <p>These can be original designs or remixes of others&#39;</p>
+                    </div>
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/learn/traditional-robot/printables.png" alt="">
+                    
+                      
+                      
+                      
+                      
+                      
+                      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                        <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                        </svg>
+                          Printables - a 3D file sharing site
+                      </figcaption>
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>But if you don&#39;t want to design your own robot, you can check out Comfy Projects!</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">Comfy Project designs are easily remixable</p>
+                      </blockquote>
+                    </figure>
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <br>
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Electrical Design</h1><br>
+                    
+                    <div class="max-w-2xl">
+                      <p>Most robots require electronics to function. Here&#39;s an example from PlayCar, a robot I recently built.</p>
+                    </div>
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/learn/traditional-robot/power-schem.png" alt="">
+                    
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>Buy electronics, solder them together, then put all in the shell. You have yourself a robot!</p>
+                    </div>
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/learn/traditional-robot/elec-in-shell.png" alt="">
+                    
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <br>
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Programming</h1><br>
+                    
+                    <div class="max-w-2xl">
+                      <p>Up until now, your robot is just metal &amp; plastics held together by love &amp; compassion.</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>An aesthetics paperweight at best.</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>To make the robots useful, programming is (often) needed.</p>
+                    </div>
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/learn/traditional-robot/coding.png" alt="">
+                    
+                      
+                      
+                      
+                      
+                      
+                      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                        <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                        </svg>
+                          A rare footage of Michael Reeves coding
+                      </figcaption>
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>This can be a huge hurdle to those with a creative mind but not experienced with the dark art of coding.</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>I (Thomas) have worked on ComfySpace to make sure &#34;not knowing how to code&#34; is not a barrier to entry to the world of robotics.</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p></p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">You can make robots with minimal (or no) coding!</p>
+                      </blockquote>
+                    </figure>
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>You can still use any programming language of choice, if that&#39;s your forte. Or you can try ComfyScript, a programming language meant to make robotics development as easy as speaking English in a sentence.</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p></p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">ComfyScript, control robots with one sentence of command (instead of 100 lines of code)</p>
+                      </blockquote>
+                    </figure>
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>In fact, you don&#39;t even need a monitor &amp; keyboard to build a robot with Comfy!</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <br>
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Controlling robot how ?</h1><br>
+                    
+                    <div class="max-w-2xl">
+                      <p>Most robots require some (remote) control functionalities</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">Such as buttons, RC controllers, a sensor, etc.</p>
+                      </blockquote>
+                    </figure>
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>This can be both expensive &amp; complicated to both beginners &amp; professionals.</p>
+                    </div>
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/build/playcar/fancy-controller.png" alt="">
+                    
+                      
+                      
+                      
+                      
+                      
+                      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                        <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                        </svg>
+                          This controller costs 175$ btw
+                      </figcaption>
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>That doesn&#39;t sit right with me.</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>So I built ComfySpace, so all the expensive hardware can be replaced by your phone!</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <br>
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Have some quality robot time!</h1><br>
+                    
+                    <div class="max-w-2xl">
+                      <p>The most triumphant part of the robot building process (perhaps) is to play with it!</p>
+                    </div>
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/learn/traditional-robot/michael-reeves-fall.png" alt="">
+                    
+                      
+                      
+                      
+                      
+                      
+                      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                        <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                        </svg>
+                          As you can see, I&#39;m a big Michael Reeves fan
+                      </figcaption>
+                      
+                    </figure>
+                   
+                    
+                    
+                  </div>
+                
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+                    
+                    <div class="max-w-2xl">
+                      <p>Also, you should share your robots online for some clout!</p>
+                    </div>
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                   
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">ComfyShare is made so you can share your robots with fellow Comfy-users!</p>
+                      </blockquote>
+                    </figure>
+                    
+                    
+                  </div>
+                
+                
+          
+          
+          <br>
+          <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Final words</h1>
+         <figure class="mt-10 border-l border-green-500 pl-9">
+            <blockquote class="font-semibold primary-text-color">
+              <p class="primary-color-text">Building robots is fun! However, the high cost &amp; barriers of entry can be a turn-off to many. ComfySpace is here to fix that. The world needs more of your creations, and I&#39;m here to faciliate that. Lay back, read some articles, look at some projects, and let the power of the robot god flow through your veins.</p>
+            </blockquote>
+          </figure>
+          
+          <br>
+
+
+
+<h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Extra</h1>
+<br>
+
+
+<a href ="/build/playcar" style="text-decoration: none;">
+<div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+  <img src="/build/playcar/title.webp" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+  <div class="w-2/3 p-4 flex flex-col justify-between">
+    <h2 class="text-xl font-semibold primary-color-text mb-2">Playcar</h2>
+    <p class="text-gray-600 text-sm">
+      Make a Playcar here!
+    </p>
+    <div class="flex items-center text-gray-500 text-xs">
+      <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+      </svg>
+      <span>/build/playcar</span>
+    </div>
+  </div>
+</div>
+</a>
+         
+
+
+
+
+<h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Credits</h1>
+<br>
+
+
+
+<a href ="https://spectrum.ieee.org/the-mythical-non-roboticist" style="text-decoration: none;">
+<div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+  <img src="https://spectrum.ieee.org/media-library/an-illustration-of-a-robot-whose-head-has-exploded-off.jpg?id=52208747&amp;width=1600&amp;quality=85" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+  <div class="w-2/3 p-4 flex flex-col justify-between">
+    <h2 class="text-xl font-semibold primary-color-text mb-2">Inspiration</h2>
+    <p class="text-gray-600 text-sm">
+      A fascinating take on the complexity of current robotics by Benjie Holson
+    </p>
+    <div class="flex items-center text-gray-500 text-xs">
+      <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+      </svg>
+      <span>https://spectrum.ieee.org/the-mythical-non-roboticist</span>
+    </div>
+  </div>
+</div>
+</a>
+
+        </div>
+      </div>
+      
+    
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
+
+
+    </div>
+    
+      
+      <footer class="background">
+        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+          <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+            <div class="pb-6">
+              <a href="/privacy" class="text-sm leading-6 hover:text-gray-900 primary-color-text" style="text-decoration: none;">Privacy Note</a>
+            </div>
+            <div class="pb-6">
+              <a href="/terms-and-conditions" class="text-sm leading-6 hover:text-gray-900 primary-color-text" style="text-decoration: none;">Terms and Conditions</a>
+            </div>
+
+          </nav>
+          <div class="mt-10 flex justify-center space-x-10">
+            <a href="https://www.facebook.com/profile.php?id=61551791159535" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/comfyrobotics/" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="https://twitter.com/comfysp" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">X</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+              </svg>
+            </a>
+            <a href="https://github.com/ThomasVuNguyen/comfySpace" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">GitHub</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@thomasthemaker" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">YouTube</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+          <p class="mt-10 text-center text-xs leading-5">&copy; 2024 Comfy Space, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        
+        
+      
+        
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyC2U2LL4kdSYd1clW4iQSXr4PFKuK_1uaA",
+          authDomain: "comfyspace-73966.firebaseapp.com",
+          projectId: "comfyspace-73966",
+          storageBucket: "comfyspace-73966.appspot.com",
+          messagingSenderId: "290068007404",
+          appId: "1:290068007404:web:2d3de02cb87000043cd8c9",
+          measurementId: "G-E3YKVED4S4"
+        };
+      
+        
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+      
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+</body>
+</html>

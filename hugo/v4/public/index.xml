@@ -70,5 +70,12 @@
       <guid>https://comfyspace.tech/build/playcar/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xD;A guide to robotics&#xD;Comfy Projects&#xA;Playcar&#xD;An RC Car that&amp;#39;s easy to build &amp;amp; fun to play with.&#xA;Your browser does not support the video tag.&#xD;Components&#xA;Here are some components you need for this project. Most of these can be used for multiple projects!&#xA;Raspberry Pi Zero 2W&#xD;Small but mighty. Packed with plenty computing power, this bad boy controls are of the motor operations.&#xD;Quantity&#xD;1&#xD;Price&#xD;15$&#xD;LM2596 Buck Converter&#xD;Regulates voltage from the AA batteries to power the Raspberry Pi&#xD;Quantity&#xD;1&#xD;Price&#xD;5$&#xD;DC Motor&#xD;This is the horsepower for Playcar.</description>
     </item>
+    <item>
+      <title>The traditional robot building process</title>
+      <link>https://comfyspace.tech/learn/traditional-robot-building/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://comfyspace.tech/learn/traditional-robot-building/</guid>
+      <description>&lt;!DOCTYPE html&gt;&#xD;A guide to robotics&#xD;Comfy Academy&#xA;The traditional robot building process&#xD;How are robots made?&#xA;Adam Savage building a robot on his show - Tested&#xD;This article will pertain mostly to personal &amp;amp; done-in-garages types of projects.&#xA;A remote-controlled car I recently built&#xD;Although many lessons can be applied to large scale corporate-level robots.&#xA;Just a picture of Thomas during his internship at Tesla, no biggie&#xD;Robot building is a diverse art</description>
+    </item>
   </channel>
 </rss>

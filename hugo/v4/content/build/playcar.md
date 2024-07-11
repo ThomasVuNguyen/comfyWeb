@@ -121,11 +121,19 @@ assembly:
           note: If you have a Linux/Mac computer, open "Terminal" and run "dig +short comfy.local" instead
 
     - name: Remotely control Playcar (using ComfySpace application)
-      description: To provide power & data/control for the whole system, we will connect parts together using jumper wires.
+      description: This is the final step to bring your Frankenstein to life!
       steps:
         - name: Add some buttons!
-          description: We will create some buttons to control Playcar & have some fun!
-          video: https://docs.material-tailwind.com/demo.mp4
+          description: In a professional setting, an experienced roboticist uses proprietary controllers and sophisticated remote control hardware.
+          img: /build/playcar/fancy-controller.png
+          img_note: This kit costs $170, by the way.
+          note: We ain't got no time or money for that. But we (mostly) have a smartphone!
+        - description: That's why I created ComfySpace, an application to control robots remotely.
+          video: /build/playcar/remote-control-intro.mp4
+        - description: Using the application, we will use your phone as a remote controller
+          video: /build/playcar/setup-comfyspace.mov
+        - description: Go & play with your PlayCar!
+          video: /build/playcar/play-with-playcar.mp4
 extra:
   - name: Customization
     description: You can customize the 3D design here!
