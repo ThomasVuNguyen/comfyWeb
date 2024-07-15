@@ -18,6 +18,14 @@ lessons:
       author:
         name: Thomas Nguyen
         role: Creator
+    
+    - title: How does one program a robot?
+      description: Robot programming is a vast and interesting world. Are you ready for it?
+      img: /blog/robot-program.png
+      url: robot-programming/
+      author:
+        name: Thomas Nguyen
+        role: Creator
 
     - title: Application overview
       description: How to create an account & application overview
