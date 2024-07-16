@@ -54,6 +54,7 @@
               <a href="/share" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Share</a>
               <a href="/support" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Support</a>
               <a href="/about" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">About us</a>
+              <a href="/script" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Script</a>
 
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -89,6 +90,7 @@
                     <a href="/share" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 " style="text-decoration: none;">Share</a>
                     <a href="/support" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50" style="text-decoration: none;">Support</a>
                     <a href="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 style=" style="text-decoration: none;">About Us</a>
+                    <a href="/script" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 style=" style="text-decoration: none;">Script</a>
                   </div>
                   
                   <div class="py-6">
@@ -127,9 +129,10 @@
           <h1 class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">ComfyScript</h1>
           <p class="mt-6 text-xl leading-8">A scripting language to make controlling robots as simple as spoken English</p>
           
+          
           <img class="aspect-video rounded-xl object-contain" src="https://github.com/ThomasVuNguyen/comfyScript/raw/main/assets/icon.png" alt="">
           
-          <p class="mt-6 text-xl leading-8">Below is how you can control common robotics components using ComfyScript.</p>
+          <p class="mt-6 text-lg leading-8">Below is how you can control common robotics components using ComfyScript. No more 100&#43; lines of Python codes.</p>
           
           <br><br><br>
           
@@ -139,21 +142,30 @@
                 
                 <div class="mx-auto max-w-3xl">
                     <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">LED</p>
-                    <p class="mt-6 text-l leading-8">LED (light emitting diode) lights up when there&#39;s power. Comes in variety of colors</p>
+                    <p class="mt-6 text-lg leading-8">LED (light emitting diode) lights up when there&#39;s power. Comes in variety of colors</p>
+                    
                       </div>
                       <figure>
                         
                         <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://cdn-shop.adafruit.com/970x728/4203-04.jpg" alt="">
+                        
+                        
+                        
+                        
+                        
+                        
+                        <figure class="mt-10 border-l border-green-500 pl-9">
+                          <blockquote class="font-semibold">
+                            <p class="primary-color-text">The ultimate starter component for all robotics enthuiasts👌</p>
+                          </blockquote>
+                        </figure>
+                        
                         <br>
-                        
-                        
-                        
-                        
                       </figure>
 
                       
                       
-                      <p class="mt-6 text-l leading-8">This command is used to turn on or off an led.</p>
+                      <p class="mt-6 text-lg leading-8">This command is used to turn on or off an led.</p>
 
                       <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
                         <span class="flex gap-4">
@@ -168,10 +180,22 @@
                         </span>
                         
                     </code>
-                    <br>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{pin} stands for the GPIO pin attached to the &#43; side of the LED.</p>
+                      </blockquote>
+                    </figure>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{state} represents the on/off state of the led. {state} has 2 values of 1 &amp; 0 for On &amp; Off, respectively.</p>
+                      </blockquote>
+                    </figure>
+                    
                       
                       
-                      <p class="mt-6 text-l leading-8">For example, his turns an LED attached to pin 11 on</p>
+                      <p class="mt-6 text-lg leading-8">For example, his turns an LED attached to pin 11 on</p>
 
                       <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
                         <span class="flex gap-4">
@@ -186,10 +210,10 @@
                         </span>
                         
                     </code>
-                    <br>
+                    
                       
                       
-                      <p class="mt-6 text-l leading-8">For example, this command turns an LED attached to pin 12 off</p>
+                      <p class="mt-6 text-lg leading-8">For example, this command turns an LED attached to pin 12 off</p>
 
                       <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
                         <span class="flex gap-4">
@@ -204,27 +228,36 @@
                         </span>
                         
                     </code>
-                    <br>
+                    
                       
                 <br><br>
                 
                 <div class="mx-auto max-w-3xl">
                     <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">DC Motor</p>
-                    <p class="mt-6 text-l leading-8">DC motors create motions (clockwise or counter-clockwise) when powered. This is meant to be used with an L298N controller.</p>
+                    <p class="mt-6 text-lg leading-8">DC motors create motions (clockwise or counter-clockwise) when powered. This is meant to be used with an L298N controller. DC Motor is used to generate fast &amp; continuous motion, useful for RC car wheels &amp; anything that spins fast.</p>
+                    
                       </div>
                       <figure>
                         
                         <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://m.media-amazon.com/images/I/41fqVNAbQ6L._SY445_SX342_QL70_FMwebp_.jpg" alt="">
+                        
+                        
+                        
+                        
+                        
+                        
+                        <figure class="mt-10 border-l border-green-500 pl-9">
+                          <blockquote class="font-semibold">
+                            <p class="primary-color-text">My favorite component 😋</p>
+                          </blockquote>
+                        </figure>
+                        
                         <br>
-                        
-                        
-                        
-                        
                       </figure>
 
                       
                       
-                      <p class="mt-6 text-l leading-8">This command is used to control a single DC motor attached to a L298N</p>
+                      <p class="mt-6 text-lg leading-8">This command is used to control a single DC motor attached to a L298N</p>
 
                       <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
                         <span class="flex gap-4">
@@ -239,10 +272,22 @@
                         </span>
                         
                     </code>
-                    <br>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{pin&#43;} &amp; {pin-} represents the GPIO pins connected to the &#43; &amp; - sides of the DC motor.</p>
+                      </blockquote>
+                    </figure>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{state&#43;} &amp; {state-} are used to control the direction in which the motor rotates. These both have 2 values 0 &amp; 1, representing off &amp; on.</p>
+                      </blockquote>
+                    </figure>
+                    
                       
                       
-                      <p class="mt-6 text-l leading-8">Example, this command will turn a DC motor (attached to pins 23 &amp; 24) clockwise</p>
+                      <p class="mt-6 text-lg leading-8">For example, this command will turn a DC motor (attached to pins 23 &amp; 24) clockwise</p>
 
                       <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
                         <span class="flex gap-4">
@@ -257,10 +302,10 @@
                         </span>
                         
                     </code>
-                    <br>
+                    
                       
                       
-                      <p class="mt-6 text-l leading-8">Example, this command will turn a DC motor (attached to pins 23 &amp; 24) off</p>
+                      <p class="mt-6 text-lg leading-8">For example, this command will turn a DC motor (attached to pins 23 &amp; 24) off</p>
 
                       <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
                         <span class="flex gap-4">
@@ -275,10 +320,10 @@
                         </span>
                         
                     </code>
-                    <br>
+                    
                       
                       
-                      <p class="mt-6 text-l leading-8">Example, this command will turn a DC motor (attached to pins 23 &amp; 24) counter-clockwise</p>
+                      <p class="mt-6 text-lg leading-8">For example, this command will turn a DC motor (attached to pins 23 &amp; 24) counter-clockwise</p>
 
                       <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
                         <span class="flex gap-4">
@@ -293,7 +338,387 @@
                         </span>
                         
                     </code>
-                    <br>
+                    
+                      
+                <br><br>
+                
+                <div class="mx-auto max-w-3xl">
+                    <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Stepper Motor</p>
+                    <p class="mt-6 text-lg leading-8">Stepper motors are motors that spin to very accurate angles. This is useful for applications requiring accurate movements such as conveyor belts, turning system for RC cars, etc.</p>
+                    
+                      </div>
+                      <figure>
+                        
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://cdn-shop.adafruit.com/970x728/918-03.jpg" alt="">
+                        
+                        
+                        
+                        
+                        
+                        
+                        <figure class="mt-10 border-l border-green-500 pl-9">
+                          <blockquote class="font-semibold">
+                            <p class="primary-color-text">Your 3D printer has at least 3 of these 🏍️💨</p>
+                          </blockquote>
+                        </figure>
+                        
+                        <br>
+                      </figure>
+
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">This command is used to control the direction of the stepper motor movement.</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy stepper {pin1} {pin2} {pin3} {pin4} {direction}
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{pin1} to {pin4} are the GPIO pins used to control the stepper motor. </p>
+                      </blockquote>
+                    </figure>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{direction} represents rotational direction. {direction} has 3 values: -1, 0, 1 for counter-clockwise, stop, clockwise.</p>
+                      </blockquote>
+                    </figure>
+                    
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">For example, this command is used to control the stepper motor attached to pins 23, 24, 22, 27 to move clockwise</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy stepper 23 24 22 27 1
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                      
+                <br><br>
+                
+                <div class="mx-auto max-w-3xl">
+                    <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Temperature &amp; humidity sensor</p>
+                    <p class="mt-6 text-lg leading-8">DHT sensors provide reading of temperature &amp; humidity. Currently supported sensors include DHT 11, 22 &amp; 2302 (which is like... all of &#39;em).</p>
+                    
+                      </div>
+                      <figure>
+                        
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://www.electronicwings.com/storage/PlatformSection/TopicContent/119/icon/DHT11%20New.jpg" alt="">
+                        
+                        
+                        
+                        
+                        
+                        
+                        <figure class="mt-10 border-l border-green-500 pl-9">
+                          <blockquote class="font-semibold">
+                            <p class="primary-color-text">Side note: this won&#39;t break no matter how much you break &#39;em 🔥</p>
+                          </blockquote>
+                        </figure>
+                        
+                        <br>
+                      </figure>
+
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">This command returns temperature reading.</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy dht_temp {sensor type} {pin}
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{sensor type} stands for the DHT sensor type. This has 3 values 11, 22 &amp; 2302.</p>
+                      </blockquote>
+                    </figure>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{pin} stands for the GPIO pin which the DHT sensor is connected to.</p>
+                      </blockquote>
+                    </figure>
+                    
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">For example, this command returns temperature reading from sensor type DHT11 &amp; attached to pin 13.</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy dht_temp 11 13
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">This command returns humidity reading.</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy dht_humid {sensor type} {pin}
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{sensor type} stands for the DHT sensor type. This has 3 values 11, 22 &amp; 2302.</p>
+                      </blockquote>
+                    </figure>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{pin} stands for the GPIO pin which the DHT sensor is connected to.</p>
+                      </blockquote>
+                    </figure>
+                    
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">For example, this command returns temperature reading from sensor type DHT22 &amp; attached to pin 15.</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy dht_humid 22 15
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                      
+                <br><br>
+                
+                <div class="mx-auto max-w-3xl">
+                    <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Distance sensor</p>
+                    <p class="mt-6 text-lg leading-8">The HC-SR04 sensor is widely used to measure distance. Small, cheap &amp; versatile. All things should be like this, don&#39;t you agree?</p>
+                    
+                      </div>
+                      <figure>
+                        
+                        
+                        
+                        <video class="h-full w-full rounded-lg" controls>
+                          <source
+                            src="https://cdn-shop.adafruit.com/product-videos/1024x768/3942-04.mp4"
+                            type="video/mp4"
+                          />
+                          Your browser does not support the video tag.
+                        </video>
+                        <br>
+                        
+                        
+                        
+                        <figure class="mt-10 border-l border-green-500 pl-9">
+                          <blockquote class="font-semibold">
+                            <p class="primary-color-text">This works using sonic btw 😎</p>
+                          </blockquote>
+                        </figure>
+                        
+                        <br>
+                      </figure>
+
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">This command returns the distance reading.</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy distance {trigger} {echo} {state}
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{trigger} &amp; {echo} stands for the GPIO pins connected to the sensor.</p>
+                      </blockquote>
+                    </figure>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{state} has 2 values 0 &amp; 1, used to turn the sensor off &amp; on accordingly</p>
+                      </blockquote>
+                    </figure>
+                    
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">For example, this command returns distance sensor reading from a sensor connected to pins 22 &amp; 23.</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy distance 22 23 1
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">This command turns the sensor off (to save energy &amp; the planet in the process... probably).</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy distance 22 23 0
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                      
+                <br><br>
+                
+                <div class="mx-auto max-w-3xl">
+                    <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Gemini (Google AI)</p>
+                    <p class="mt-6 text-lg leading-8">Yep, you&#39;re reading it right! ComfyScript has Gemini AI chat built-in. We built this with convenience &amp; simplicity in mind.</p>
+                    
+                      </div>
+                      <figure>
+                        
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO24_WhatsInAName_Hero_1.width-1200.format-webp.webp" alt="">
+                        
+                        
+                        
+                        
+                        
+                        
+                        <figure class="mt-10 border-l border-green-500 pl-9">
+                          <blockquote class="font-semibold">
+                            <p class="primary-color-text">AI is everywhere nowaday, might as well take a piece 💸</p>
+                          </blockquote>
+                        </figure>
+                        
+                        <br>
+                      </figure>
+
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">This command is used to setup your API key. Meant to run once per Raspberry Pi.</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy gemini_setup {api}
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{api} stands for the Google Gemini API.</p>
+                      </blockquote>
+                    </figure>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">Don&#39;t worry, Google Gemini has a generous free tier.</p>
+                      </blockquote>
+                    </figure>
+                    
+                      
+                      
+                      <p class="mt-6 text-lg leading-8">This command returns a response from Gemini.</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            comfy gemini_run {prompt}
+                                        </span>
+                                    </span>
+                        </span>
+                        
+                    </code>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{prompt} stands for your prompt/question to the AI!</p>
+                      </blockquote>
+                    </figure>
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">Don&#39;t ask anything explicitly sexual. I mean it!</p>
+                      </blockquote>
+                    </figure>
+                    
                       
                 <br><br>
                 
@@ -313,45 +738,60 @@
 
 
 
+<h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Want to use ComfyScript for your next project?</h1>
+<br>
+
+
+<a href ="/download" style="text-decoration: none;">
+<div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+  <img src="/homepage/remote-control.png" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+  <div class="w-2/3 p-4 flex flex-col justify-between">
+    <h2 class="text-xl font-semibold primary-color-text mb-2">Launch ahead!</h2>
+    <p class="text-gray-600 text-sm">
+      The app looks much better than in the picture, btw! ✌
+    </p>
+    <div class="flex items-center text-gray-500 text-xs">
+      <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+      </svg>
+      <span>/download</span>
+    </div>
+  </div>
+</div>
+</a>
          
 
 
 
 
+<h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">ComfyScript open source, btw</h1>
+<br>
+
+
+
+<a href ="https://github.com/ThomasVuNguyen/comfyScript" style="text-decoration: none;" target="_null_">
+<div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+  <img src="https://github.com/ThomasVuNguyen/comfyScript/raw/main/assets/icon.png" alt="Website preview" class="w-1/3 h-40 object-contain rounded-l-xl">
+  <div class="w-2/3 p-4 flex flex-col justify-between">
+    <h2 class="text-xl font-semibold primary-color-text mb-2">Github</h2>
+    <p class="text-gray-600 text-sm">
+      Built with love by Thomas the Maker 💘
+    </p>
+    <div class="flex items-center text-gray-500 text-xs">
+      <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+      </svg>
+      <span>https://github.com/ThomasVuNguyen/comfyScript</span>
+    </div>
+  </div>
+</div>
+</a>
 
         </div>
       </div>
       
-    
-    <div class="carousel w-full">
-      <div id="slide1" class="carousel-item relative w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-          class="w-full" />
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide4" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div id="slide2" class="carousel-item relative w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-          class="w-full" />
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide1" class="btn btn-circle">❮</a>
-          <a href="#slide3" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
-          class="w-full" />
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide2" class="btn btn-circle">❮</a>
-          <a href="#slide4" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-    </div>
 
 </body>
 </html>
@@ -372,12 +812,7 @@
 
           </nav>
           <div class="mt-10 flex justify-center space-x-10">
-            <a href="https://www.facebook.com/profile.php?id=61551791159535" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
-              <span class="sr-only">Facebook</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-              </svg>
-            </a>
+            
             <a href="https://www.instagram.com/comfyrobotics/" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
               <span class="sr-only">Instagram</span>
               <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -402,6 +837,13 @@
                 <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
               </svg>
             </a>
+            <a href="https://discord.gg/rQWPPPNMmZ" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">Discord</span>
+              <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" clip-rule="evenodd" />
+              </svg>
+            </a>
+
           </div>
           <p class="mt-10 text-center text-xs leading-5">&copy; 2024 Comfy Space, Inc. All rights reserved.</p>
         </div>
