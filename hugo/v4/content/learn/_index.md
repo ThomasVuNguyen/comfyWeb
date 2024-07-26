@@ -2,6 +2,8 @@
 
 title: "Comfy Academy"
 description: "Learning robotics, one snippet at a time."
+img: https://images.unsplash.com/photo-1610902422826-548d3472fff5?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=10512F&blend-mode=multiply
+
 lessons:
     - title: A friendly guide to robotics
       description: Robots are created in our own image, so they are simple to understand by nature.

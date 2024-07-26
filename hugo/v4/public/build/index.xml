@@ -14,5 +14,12 @@
       <guid>https://comfyspace.tech/build/playcar/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xD;A guide to robotics&#xD;Comfy Projects&#xA;Playcar&#xD;An RC Car that&amp;#39;s easy to build &amp;amp; fun to play with.&#xA;Your browser does not support the video tag.&#xD;Components&#xA;Here are some components you need for this project. Most of these can be used for multiple projects!&#xA;Raspberry Pi Zero 2W&#xD;Small but mighty. Packed with plenty computing power, this bad boy controls are of the motor operations.&#xD;Quantity&#xD;1&#xD;Price&#xD;15$&#xD;LM2596 Buck Converter&#xD;Regulates voltage from the AA batteries to power the Raspberry Pi&#xD;Quantity&#xD;1&#xD;Price&#xD;5$&#xD;DC Motor&#xD;This is the horsepower for Playcar.</description>
     </item>
+    <item>
+      <title>Rappit</title>
+      <link>https://comfyspace.tech/build/rappit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://comfyspace.tech/build/rappit/</guid>
+      <description>&lt;!DOCTYPE html&gt;&#xD;A guide to robotics&#xD;Comfy Projects&#xA;Rappit&#xD;An AI friend you can talk to!&#xA;Components&#xA;Here are some components you need for this project. Most of these can be used for multiple projects!&#xA;Raspberry Pi Zero 2W&#xD;Small but mighty. Packed with plenty computing power, this bad boy is the brain of the operation.&#xD;Quantity&#xD;1&#xD;Price&#xD;15$&#xD;Rechargable AA batteries&#xD;Easy to use, sustainable &amp;amp; available everywhere.&#xD;Quantity&#xD;Pack of 4 &amp;#43; charger&#xD;Price&#xD;~15$&#xD;Power bank (alternative to AA batteries)&#xD;Chances are you have one around the house.</description>
+    </item>
   </channel>
 </rss>

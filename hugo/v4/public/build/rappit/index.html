@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComfySpace</title>
+    <meta content="Build robots comfortably with ComfySpace" property="og:title" />
+    <meta property="og:description" content="Learn, build, and share creative robotics while having fun!" />
+    <meta property="og:image" content="https://comfyspace.tech/brand-assets/social-image.gif" />
+    <meta content="Build robots comfortably with ComfySpace" property="twitter:title" />
+    <meta property="twitter:description" content="Learn, build, and share creative robotics while having fun!" />
+    <meta property="twitter:image" content="https://comfyspace.tech/brand-assets/social-image.gif" />
+    <meta property="twitter:site" content="comfyspace.tech" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://comfyspace.tech/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://comfyspace.tech/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://comfyspace.tech/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://comfyspace.tech/favicon/site.webmanifest">
+  <link rel="mask-icon" href="https://comfyspace.tech/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "n9l0h0ub8m");
+  </script>
+    <link rel="stylesheet" href="/css/main.css">
+    
+
+
+</head>
+<body>
+      <div x-data="{ isOpen: false }">
+        <header class="background">
+          <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+              <a href="/" class="-m-1.5 p-1.5">
+                <span class="sr-only">ComfySpace</span>
+                <img class="h-12 w-auto" src="/brand-assets/light-logo.png" alt="">
+              </a>
+            </div>
+            <div class="flex lg:hidden">
+              <button @click="isOpen = !isOpen" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class=" hidden lg:flex lg:gap-x-12">
+              <a href="/learn" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Learn</a>
+              <a href="/build" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Build</a>
+              <a href="/share" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Share</a>
+              <a href="/support" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">About us</a>
+              <a href="/script" class="nav-button text-sm font-semibold leading-6" style="text-decoration: none;">Script</a>
+
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+              <a href="/download">
+              <button type="button" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                
+                Download
+              </button></a>
+            </div>
+          </nav>
+          
+          <div x-show="isOpen" class="lg:hidden background" role="dialog" aria-modal="true">
+            
+            <div class="fixed inset-0 z-10"></div>
+            <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">ComfySpace</span>
+                  <img class="h-8 w-auto" src="/brand-assets/logo.png" alt="">
+                </a>
+                <button @click="isOpen = !isOpen" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Close menu</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                  <div class="space-y-2 py-6">
+                    <a href="/learn" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 " style="text-decoration: none;">Learn</a>
+                    <a href="/build" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 " style="text-decoration: none;">Build</a>
+                    <a href="/share" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 " style="text-decoration: none;">Share</a>
+                    <a href="/support" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 style=" style="text-decoration: none;">About Us</a>
+                    <a href="/script" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 nav-button hover:bg-gray-50 style=" style="text-decoration: none;">Script</a>
+                  </div>
+                  
+                  <div class="py-6">
+                    <a href="/download" class="accent-color -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                      <button type="button" class="relative inline-flex items-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                        Download
+                      </button>
+                    </a>
+                  </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="background">
+        
+      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A guide to robotics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+<body>    
+      
+      <div class="px-6 py-32 lg:px-8">
+        
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+          <p class="text-base font-semibold leading-7 primary-color-text">Comfy Projects</p>
+          <h1 class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">Rappit</h1>
+          <p class="mt-6 text-xl leading-8">An AI friend you can talk to!</p>
+          
+          <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/build/rappit/intro.jpg" alt="">
+          
+          
+          <br><br><br>
+          
+          <div class="component-list">
+            <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+              <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Components</p>
+              <p class="mt-2 text-base ">Here are some components you need for this project. Most of these can be used for multiple projects!</p>
+                
+                
+                <div class="flex space-x-6 border-b border-greeb-100 py-10">
+                  <img src="https://www.cnx-software.com/wp-content/uploads/2021/10/Raspberry-Pi-Zero-2-W-board.jpg" alt="Glass bottle with black plastic pour top and mesh insert." class="h-20 w-20 flex-none rounded-lg bg-gray-100 object-cover object-center sm:h-40 sm:w-40">
+                  <div class="flex flex-auto flex-col">
+                    <div>
+                      <h4 class="font-medium primary-color-text">
+                        Raspberry Pi Zero 2W
+                      </h4>
+                      <p class="mt-2 text-sm">
+                        Small but mighty. Packed with plenty computing power, this bad boy is the brain of the operation.
+                      </p>
+                    </div>
+                    <div class="mt-6 flex flex-1 items-end">
+                      <dl class="flex space-x-4 divide-x divide-gray-200 text-sm sm:space-x-6">
+                        <div class="flex">
+                          <dt class="font-medium primary-color-text">Quantity</dt>
+                          <dd class="ml-2 primary-color-text">1</dd>
+                        </div>
+                        <div class="flex pl-4 sm:pl-6">
+                          <dt class="font-medium primary-color-text">Price</dt>
+                          <dd class="ml-2 primary-color-text">15$</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    
+                  </div>
+
+                </div>
+                
+                
+                <div class="flex space-x-6 border-b border-greeb-100 py-10">
+                  <img src="https://images.thdstatic.com/productImages/1a00d2b5-72bf-4832-9717-216161fef9bc/svn/blacks-energizer-rechargeable-battery-chargers-chvcmwb-4-4f_600.jpg" alt="Glass bottle with black plastic pour top and mesh insert." class="h-20 w-20 flex-none rounded-lg bg-gray-100 object-cover object-center sm:h-40 sm:w-40">
+                  <div class="flex flex-auto flex-col">
+                    <div>
+                      <h4 class="font-medium primary-color-text">
+                        Rechargable AA batteries
+                      </h4>
+                      <p class="mt-2 text-sm">
+                        Easy to use, sustainable &amp; available everywhere.
+                      </p>
+                    </div>
+                    <div class="mt-6 flex flex-1 items-end">
+                      <dl class="flex space-x-4 divide-x divide-gray-200 text-sm sm:space-x-6">
+                        <div class="flex">
+                          <dt class="font-medium primary-color-text">Quantity</dt>
+                          <dd class="ml-2 primary-color-text">Pack of 4 &#43; charger</dd>
+                        </div>
+                        <div class="flex pl-4 sm:pl-6">
+                          <dt class="font-medium primary-color-text">Price</dt>
+                          <dd class="ml-2 primary-color-text">~15$</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    
+                  </div>
+
+                </div>
+                
+                
+                <div class="flex space-x-6 border-b border-greeb-100 py-10">
+                  <img src="https://target.scene7.com/is/image/Target/GUEST_f106dfb3-1be1-4049-8522-1a5bcae7b472?wid=1200&amp;hei=1200&amp;qlt=80&amp;fmt=webp" alt="Glass bottle with black plastic pour top and mesh insert." class="h-20 w-20 flex-none rounded-lg bg-gray-100 object-cover object-center sm:h-40 sm:w-40">
+                  <div class="flex flex-auto flex-col">
+                    <div>
+                      <h4 class="font-medium primary-color-text">
+                        Power bank (alternative to AA batteries)
+                      </h4>
+                      <p class="mt-2 text-sm">
+                        Chances are you have one around the house. If not, pretty cheap.
+                      </p>
+                    </div>
+                    <div class="mt-6 flex flex-1 items-end">
+                      <dl class="flex space-x-4 divide-x divide-gray-200 text-sm sm:space-x-6">
+                        <div class="flex">
+                          <dt class="font-medium primary-color-text">Quantity</dt>
+                          <dd class="ml-2 primary-color-text">1</dd>
+                        </div>
+                        <div class="flex pl-4 sm:pl-6">
+                          <dt class="font-medium primary-color-text">Price</dt>
+                          <dd class="ml-2 primary-color-text">~2$</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    
+                  </div>
+
+                </div>
+                
+                
+                <div class="flex space-x-6 border-b border-greeb-100 py-10">
+                  <img src="https://m.media-amazon.com/images/I/51O0vLttRfL._AC_UL640_FMwebp_QL65_.jpg" alt="Glass bottle with black plastic pour top and mesh insert." class="h-20 w-20 flex-none rounded-lg bg-gray-100 object-cover object-center sm:h-40 sm:w-40">
+                  <div class="flex flex-auto flex-col">
+                    <div>
+                      <h4 class="font-medium primary-color-text">
+                        Power supply (alternative to AA batteries)
+                      </h4>
+                      <p class="mt-2 text-sm">
+                        You can even use your phone charger at home! Just make sure it&#39;s 5V.
+                      </p>
+                    </div>
+                    <div class="mt-6 flex flex-1 items-end">
+                      <dl class="flex space-x-4 divide-x divide-gray-200 text-sm sm:space-x-6">
+                        <div class="flex">
+                          <dt class="font-medium primary-color-text">Quantity</dt>
+                          <dd class="ml-2 primary-color-text">1</dd>
+                        </div>
+                        <div class="flex pl-4 sm:pl-6">
+                          <dt class="font-medium primary-color-text">Price</dt>
+                          <dd class="ml-2 primary-color-text">2-10$</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    
+                  </div>
+
+                </div>
+                
+                
+                <div class="flex space-x-6 border-b border-greeb-100 py-10">
+                  <img src="https://www.harborfreight.com/media/catalog/product/cache/9fc4a8332f9638515cd199dd0f9238da/i/m/image_20117.jpg" alt="Glass bottle with black plastic pour top and mesh insert." class="h-20 w-20 flex-none rounded-lg bg-gray-100 object-cover object-center sm:h-40 sm:w-40">
+                  <div class="flex flex-auto flex-col">
+                    <div>
+                      <h4 class="font-medium primary-color-text">
+                        Screws
+                      </h4>
+                      <p class="mt-2 text-sm">
+                        Wood screws (because they&#39;re cheap) to assemble parts together. A pack will last you years worth of projects. You can use some random screws around the house instead.
+                      </p>
+                    </div>
+                    <div class="mt-6 flex flex-1 items-end">
+                      <dl class="flex space-x-4 divide-x divide-gray-200 text-sm sm:space-x-6">
+                        <div class="flex">
+                          <dt class="font-medium primary-color-text">Quantity</dt>
+                          <dd class="ml-2 primary-color-text">1</dd>
+                        </div>
+                        <div class="flex pl-4 sm:pl-6">
+                          <dt class="font-medium primary-color-text">Price</dt>
+                          <dd class="ml-2 primary-color-text">5$</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    
+                  </div>
+
+                </div>
+                
+                
+                <div class="flex space-x-6 border-b border-greeb-100 py-10">
+                  <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTDNynOlYVkNSW3YegssxM0PbGjAmF5ItQFSm1W4u74el_OW_eTAh7qMb-4F2-Y0_RGVK4eNoGCRw1nnMCzaGki8oO3t3-pUJTTTdRU7l3jpNzLC7rfuiFJPUnqC9nHbQ&amp;usqp=CAc" alt="Glass bottle with black plastic pour top and mesh insert." class="h-20 w-20 flex-none rounded-lg bg-gray-100 object-cover object-center sm:h-40 sm:w-40">
+                  <div class="flex flex-auto flex-col">
+                    <div>
+                      <h4 class="font-medium primary-color-text">
+                        MicroSD Card
+                      </h4>
+                      <p class="mt-2 text-sm">
+                        This will be used to run the Operating System (OS). Anything above 8GB in capacity is enough.
+                      </p>
+                    </div>
+                    <div class="mt-6 flex flex-1 items-end">
+                      <dl class="flex space-x-4 divide-x divide-gray-200 text-sm sm:space-x-6">
+                        <div class="flex">
+                          <dt class="font-medium primary-color-text">Quantity</dt>
+                          <dd class="ml-2 primary-color-text">1</dd>
+                        </div>
+                        <div class="flex pl-4 sm:pl-6">
+                          <dt class="font-medium primary-color-text">Price</dt>
+                          <dd class="ml-2 primary-color-text">4$ - 10$</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    
+                  </div>
+
+                </div>
+                
+              
+            </div>
+          </div>
+          <br><br>
+
+          
+          <div class="tool-list">
+            <div class="mx-auto max-w-3xl px-4sm:px-6 lg:px-8">
+              <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Tools</p>
+              <p class="mt-2 text-base text-gray-500">You might already have these tools. If not, ask around!</p>
+                
+                <div class="flex space-x-6 border-b border-greeb-100 py-5">
+                  <img src="https://www.cnet.com/a/img/resize/743440ccfdec25dda93319ad4f362ae162bfffd0/hub/2022/09/06/f166bd01-ea0b-499f-bdc9-7d156e8e5cce/img-2138.jpg?auto=webp&amp;width=1200" alt="Glass bottle with black plastic pour top and mesh insert." class="h-20 w-20 flex-none rounded-lg bg-gray-100 object-cover object-center sm:h-40 sm:w-40">
+                  <div class="flex flex-auto flex-col">
+                    <div>
+                      <h4 class="font-medium primary-color-text text-2xl">
+                        3D Printer (optional)
+                      </h4>
+                      <p class="mt-10 max-w-2xl">
+                        This is used to create the enclosure. The device still works without an enclosure, so if you don&#39;t have a 3d printer, don&#39;t sweat it.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="flex space-x-6 border-b border-greeb-100 py-5">
+                  <img src="https://i5.walmartimages.com/seo/Hyper-Tough-44-Piece-Precision-Multi-type-Screwdriver-Bits-Set-TS99913A_f23c0e46-f267-48d5-87fe-17ea92e2884f.72e98357c6fd8c95fd22e454cff128cc.jpeg?odnHeight=2000&amp;odnWidth=2000&amp;odnBg=FFFFFF" alt="Glass bottle with black plastic pour top and mesh insert." class="h-20 w-20 flex-none rounded-lg bg-gray-100 object-cover object-center sm:h-40 sm:w-40">
+                  <div class="flex flex-auto flex-col">
+                    <div>
+                      <h4 class="font-medium primary-color-text text-2xl">
+                        Screw Driver Set
+                      </h4>
+                      <p class="mt-10 max-w-2xl">
+                        Nothing fancy, you can borrow a friend for an afternoon.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
+            </div>
+            <br><br>
+
+
+                
+
+                
+          
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Why?</h1><br>
+                    <p >Artificial Intelligence (AI) is everywhere, leading to the introduction of many devices such as the Rabbit R1 and Humane AI.</p>
+                    
+                    <div class="max-w-2xl">
+                      <p></p>
+                    </div>
+                    
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl object-cover" src="/build/rappit/ai-device.png" alt="">
+                      <br>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                    
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">These devices cost 200-700$ (with subscriptions)</p>
+                      </blockquote>
+                    </figure>
+                    <br>
+                    
+                    
+                    <div class="max-w-2xl">
+                      <p>I believe powerful devices like such should be accessible to all - cheap &amp; simple to make/own.</p>
+                    </div>
+                    
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                    
+                    
+                    
+                    <div class="max-w-2xl">
+                      <p>That&#39;s why I created Rappit, an affordable DIY alternative that&#39;s easy to make.</p>
+                    </div>
+                    
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                    
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">You can make your own for 20-40$!</p>
+                      </blockquote>
+                    </figure>
+                    <br>
+                    
+                    
+
+                  </div>
+                
+          
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Print some 3D stuff!</h1><br>
+                    <p >To make the build cute &amp; make you feel bubbly inside, print the enclosure below!</p>
+                    
+                    <div class="max-w-2xl">
+                      <p></p>
+                    </div>
+                    
+                    <figure>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                    
+                    <a href ="https://www.printables.com/model/954310-rappit-a-diy-rabbit-r1-for-20/comments" style="text-decoration: none;">
+                    <div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+                      <img src="https://media.printables.com/media/prints/954310/images/7278678_cd1cc93b-ff12-41c9-b963-232498c30d5f_490d9145-92c0-4047-8a15-3560c823bb0d/thumbs/cover/320x240/jpg/img_2033.webp" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+                      <div class="w-2/3 p-4 flex flex-col justify-between">
+                        <p class="text-gray-600 text-sm">
+                          Download the STL files below &amp; 3D print them per instruction.
+                        </p>
+                        <div class="flex items-center text-gray-500 text-xs">
+                          <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                          </svg>
+                          <span>https://www.printables.com/model/954310-rappit-a-diy-rabbit-r1-for-20/comments</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                    
+                    
+                    
+
+                  </div>
+                
+          
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Flash an OS onto the SD Card</h1><br>
+                    <p ></p>
+                    
+                    <div class="max-w-2xl">
+                      <p></p>
+                    </div>
+                    
+                    <figure>
+                      
+                      
+                      
+                      
+                      <iframe class="w-full h-96" src="https://www.youtube.com/embed/4Qfb909ocQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <br>
+                      
+                      
+                    </figure>
+                    
+                    
+                    
+
+                  </div>
+                
+          
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">General Assembly</h1><br>
+                    <p >This step involves making simple mechanical &amp; electrical connections.</p>
+                    
+                    <div class="max-w-2xl">
+                      <p>Attach the AA batteries holder to the Enclosure.</p>
+                    </div>
+                    
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl object-cover" src="/build/rappit/assemble-1.png" alt="">
+                      <br>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                    
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">Remember to use rechargable AA instead of normal AA to avoid damaging the Raspberry Pi.</p>
+                      </blockquote>
+                    </figure>
+                    <br>
+                    
+                    
+                    <div class="max-w-2xl">
+                      <p>Assemble the Raspberry Pi (and SD cad)</p>
+                    </div>
+                    
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl object-cover" src="/build/rappit/assemble-2.png" alt="">
+                      <br>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                    
+                    
+                    
+                    <div class="max-w-2xl">
+                      <p>Connect the AA battery holder to the Raspberry Pi 2W.</p>
+                    </div>
+                    
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl object-cover" src="/build/rappit/assemble-3.png" alt="">
+                      <br>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                    
+                    
+                    
+                    <div class="max-w-2xl">
+                      <p>Put the Lid on top.</p>
+                    </div>
+                    
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl object-cover" src="/build/rappit/assemble-4.png" alt="">
+                      <br>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                    
+                    
+                    
+                    <div class="max-w-2xl">
+                      <p>Attach the ears (using #3 screws) and eyes &amp; mouth (friction fit)</p>
+                    </div>
+                    
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl object-cover" src="/build/rappit/assemble-5.png" alt="">
+                      <br>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                    
+                    
+                    
+                    <div class="max-w-2xl">
+                      <p>Lastly, put on the Bottom Plate (friction fit)</p>
+                    </div>
+                    
+                    <figure>
+                      
+                      <img class="aspect-video rounded-xl object-cover" src="/build/rappit/assemble-6.png" alt="">
+                      <br>
+                      
+                      
+                      
+                      
+                      
+                    </figure>
+                    
+                    
+                    
+
+                  </div>
+                
+          
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Setup the software</h1><br>
+                    <p >In this step, we will put some low-code software magic on this cutesy rabbit!</p>
+                    
+                    <div class="max-w-2xl">
+                      <p></p>
+                    </div>
+                    
+                    <figure>
+                      
+                      
+                      
+                      
+                      <iframe class="w-full h-96" src="https://youtube.com/embed/cB1Fydgjipk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <br>
+                      
+                      
+                    </figure>
+                    
+                    
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">This works on both Playstore (Android) and Appstore (iOS)</p>
+                      </blockquote>
+                    </figure>
+                    <br>
+                    
+                    
+
+                  </div>
+                
+          
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Enjoy your newly created companion!</h1><br>
+                    <p >Feel free to ask it anything!</p>
+                    
+                    <div class="max-w-2xl">
+                      <p></p>
+                    </div>
+                    
+                    <figure>
+                      
+                      
+                      
+                      
+                      <iframe class="w-full h-96" src="https://youtube.com/embed/1yaQxBpiEMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <br>
+                      
+                      
+                    </figure>
+                    
+                    
+                    
+
+                  </div>
+                
+                <br><br>
+          
+          
+          <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Final words</h1>
+         <figure class="mt-10 border-l border-green-500 pl-9">
+            <blockquote class="font-semibold primary-text-color">
+              <p class="primary-color-text">Congrats on your Rappit! Enjoy it &amp; share onlin!. Email me a picture or video at thomas@comfyspace.tech to brighten my day!</p>
+            </blockquote>
+          </figure>
+        
+          
+          <br>
+
+
+<h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Ready to make it for real?</h1>
+<br>
+<a href ="/download" style="text-decoration: none;">
+<div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+  <img src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+  <div class="w-2/3 p-4 flex flex-col justify-between">
+    <h2 class="text-xl font-semibold primary-color-text mb-2">Download ComfySpace</h2>
+    <p class="text-gray-600 text-sm">
+      Available on both Android and iOS
+    </p>
+    <div class="flex items-center text-gray-500 text-xs">
+      <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+      </svg>
+      <span>comfyspace.tech/download</span>
+    </div>
+  </div>
+</div>
+</a>
+
+
+
+<h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Extra</h1>
+<br>
+
+
+<a href ="https://cad.onshape.com/documents/fc179e880583a401c85eac67/w/19d42bbe61a08bec1eeaf4cf/e/2dfb50edc0b5ff8f11a13583" style="text-decoration: none;">
+<div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+  <img src="/build/rappit/cad.png" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+  <div class="w-2/3 p-4 flex flex-col justify-between">
+    <h2 class="text-xl font-semibold primary-color-text mb-2">Customization</h2>
+    <p class="text-gray-600 text-sm">
+      You can customize the 3D design here!
+    </p>
+    <div class="flex items-center text-gray-500 text-xs">
+      <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+      </svg>
+      <span>https://cad.onshape.com/documents/fc179e880583a401c85eac67/w/19d42bbe61a08bec1eeaf4cf/e/2dfb50edc0b5ff8f11a13583</span>
+    </div>
+  </div>
+</div>
+</a>
+         
+
+
+
+
+
+        </div>
+      </div>
+      
+    
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
+
+
+    </div>
+    
+      
+      <footer class="background">
+        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+          <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+            <div class="pb-6">
+              <a href="/privacy" class="text-sm leading-6 hover:text-gray-900 primary-color-text" style="text-decoration: none;">Privacy Note</a>
+            </div>
+            <div class="pb-6">
+              <a href="/terms-and-conditions" class="text-sm leading-6 hover:text-gray-900 primary-color-text" style="text-decoration: none;">Terms and Conditions</a>
+            </div>
+
+          </nav>
+          <div class="mt-10 flex justify-center space-x-10">
+            
+            <a href="https://www.instagram.com/comfyrobotics/" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="https://twitter.com/comfysp" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">X</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+              </svg>
+            </a>
+            <a href="https://github.com/ThomasVuNguyen/comfySpace" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">GitHub</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@thomasthemaker" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">YouTube</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="https://discord.gg/rQWPPPNMmZ" class="hover:text-gray-500 primary-color-text" style="text-decoration: none;" target="_blank">
+              <span class="sr-only">Discord</span>
+              <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" clip-rule="evenodd" />
+              </svg>
+            </a>
+
+          </div>
+          <p class="mt-10 text-center text-xs leading-5">&copy; 2024 Comfy Space, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        
+        
+      
+        
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyC2U2LL4kdSYd1clW4iQSXr4PFKuK_1uaA",
+          authDomain: "comfyspace-73966.firebaseapp.com",
+          projectId: "comfyspace-73966",
+          storageBucket: "comfyspace-73966.appspot.com",
+          messagingSenderId: "290068007404",
+          appId: "1:290068007404:web:2d3de02cb87000043cd8c9",
+          measurementId: "G-E3YKVED4S4"
+        };
+      
+        
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+      
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+</body>
+</html>
