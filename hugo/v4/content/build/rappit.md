@@ -63,6 +63,8 @@ assembly:
             url: https://www.printables.com/model/954310-rappit-a-diy-rabbit-r1-for-20/comments
             img: https://media.printables.com/media/prints/954310/images/7278678_cd1cc93b-ff12-41c9-b963-232498c30d5f_490d9145-92c0-4047-8a15-3560c823bb0d/thumbs/cover/320x240/jpg/img_2033.webp
             description: Download the STL files below & 3D print them per instruction.
+          note: If you don't have access to a 3D printer, email me at thomas@comfyspace.tech and I will print for you for free!
+            
     - name: Flash an OS onto the SD Card
       steps:
         - youtube: https://www.youtube.com/embed/4Qfb909ocQc

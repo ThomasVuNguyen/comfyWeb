@@ -58,7 +58,8 @@ content:
           img: https://github.com/ThomasVuNguyen/comfyScript/raw/main/assets/icon.png
           url: /script
 
-
+final_words:
+    note: Thanks for reading through to the end. ComfyScript has been my brain child for a long time & I really hope it makes robot programming more accessible.
 
 
 
