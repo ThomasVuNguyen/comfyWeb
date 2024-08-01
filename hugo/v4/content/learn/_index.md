@@ -29,6 +29,19 @@ lessons:
         name: Thomas Nguyen
         role: Creator
 
+    - title: Power sources for a robot
+      description: From power supplies to batteries, there are more ways to power a robot than stars in the sky. So, what should you choose for your project?
+      img: battery/battery.png
+      url: battery-basic/
+      author:
+        name: Thomas Nguyen
+        role: Creator
+
+---
+
+{{<blog>}}
+
+<!--
     - title: Application overview
       description: How to create an account & application overview
       img: /blog/get-started.png
@@ -36,6 +49,4 @@ lessons:
       author:
         name: Thomas Nguyen
         role: Creator
----
-
-{{<blog>}}
+-->
