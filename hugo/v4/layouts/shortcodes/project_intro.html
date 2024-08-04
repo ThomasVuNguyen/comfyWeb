@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A guide to robotics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+<body>    
+      
+      <div class="px-6 py-32 lg:px-8">
+        
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+          <p class="text-base font-semibold leading-7 primary-color-text">We are building</p>
+          <h1 class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">{{.Page.Params.title}}</h1>
+          <p class="mt-6 text-xl leading-8">{{ .Page.Params.description}}</p>
+          
+          {{ with .Page.Params.img}}
+          <img class="aspect-video rounded-xl object-contain" src="{{ . }}" alt="">
+          {{end}}
+          {{ with .Page.Params.img_note}}
+          <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+            <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+            </svg>
+              {{.}}
+          </figcaption>
+          {{ end }}
+          <p class="mt-6 text-lg leading-8">{{ .Page.Params.general_description}}</p>
+          {{ with .Page.Params.video}}
+          <video class="h-full w-full rounded-lg" controls>
+            <source
+              src="{{.}}"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          {{end}}
+          
+          {{range .Page.Params.detailed_description}}
+          <p class="mt-6 text-xl leading-8">{{.}}</p>
+          {{end}}
+          <br>
+          <div class="items-center gap-x-6">
+            <a data-tally-open="{{.Page.Params.tally_code}}" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" style="text-decoration: none;">Sign me up, I am interested af<span aria-hidden="true">→</span></a>        
+          </div>
+
+          
+
+  <!-- Credits -->
+  {{ with .Page.Params.github}}
+  <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Check it out!</h1>
+  <br>
+
+{{end}}
+  {{ range .Page.Params.github}}
+  <a href ="{{.url}}" style="text-decoration: none;" target="_null_">
+  <div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+    <img src="{{.img}}" alt="Website preview" class="w-1/3 h-40 object-contain rounded-l-xl">
+    <div class="w-2/3 p-4 flex flex-col justify-between">
+      <h2 class="text-xl font-semibold primary-color-text mb-2">{{.type}}</h2>
+      <p class="text-gray-600 text-sm">
+        Run by {{.manager}}
+      </p>
+      <div class="flex items-center text-gray-500 text-xs">
+        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+          <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>{{.url}}</span>
+      </div>
+    </div>
+  </div>
+  </a>
+  {{ end }}
+        </div>
+      </div>
+      
+
+</body>
+</html>
