@@ -147,6 +147,9 @@ credit:
     url: https://www.thingiverse.com/thing:3112734
 final_words:
     note: Congrats on your Playcar! Enjoy it, show it to neighbors, and share online. Email me a picture or video at thomas@comfyspace.tech to brighten my day!
+
+download:
+  name: true
 ---
 {{<build
 >}}

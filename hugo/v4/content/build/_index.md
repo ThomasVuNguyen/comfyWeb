@@ -19,6 +19,14 @@ projects:
       author:
         name: Thomas Nguyen
         role: CEO & Creator
+      
+    - title: Baymax
+      description: Build a real-life Baymax (from Big Hero 6).
+      img: https://facts.net/wp-content/uploads/2023/09/19-facts-about-baymax-big-hero-6-the-series-1694000286.jpg
+      url: baymax
+      author:
+        name: Thomas Nguyen
+        role: CEO & Creator
 
 ---
 

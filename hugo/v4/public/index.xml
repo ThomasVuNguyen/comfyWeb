@@ -86,6 +86,13 @@
     </item>
     <item>
       <title>Rappit</title>
+      <link>https://comfyspace.tech/build/baymax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://comfyspace.tech/build/baymax/</guid>
+      <description>&lt;!DOCTYPE html&gt;&#xD;A guide to robotics&#xD;Comfy Projects&#xA;Rappit&#xD;Your adorable humanoid robot friend&#xA;Components&#xA;Here are some components you need for this project. Most of these can be used for multiple projects!&#xA;Raspberry Pi Zero 2W&#xD;Small but mighty. Packed with plenty computing power, this bad boy is the brain of the operation.&#xD;Quantity&#xD;1&#xD;Price&#xD;15$&#xD;Small 3S Lipo battery&#xD;Small but packs lots of juice.&#xD;Quantity&#xD;1&#xD;Price&#xD;13$&#xD;PCA9685 16 Channel PWM Servo Driver&#xD;You can control a bazzilion servo motors with this.</description>
+    </item>
+    <item>
+      <title>Rappit</title>
       <link>https://comfyspace.tech/build/rappit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://comfyspace.tech/build/rappit/</guid>

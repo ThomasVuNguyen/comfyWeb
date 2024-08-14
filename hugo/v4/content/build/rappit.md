@@ -100,5 +100,8 @@ extra:
     description: You can customize the 3D design here!
     img: /build/rappit/cad.png
     url: https://cad.onshape.com/documents/fc179e880583a401c85eac67/w/19d42bbe61a08bec1eeaf4cf/e/2dfb50edc0b5ff8f11a13583
+  
+download:
+  name: true
 ---
 {{<build>}}
