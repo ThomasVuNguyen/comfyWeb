@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComfySpace</title>
@@ -125,6 +125,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
 </head>
 <body>    
       
@@ -146,6 +150,74 @@
             <div class="mx-auto">
               
                 
+
+                
+                <div class="overflow-hidden background py-12 sm:py-32 background">
+                  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                
+                      <div class="sm:px-6 lg:px-0 p-6">
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" id="cardImage" src="https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww">
+                        
+
+                      </div>
+                
+                      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+                        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+                          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">LED</p>
+                          <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                            <span class="flex gap-4">
+                                <span class="shrink-0 text-gray-500">
+                                    $
+                                </span>
+                                <span class="flex-1">
+                                            <span id="cardMessage">
+                                                comfy led 15 off
+                                            </span>
+                                        </span>
+                            </span>
+                        </code>
+                          <div class="mt-10 flex items-center gap-x-6">
+                            <button id="toggleButton" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Run code<span aria-hidden="true">→</span></button>        
+                          </div>
+                        </div>
+                
+                      </div>
+                
+                
+                    </div>
+                  </div>
+                </div>
+
+
+
+              <script>
+                $(document).ready(function() {
+                    const images = [
+                        "https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww",
+                        "https://images.unsplash.com/photo-1587777486191-c681c0adafb1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBvbnxlbnwwfHwwfHx8MA%3D%3D",
+
+
+                    ];
+                    const messages = [
+                      "comfy led 15 off",
+                      "comfy led 15 on",
+                  ];
+                    let currentImageIndex = 0;
+                    let currentMessageIndex = 0;
+        
+                    $("#toggleButton").click(function() {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        $("#cardImage").attr("src", images[currentImageIndex]);
+                        currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+                        console.log(messages[currentMessageIndex]);
+                        $("#cardMessage").text(messages[currentMessageIndex]);
+                    });
+                });
+            </script>
+
+            
+              
                 <div class="mx-auto max-w-3xl">
                     <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">LED</p>
                     <p class="mt-6 text-lg leading-8">LED (light emitting diode) lights up when there&#39;s power. Comes in variety of colors</p>
@@ -184,7 +256,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                     <figure class="mt-10 border-l border-green-500 pl-9">
@@ -214,7 +285,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                       
@@ -232,12 +302,79 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                       
                 <br><br>
                 
+
+                
+                <div class="overflow-hidden background py-12 sm:py-32 background">
+                  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                
+                      <div class="sm:px-6 lg:px-0 p-6">
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" id="cardImage" src="https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww">
+                        
+
+                      </div>
+                
+                      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+                        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+                          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">LED</p>
+                          <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                            <span class="flex gap-4">
+                                <span class="shrink-0 text-gray-500">
+                                    $
+                                </span>
+                                <span class="flex-1">
+                                            <span id="cardMessage">
+                                                comfy led 15 off
+                                            </span>
+                                        </span>
+                            </span>
+                        </code>
+                          <div class="mt-10 flex items-center gap-x-6">
+                            <button id="toggleButton" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Run code<span aria-hidden="true">→</span></button>        
+                          </div>
+                        </div>
+                
+                      </div>
+                
+                
+                    </div>
+                  </div>
+                </div>
+
+
+
+              <script>
+                $(document).ready(function() {
+                    const images = [
+                        "https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww",
+                        "https://images.unsplash.com/photo-1587777486191-c681c0adafb1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBvbnxlbnwwfHwwfHx8MA%3D%3D",
+
+
+                    ];
+                    const messages = [
+                      "comfy led 15 off",
+                      "comfy led 15 on",
+                  ];
+                    let currentImageIndex = 0;
+                    let currentMessageIndex = 0;
+        
+                    $("#toggleButton").click(function() {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        $("#cardImage").attr("src", images[currentImageIndex]);
+                        currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+                        console.log(messages[currentMessageIndex]);
+                        $("#cardMessage").text(messages[currentMessageIndex]);
+                    });
+                });
+            </script>
+
+            
+              
                 <div class="mx-auto max-w-3xl">
                     <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">DC Motor</p>
                     <p class="mt-6 text-lg leading-8">DC motors create motions (clockwise or counter-clockwise) when powered. This is meant to be used with an L298N controller. DC Motor is used to generate fast &amp; continuous motion, useful for RC car wheels &amp; anything that spins fast.</p>
@@ -276,7 +413,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                     <figure class="mt-10 border-l border-green-500 pl-9">
@@ -306,7 +442,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                       
@@ -324,7 +459,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                       
@@ -342,12 +476,79 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                       
                 <br><br>
                 
+
+                
+                <div class="overflow-hidden background py-12 sm:py-32 background">
+                  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                
+                      <div class="sm:px-6 lg:px-0 p-6">
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" id="cardImage" src="https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww">
+                        
+
+                      </div>
+                
+                      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+                        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+                          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">LED</p>
+                          <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                            <span class="flex gap-4">
+                                <span class="shrink-0 text-gray-500">
+                                    $
+                                </span>
+                                <span class="flex-1">
+                                            <span id="cardMessage">
+                                                comfy led 15 off
+                                            </span>
+                                        </span>
+                            </span>
+                        </code>
+                          <div class="mt-10 flex items-center gap-x-6">
+                            <button id="toggleButton" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Run code<span aria-hidden="true">→</span></button>        
+                          </div>
+                        </div>
+                
+                      </div>
+                
+                
+                    </div>
+                  </div>
+                </div>
+
+
+
+              <script>
+                $(document).ready(function() {
+                    const images = [
+                        "https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww",
+                        "https://images.unsplash.com/photo-1587777486191-c681c0adafb1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBvbnxlbnwwfHwwfHx8MA%3D%3D",
+
+
+                    ];
+                    const messages = [
+                      "comfy led 15 off",
+                      "comfy led 15 on",
+                  ];
+                    let currentImageIndex = 0;
+                    let currentMessageIndex = 0;
+        
+                    $("#toggleButton").click(function() {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        $("#cardImage").attr("src", images[currentImageIndex]);
+                        currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+                        console.log(messages[currentMessageIndex]);
+                        $("#cardMessage").text(messages[currentMessageIndex]);
+                    });
+                });
+            </script>
+
+            
+              
                 <div class="mx-auto max-w-3xl">
                     <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Stepper Motor</p>
                     <p class="mt-6 text-lg leading-8">Stepper motors are motors that spin to very accurate angles. This is useful for applications requiring accurate movements such as conveyor belts, turning system for RC cars, etc.</p>
@@ -386,7 +587,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                     <figure class="mt-10 border-l border-green-500 pl-9">
@@ -416,12 +616,79 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                       
                 <br><br>
                 
+
+                
+                <div class="overflow-hidden background py-12 sm:py-32 background">
+                  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                
+                      <div class="sm:px-6 lg:px-0 p-6">
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" id="cardImage" src="https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww">
+                        
+
+                      </div>
+                
+                      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+                        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+                          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">LED</p>
+                          <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                            <span class="flex gap-4">
+                                <span class="shrink-0 text-gray-500">
+                                    $
+                                </span>
+                                <span class="flex-1">
+                                            <span id="cardMessage">
+                                                comfy led 15 off
+                                            </span>
+                                        </span>
+                            </span>
+                        </code>
+                          <div class="mt-10 flex items-center gap-x-6">
+                            <button id="toggleButton" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Run code<span aria-hidden="true">→</span></button>        
+                          </div>
+                        </div>
+                
+                      </div>
+                
+                
+                    </div>
+                  </div>
+                </div>
+
+
+
+              <script>
+                $(document).ready(function() {
+                    const images = [
+                        "https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww",
+                        "https://images.unsplash.com/photo-1587777486191-c681c0adafb1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBvbnxlbnwwfHwwfHx8MA%3D%3D",
+
+
+                    ];
+                    const messages = [
+                      "comfy led 15 off",
+                      "comfy led 15 on",
+                  ];
+                    let currentImageIndex = 0;
+                    let currentMessageIndex = 0;
+        
+                    $("#toggleButton").click(function() {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        $("#cardImage").attr("src", images[currentImageIndex]);
+                        currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+                        console.log(messages[currentMessageIndex]);
+                        $("#cardMessage").text(messages[currentMessageIndex]);
+                    });
+                });
+            </script>
+
+            
+              
                 <div class="mx-auto max-w-3xl">
                     <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Temperature &amp; humidity sensor</p>
                     <p class="mt-6 text-lg leading-8">DHT sensors provide reading of temperature &amp; humidity. Currently supported sensors include DHT 11, 22 &amp; 2302 (which is like... all of &#39;em).</p>
@@ -460,7 +727,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                     <figure class="mt-10 border-l border-green-500 pl-9">
@@ -490,7 +756,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                       
@@ -508,7 +773,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                     <figure class="mt-10 border-l border-green-500 pl-9">
@@ -538,12 +802,79 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                       
                 <br><br>
                 
+
+                
+                <div class="overflow-hidden background py-12 sm:py-32 background">
+                  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                
+                      <div class="sm:px-6 lg:px-0 p-6">
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" id="cardImage" src="https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww">
+                        
+
+                      </div>
+                
+                      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+                        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+                          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">LED</p>
+                          <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                            <span class="flex gap-4">
+                                <span class="shrink-0 text-gray-500">
+                                    $
+                                </span>
+                                <span class="flex-1">
+                                            <span id="cardMessage">
+                                                comfy led 15 off
+                                            </span>
+                                        </span>
+                            </span>
+                        </code>
+                          <div class="mt-10 flex items-center gap-x-6">
+                            <button id="toggleButton" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Run code<span aria-hidden="true">→</span></button>        
+                          </div>
+                        </div>
+                
+                      </div>
+                
+                
+                    </div>
+                  </div>
+                </div>
+
+
+
+              <script>
+                $(document).ready(function() {
+                    const images = [
+                        "https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww",
+                        "https://images.unsplash.com/photo-1587777486191-c681c0adafb1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBvbnxlbnwwfHwwfHx8MA%3D%3D",
+
+
+                    ];
+                    const messages = [
+                      "comfy led 15 off",
+                      "comfy led 15 on",
+                  ];
+                    let currentImageIndex = 0;
+                    let currentMessageIndex = 0;
+        
+                    $("#toggleButton").click(function() {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        $("#cardImage").attr("src", images[currentImageIndex]);
+                        currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+                        console.log(messages[currentMessageIndex]);
+                        $("#cardMessage").text(messages[currentMessageIndex]);
+                    });
+                });
+            </script>
+
+            
+              
                 <div class="mx-auto max-w-3xl">
                     <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Distance sensor</p>
                     <p class="mt-6 text-lg leading-8">The HC-SR04 sensor is widely used to measure distance. Small, cheap &amp; versatile. All things should be like this, don&#39;t you agree?</p>
@@ -588,7 +919,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                     <figure class="mt-10 border-l border-green-500 pl-9">
@@ -618,7 +948,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                       
@@ -636,12 +965,79 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                       
                 <br><br>
                 
+
+                
+                <div class="overflow-hidden background py-12 sm:py-32 background">
+                  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                
+                      <div class="sm:px-6 lg:px-0 p-6">
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" id="cardImage" src="https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww">
+                        
+
+                      </div>
+                
+                      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+                        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+                          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">LED</p>
+                          <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                            <span class="flex gap-4">
+                                <span class="shrink-0 text-gray-500">
+                                    $
+                                </span>
+                                <span class="flex-1">
+                                            <span id="cardMessage">
+                                                comfy led 15 off
+                                            </span>
+                                        </span>
+                            </span>
+                        </code>
+                          <div class="mt-10 flex items-center gap-x-6">
+                            <button id="toggleButton" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Run code<span aria-hidden="true">→</span></button>        
+                          </div>
+                        </div>
+                
+                      </div>
+                
+                
+                    </div>
+                  </div>
+                </div>
+
+
+
+              <script>
+                $(document).ready(function() {
+                    const images = [
+                        "https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww",
+                        "https://images.unsplash.com/photo-1587777486191-c681c0adafb1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBvbnxlbnwwfHwwfHx8MA%3D%3D",
+
+
+                    ];
+                    const messages = [
+                      "comfy led 15 off",
+                      "comfy led 15 on",
+                  ];
+                    let currentImageIndex = 0;
+                    let currentMessageIndex = 0;
+        
+                    $("#toggleButton").click(function() {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        $("#cardImage").attr("src", images[currentImageIndex]);
+                        currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+                        console.log(messages[currentMessageIndex]);
+                        $("#cardMessage").text(messages[currentMessageIndex]);
+                    });
+                });
+            </script>
+
+            
+              
                 <div class="mx-auto max-w-3xl">
                     <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Gemini (Google AI)</p>
                     <p class="mt-6 text-lg leading-8">Yep, you&#39;re reading it right! ComfyScript has Gemini AI chat built-in. We built this with convenience &amp; simplicity in mind.</p>
@@ -680,7 +1076,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                     <figure class="mt-10 border-l border-green-500 pl-9">
@@ -710,7 +1105,6 @@
                                         </span>
                                     </span>
                         </span>
-                        
                     </code>
                     
                     <figure class="mt-10 border-l border-green-500 pl-9">

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A guide to robotics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>    
+      
+      <div class="px-6 py-32 lg:px-8">
+        
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+          <p class="text-base font-semibold leading-7 primary-color-text">Documentation</p>
+          <h1 class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">{{.Page.Params.title}}</h1>
+          <p class="mt-6 text-xl leading-8">{{ .Page.Params.description}}</p>
+          
+          {{ with .Page.Params.img}}
+          <img class="aspect-video rounded-xl object-contain" src="{{ . }}" alt="">
+          {{end}}
+          <p class="mt-6 text-lg leading-8">{{ .Page.Params.general_description}}</p>
+          {{ with .Page.Params.video}}
+          <video class="h-full w-full rounded-lg" controls>
+            <source
+              src="{{.}}"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          {{end}}
+          <br><br><br>
+          <!-- Component list -->
+          <div class="component-list">
+            <div class="mx-auto">
+              <!--<p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">Forewords</p>
+              <p class="mt-2 text-base ">{{.Page.Params.foreword}}</p>-->
+                {{ range .Page.Params.components }}
+
+                <!-- testing -->
+                <div class="overflow-hidden background py-12 sm:py-32 background">
+                  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+                
+                      <div class="sm:px-6 lg:px-0 p-6">
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" id="cardImage" src="https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww">
+                        
+
+                      </div>
+                
+                      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+                        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+                          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">LED</p>
+                          <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                            <span class="flex gap-4">
+                                <span class="shrink-0 text-gray-500">
+                                    $
+                                </span>
+                                <span class="flex-1">
+                                            <span id="cardMessage">
+                                                comfy led 15 off
+                                            </span>
+                                        </span>
+                            </span>
+                        </code>
+                          <div class="mt-10 flex items-center gap-x-6">
+                            <button id="toggleButton" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Run code<span aria-hidden="true">→</span></button>        
+                          </div>
+                        </div>
+                
+                      </div>
+                
+                
+                    </div>
+                  </div>
+                </div>
+
+
+
+              <script>
+                $(document).ready(function() {
+                    const images = [
+                        "https://images.unsplash.com/photo-1472954253026-157558836cd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjByb29tfGVufDB8fDB8fHww",
+                        "https://images.unsplash.com/photo-1587777486191-c681c0adafb1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBvbnxlbnwwfHwwfHx8MA%3D%3D",
+
+
+                    ];
+                    const messages = [
+                      "comfy led 15 off",
+                      "comfy led 15 on",
+                  ];
+                    let currentImageIndex = 0;
+                    let currentMessageIndex = 0;
+        
+                    $("#toggleButton").click(function() {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        $("#cardImage").attr("src", images[currentImageIndex]);
+                        currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+                        console.log(messages[currentMessageIndex]);
+                        $("#cardMessage").text(messages[currentMessageIndex]);
+                    });
+                });
+            </script>
+
+            
+              <!-- testing -->
+                <div class="mx-auto max-w-3xl">
+                    <p class="mt-2 text-4xl font-bold tracking-tight sm:text-3xl primary-color-text">{{.name}}</p>
+                    <p class="mt-6 text-lg leading-8">{{.description}}</p>
+                    
+                      </div>
+                      <figure>
+                        {{ with .img}}
+                        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="{{.}}" alt="">
+                        
+                        {{end}}
+                        {{ with .pdf}}
+                        <div class="max-w-3xl w-full mx-auto my-8 px-4">
+                          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                              <div class="relative pb-[56.25%] h-0">
+                                  <iframe class="absolute top-0 left-0 w-full h-full" src="{{.}}" scrolling="no"></iframe>
+                              </div>
+                          </div>
+                      </div>
+                        {{end}}
+                        {{ with .video}}
+                        <video class="h-full w-full rounded-lg" controls>
+                          <source
+                            src="{{.}}"
+                            type="video/mp4"
+                          />
+                          Your browser does not support the video tag.
+                        </video>
+                        <br>
+                        {{end}}
+                        {{ with .img_note}}
+                        <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                          <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                          </svg>
+                            {{.}}
+                        </figcaption>
+                        {{ end }}
+                        {{with .joke}}
+                        <figure class="mt-10 border-l border-green-500 pl-9">
+                          <blockquote class="font-semibold">
+                            <p class="primary-color-text">{{.}}</p>
+                          </blockquote>
+                        </figure>
+                        {{end}}
+                        <br>
+                      </figure>
+
+                      {{ range .code}}
+                      
+                      <p class="mt-6 text-lg leading-8">{{ .note}}</p>
+
+                      <code class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-4">
+                        <span class="flex gap-4">
+                            <span class="shrink-0 text-gray-500">
+                                $
+                            </span>
+                            <span class="flex-1">
+                                        <span>
+                                            {{.text}}
+                                        </span>
+                                    </span>
+                        </span>
+                    </code>
+                    {{range .explain}}
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{{.text}}</p>
+                      </blockquote>
+                    </figure>
+                    {{end}}
+                      {{end}}
+                <br><br>
+                {{ end }}
+              
+            </div>
+          </div>
+          <br><br>
+
+
+                <!-- Assembly -->
+
+                {{ range .Page.Params.assembly}}
+          
+                  <div class="mx-auto max-w-3xl text-base leading-7">
+
+                    <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">{{ .name }}</h1><br>
+                    <p >{{.description}}</p>
+                    {{ range .steps}}
+                    <div class="max-w-2xl">
+                      <p>{{.description}}</p>
+                    </div>
+                    
+                    <figure>
+                      {{ with .img}}
+                      <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="{{.}}" alt="">
+                      <br>
+                      {{end}}
+                      {{ with .pdf}}
+                      <div class="max-w-3xl w-full mx-auto my-8 px-4">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="relative pb-[56.25%] h-0">
+                                <iframe class="absolute top-0 left-0 w-full h-full" src="{{.}}" scrolling="no"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                      {{end}}
+                      {{ with .video}}
+                      <video class="h-full w-full rounded-lg" controls>
+                        <source
+                          src="{{.}}"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                      <br>
+                      {{end}}
+                      {{ with .img_note}}
+                      <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+                        <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                        </svg>
+                          {{.}}
+                      </figcaption>
+                      {{ end }}
+                    </figure>
+                    {{ with .link}}
+                    <a href ="{{.url}}" style="text-decoration: none;">
+                    <div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+                      <img src="{{.img}}" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+                      <div class="w-2/3 p-4 flex flex-col justify-between">
+                        <p class="text-gray-600 text-sm">
+                          {{.description}}
+                        </p>
+                        <div class="flex items-center text-gray-500 text-xs">
+                          <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                          </svg>
+                          <span>{{.url}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                    {{ end }}
+                    {{with .note}}
+                    <figure class="mt-10 border-l border-green-500 pl-9">
+                      <blockquote class="font-semibold">
+                        <p class="primary-color-text">{{.}}</p>
+                      </blockquote>
+                    </figure>
+                    <br>
+                    {{end}}
+                    {{ end }}
+
+                  </div>
+                {{ end }}
+                <br><br>
+          <!-- Final words -->
+          {{ with .Page.Params.final_words}}
+          <h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Final words</h1>
+         <figure class="mt-10 border-l border-green-500 pl-9">
+            <blockquote class="font-semibold primary-text-color">
+              <p class="primary-color-text">{{.note}}</p>
+            </blockquote>
+          </figure>
+        
+          {{ end }}
+          <br>
+
+<!-- Extra -->
+{{ with .Page.Params.usage}}
+<h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">Want to use ComfyScript for your next project?</h1>
+<br>
+{{end}}
+{{ range .Page.Params.usage}}
+<a href ="{{.url}}" style="text-decoration: none;">
+<div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+  <img src="{{.img}}" alt="Website preview" class="w-1/3 h-40 object-cover rounded-l-xl">
+  <div class="w-2/3 p-4 flex flex-col justify-between">
+    <h2 class="text-xl font-semibold primary-color-text mb-2">{{.name}}</h2>
+    <p class="text-gray-600 text-sm">
+      {{.description}}
+    </p>
+    <div class="flex items-center text-gray-500 text-xs">
+      <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+      </svg>
+      <span>{{.url}}</span>
+    </div>
+  </div>
+</div>
+</a>
+{{ end }}         
+
+
+<!-- Credits -->
+{{ with .Page.Params.github}}
+<h1 class="mt-10 text-3xl font-bold tracking-tight primary-color-text sm:text-3xl">ComfyScript open source, btw</h1>
+<br>
+
+{{end}}
+{{ range .Page.Params.github}}
+<a href ="{{.url}}" style="text-decoration: none;" target="_null_">
+<div class="max-w-3xl w-full bg-white rounded-xl shadow-md overflow-hidden flex">
+  <img src="{{.img}}" alt="Website preview" class="w-1/3 h-40 object-contain rounded-l-xl">
+  <div class="w-2/3 p-4 flex flex-col justify-between">
+    <h2 class="text-xl font-semibold primary-color-text mb-2">{{.type}}</h2>
+    <p class="text-gray-600 text-sm">
+      {{.part}} by {{.creator}}
+    </p>
+    <div class="flex items-center text-gray-500 text-xs">
+      <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+      </svg>
+      <span>{{.url}}</span>
+    </div>
+  </div>
+</div>
+</a>
+{{ end }}
+        </div>
+      </div>
+      
+
+</body>
+</html>
