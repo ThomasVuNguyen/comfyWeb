@@ -38,6 +38,8 @@
   </url><url>
     <loc>http://localhost:1313/learn/app-overview/</loc>
   </url><url>
+    <loc>http://localhost:1313/bento/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/learn/</loc>

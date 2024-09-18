@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        video::-webkit-media-controls {
+            display: none;
+          }
+    </style>
+</head>
+<body>
+<div class="">
+
+  <div class="background">
+    <div class="relative isolate overflow-hidden pt-14">
+        <div class="relative">
+        <video autoplay loop muted playsinline controls="false"width="640" height="360" class="absolute inset-0 -z-10 h-full w-full object-cover">
+  <source src="/bento/bento-intro.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<div class="absolute inset-0 bg-blue-800 opacity-100 mix-blend-multiply"></div></div>
+
+      <!--<img 
+      src=
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" 
+      alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">-->
+      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <!-- Announcement
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+            Announcing our next round of funding. <a href="#" class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>-->
+        <div class="text-center">
+          <h1 class="text-4xl font-bold tracking-tight background-color sm:text-6xl">{{.Page.Params.title}}</h1>
+          <p class="mt-6 text-lg leading-8 background-color">{{.Page.Params.one_liner}}</p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a href="/learn" class="rounded-md accent-color px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overflow-hidden background py-12 bg-red-50 sm:py-32">
+  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+          <h2 class="text-base font-semibold leading-7 primary-color-text">Comfy Academy</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">Learn robotics</p>
+          <p class="mt-6 text-lg leading-8 primary-color-text">
+            Our articles simplify robotics basics for non-roboticists. No prior experience is needed, inspiring anyone to start creating robots.
+          </p>
+          <div class="mt-10 flex items-center gap-x-6">
+            <a href="/learn" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Fuel your mind<span aria-hidden="true">→</span></a>        
+          </div>
+        </div>
+      </div>
+      <div class="sm:px-6 lg:px-0 p-6">
+        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/learn/robot-intro.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overflow-hidden background py-12 sm:py-32 bg-yellow-50">
+  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+
+      <div class="sm:px-6 lg:px-0 p-6">
+        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/homepage/robot-assembly.png">
+      </div>
+      <div class="px-6 lg:px-0 lg:pl-4 lg:pt-4">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+          <h2 class="text-base font-semibold leading-7 primary-color-text">Comfy Projects</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">Build robots</p>
+          <p class="mt-6 text-lg leading-8 primary-color-text">
+            Create your own robots or learn from an archive of aesthetically pleasing, easy-to-replicate projects.          
+          </p>
+          <div class="mt-10 flex items-center gap-x-6">
+            <a href="/build" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Start building<span aria-hidden="true">→</span></a>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overflow-hidden bg-purple-50 py-12 sm:py-32">
+  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+          <h2 class="text-base font-semibold leading-7 primary-color-text">ComfySpace</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">Remotely control your robots</p>
+          <p class="mt-6 text-lg leading-8 primary-color-text">
+            Once your robot is put together, you can seamlessly control it using ComfySpace. This intuitive mobile app lets you remotely manage all your robot's functions by creating customizable buttons.
+          </p>
+          <div class="mt-10 flex items-center gap-x-6">
+            <a href="/download" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Download<span aria-hidden="true">→</span></a>        
+          </div>
+        </div>
+
+      </div>
+      <div class="sm:px-6 lg:px-0 p-6">
+        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/homepage/remote-control.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overflow-hidden background py-12 sm:py-32 background">
+  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+
+      <div class="sm:px-6 lg:px-0 p-6">
+        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/blog/jax-demo.gif">
+      </div>
+
+      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+          <h2 class="text-base font-semibold leading-7 primary-color-text">ComfyShare</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">Share your creations with the world!</p>
+          <p class="mt-6 text-lg leading-8 primary-color-text">
+            Share your projects with others as a Comfy Project! You can even spread the word on social media. We can't wait to see what you've created!        
+          </p>
+          <div class="mt-10 flex items-center gap-x-6">
+            <a href="/share" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Start sharing<span aria-hidden="true">→</span></a>        
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="overflow-hidden bg-purple-50 py-12 sm:py-32">
+  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+          <h2 class="text-base font-semibold leading-7 primary-color-text">ComfyScript (optional)</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">Program robots as easily as speaking English</p>
+          <p class="mt-6 text-lg leading-8 primary-color-text">
+            Instead of writing code, you can use ComfyScript to program your robot. This language is designed to be as easy to use as possible, so you can focus on creating your robot, not the code.
+          </p>
+          <div class="mt-10 flex items-center gap-x-6">
+            <a href="/script" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Documentation<span aria-hidden="true">→</span></a>        
+          </div>
+        </div>
+
+      </div>
+      <div class="sm:px-6 lg:px-0 p-6">
+        <img class="aspect-video rounded-xl object-contain" src="https://raw.githubusercontent.com/ThomasVuNguyen/comfyScript/main/assets/icon.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overflow-hidden background py-12 sm:py-32 background">
+  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+
+      <div class="sm:px-6 lg:px-0 p-6">
+        <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="/homepage/discord.png">
+      </div>
+
+      <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+          <h2 class="text-base font-semibold leading-7 primary-color-text">Community</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight primary-color-text sm:text-4xl">Join our Discord channel!</p>
+          <p class="mt-6 text-lg leading-8 primary-color-text">
+            Join our Discord channel to chat with other robot enthusiasts, ask questions, and share your projects. We can't wait to meet you!
+          </p>
+          <div class="mt-10 flex items-center gap-x-6">
+            <a href="https://discord.gg/rQWPPPNMmZ" target="_blank" class="relative inline-flex items-center gap-x-1.5 rounded-md accent-color px-3 py-2 text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Join in<span aria-hidden="true">→</span></a>        
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+</body>
